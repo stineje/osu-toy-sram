@@ -1,0 +1,2 @@
+vsim -do top.do
+

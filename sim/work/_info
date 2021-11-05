@@ -9,349 +9,349 @@ z2
 cModel Technology
 Z0 d/home/jstine/osu-toy-sram/sim
 T_opt
-Z1 !s110 1636140949
-VjgRSJP08WWk3QQgc2n1CM1
+Z1 !s110 1636142688
+V:JTAcQ`kWV_8@_D>bzZa92
 04 11 4 work test_ra_sdr fast 0
-=1-d0c637908675-61858795-ba5d-59410
+=1-d0c637908675-61858e60-a672d-5a6ed
 o-quiet -auto_acc_if_foreign -work work -debugdb +acc
 Z2 tCvgOpt 0
 n@_opt
 OL;O;10.7e;67
 vaddress_clock_sdr_2r1w_64
-Z3 !s110 1636140948
+R1
 !i10b 1
 !s100 Mh<0PQd36eMkz^OaSfDf03
 ImBPoP:B[HkXVXe8T?mc@:3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z5 w1636140869
+Z4 w1636140869
 8../src/address_clock_sdr_2r1w_64.v
 F../src/address_clock_sdr_2r1w_64.v
-Z6 L0 28
-Z7 OL;L;10.7e;67
+Z5 L0 28
+Z6 OL;L;10.7e;67
 r1
 !s85 0
 31
-Z8 !s108 1636140948.000000
-Z9 !s107 ../src/test_ra_ddr_1x.v|../src/test_ra_sdr.sv|../src/test_ra_ddr.v|../src/ra_lcb_ddr.v|../src/ra_lcb_sdr.v|../src/ra_delay.v|../src/ra_4r2w_64x72_ddr.v|../src/regfile_4r2w_64x24.v|../src/ra_cfg_sdr.v|../src/ra_4r2w_64x72_ddr_1x.v|../src/toysram.vh|../src/regfile_2r1w_64x24.v|../src/ra_cfg_ddr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_bist_sdr.v|../src/predecode_sdr_64.v|../src/ra_bist_ddr.v|../src/address_clock_sdr_2r1w_64.v|
-Z10 !s90 -reportprogress|300|-lint|../src/address_clock_sdr_2r1w_64.v|../src/ra_bist_ddr.v|../src/predecode_sdr_64.v|../src/ra_bist_sdr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_cfg_ddr.v|../src/regfile_2r1w_64x24.v|../src/toysram.vh|../src/ra_4r2w_64x72_ddr_1x.v|../src/ra_cfg_sdr.v|../src/regfile_4r2w_64x24.v|../src/ra_4r2w_64x72_ddr.v|../src/ra_delay.v|../src/ra_lcb_sdr.v|../src/ra_lcb_ddr.v|../src/test_ra_ddr.v|../src/test_ra_sdr.sv|../src/test_ra_ddr_1x.v|
+Z7 !s108 1636142688.000000
+Z8 !s107 ../src/test_ra_ddr_1x.v|../src/test_ra_sdr.sv|../src/test_ra_ddr.v|../src/ra_lcb_ddr.v|../src/ra_lcb_sdr.v|../src/ra_delay.v|../src/ra_4r2w_64x72_ddr.v|../src/regfile_4r2w_64x24.v|../src/ra_cfg_sdr.v|../src/ra_4r2w_64x72_ddr_1x.v|../src/toysram.vh|../src/regfile_2r1w_64x24.v|../src/ra_cfg_ddr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_bist_sdr.v|../src/predecode_sdr_64.v|../src/ra_bist_ddr.v|../src/address_clock_sdr_2r1w_64.v|
+Z9 !s90 -reportprogress|300|-lint|../src/address_clock_sdr_2r1w_64.v|../src/ra_bist_ddr.v|../src/predecode_sdr_64.v|../src/ra_bist_sdr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_cfg_ddr.v|../src/regfile_2r1w_64x24.v|../src/toysram.vh|../src/ra_4r2w_64x72_ddr_1x.v|../src/ra_cfg_sdr.v|../src/regfile_4r2w_64x24.v|../src/ra_4r2w_64x72_ddr.v|../src/ra_delay.v|../src/ra_lcb_sdr.v|../src/ra_lcb_ddr.v|../src/test_ra_ddr.v|../src/test_ra_sdr.sv|../src/test_ra_ddr_1x.v|
 !i113 0
-Z11 o-lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 o-lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 vpredecode_sdr_64
-R3
+R1
 !i10b 1
 !s100 G7YWbZeO=4iD=ohW<75Yl1
 IG5j@8nFK@SI3bjLXk21Nn0
-R4
+R3
 R0
-R5
+R4
 8../src/predecode_sdr_64.v
 F../src/predecode_sdr_64.v
 L0 24
-R7
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_2r1w_64x72_sdr
-R3
+R1
 !i10b 1
 !s100 8R4T3if6IPHY[b8:L0gJY3
 I1o6fA8eR:hn:;LPZ0bfY80
-R4
+R3
 R0
-R5
+R4
 8../src/ra_2r1w_64x72_sdr.v
 F../src/ra_2r1w_64x72_sdr.v
+R5
 R6
-R7
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_4r2w_64x72_ddr
 R1
 !i10b 1
 !s100 <Xog_IAdglzlL^0d^YTQS2
 IIBfb>eUYncOi0`1AM_]G50
-R4
+R3
 R0
-R5
+R4
 8../src/ra_4r2w_64x72_ddr.v
 F../src/ra_4r2w_64x72_ddr.v
-Z12 L0 30
-R7
+Z11 L0 30
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_4r2w_64x72_ddr_1x
 R1
 !i10b 1
 !s100 7Pj0iHV2?C:?mQaNZ1bSd3
 Ie9e1<fL_iPOe?zSP3zQGn0
-R4
+R3
 R0
-R5
+R4
 8../src/ra_4r2w_64x72_ddr_1x.v
 F../src/ra_4r2w_64x72_ddr_1x.v
+R5
 R6
-R7
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_bist_ddr
-R3
+R1
 !i10b 1
 !s100 =i`X>94`Fc6KlPS?o0:<l1
 Ig]Oc7=JdH1AEb;n6LOJSR0
-R4
+R3
 R0
-R5
+R4
 8../src/ra_bist_ddr.v
 F../src/ra_bist_ddr.v
-Z13 L0 39
-R7
+Z12 L0 39
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_bist_sdr
-R3
+R1
 !i10b 1
 !s100 ^f>=^S<`PI3o`;ocX^<Pk3
 I6Tfnm[hl4?9NLBO^B;P3P2
-R4
+R3
 R0
-R5
+R4
 8../src/ra_bist_sdr.v
 F../src/ra_bist_sdr.v
-R13
-R7
+R12
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_cfg_ddr
-R3
+R1
 !i10b 1
 !s100 PLZNU;6C6U]CKGZ0PSIBl2
 I]^9GmCLl^]QNA`gBMSC5>3
-R4
+R3
 R0
-R5
+R4
 8../src/ra_cfg_ddr.v
 F../src/ra_cfg_ddr.v
+R5
 R6
-R7
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_cfg_sdr
 R1
 !i10b 1
 !s100 HQ>hmf<fb:W2IH?:<>?@J3
 IS86?h1X=_:^V>34Ham:472
-R4
+R3
 R0
-R5
+R4
 8../src/ra_cfg_sdr.v
 F../src/ra_cfg_sdr.v
+R5
 R6
-R7
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_delay
 R1
 !i10b 1
 !s100 ijYe0;cc^D>4=bVz:QERS0
 IZ72CYCHm4O9ajebd4UYnk1
-R4
+R3
 R0
-R5
+R4
 8../src/ra_delay.v
 F../src/ra_delay.v
-Z14 L0 27
-R7
+Z13 L0 27
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_lcb_ddr
 R1
 !i10b 1
 !s100 kE^e^?;2F`07R2X32?k_H1
 IV>AEC<6nWmh3W@W11nnNe2
-R4
+R3
 R0
-R5
+R4
 8../src/ra_lcb_ddr.v
 F../src/ra_lcb_ddr.v
 L0 29
-R7
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vra_lcb_sdr
 R1
 !i10b 1
 !s100 5RD<Q0PHAj7]KWU[5Yh3i1
 IK1JeT?Q87?Gl>Yd;FOB;=0
-R4
+R3
 R0
-R5
+R4
 8../src/ra_lcb_sdr.v
 F../src/ra_lcb_sdr.v
+R5
 R6
-R7
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vregfile_2r1w_64x24
 R1
 !i10b 1
 !s100 <5C8POMOh7Ie]J;Q1ld<X1
 IR43283`EJN:kBfBO5:19A2
-R4
+R3
 R0
-R5
+R4
 8../src/regfile_2r1w_64x24.v
 F../src/regfile_2r1w_64x24.v
-R14
-R7
+R13
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vregfile_4r2w_64x24
 R1
 !i10b 1
 !s100 ^DAK?ZYTK?iaiGfWfnKC63
 Ib`GkJ]>Od8F@9fbE2S_LX3
-R4
+R3
 R0
-R5
+R4
 8../src/regfile_4r2w_64x24.v
 F../src/regfile_4r2w_64x24.v
-R14
-R7
+R13
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vtest_ra_ddr
 R1
 !i10b 1
 !s100 m>CMkdOoG<FZ<j>d@`7[H1
 Ia<Z0I8k[2fKce9Dn8O1;m3
-R4
+R3
 R0
-R5
+R4
 8../src/test_ra_ddr.v
 F../src/test_ra_ddr.v
-R12
-R7
+R11
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vtest_ra_ddr_1x
 R1
 !i10b 1
 !s100 D6oM4IIU?N5b3TDo1?<dz2
 IW<`UGDifFXY?1oe9487^]2
-R4
+R3
 R0
-R5
+R4
 8../src/test_ra_ddr_1x.v
 F../src/test_ra_ddr_1x.v
-R12
-R7
+R11
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
 vtest_ra_sdr
 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
@@ -359,21 +359,21 @@ R1
 !i10b 1
 !s100 <LJfHiC`02:O2Wa3`9CCX2
 I6WY`>6FLOR>^`geebbB133
-R4
+R3
 !s105 test_ra_sdr_sv_unit
 S1
 R0
-R5
+R4
 8../src/test_ra_sdr.sv
 F../src/test_ra_sdr.sv
-R14
-R7
+R13
+R6
 r1
 !s85 0
 31
+R7
 R8
 R9
-R10
 !i113 0
-R11
+R10
 R2
