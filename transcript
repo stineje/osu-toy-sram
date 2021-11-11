@@ -1,0 +1,310 @@
+# //  Questa Sim-64
+# //  Version 2020.3_1 linux_x86_64 Aug 25 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ./sim/top.do
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 15:13:00 on Nov 11,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# ** Error: (vlog-7) Failed to open design unit file "../src/address_clock_sdr_2r1w_64.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 15:13:01 on Nov 11,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /opt/Mentor/questasim/linux_x86_64/vlog failed.
+# Error in macro ././sim/top.do line 30
+# /opt/Mentor/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra..."
+pwd
+# /home/ptikals/IBM/osu-toy-sram
+cd sim
+pwd
+# /home/ptikals/IBM/osu-toy-sram/sim
+pwd
+# /home/ptikals/IBM/osu-toy-sram/sim
+do top.do
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 15:25:49 on Nov 11,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(27): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(64): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 15:25:49 on Nov 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 15:25:49 on Nov 11,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(27): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vopt-2623) Undefined variable: status.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+find drivers -source -time {21975 ps} -cause sim:/test_ra_sdr/bist/wr0_dat_in
+run -all
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 15:34:04 on Nov 11,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(27): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(64): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 15:34:04 on Nov 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# End time: 15:34:04 on Nov 11,2021, Elapsed time: 0:08:15
+# Errors: 0, Warnings: 3
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 15:34:04 on Nov 11,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 16:55:55 on Nov 11,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(27): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(64): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 16:55:55 on Nov 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# End time: 16:55:55 on Nov 11,2021, Elapsed time: 1:21:51
+# Errors: 0, Warnings: 0
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 16:55:55 on Nov 11,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 16:56:49 on Nov 11,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(27): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(64): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 16:56:49 on Nov 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# End time: 16:56:50 on Nov 11,2021, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 0
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 16:56:50 on Nov 11,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(27): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vopt-2623) Undefined variable: status.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/test_ra_sdr/rd_dat_0', driven via a port connection, is multiply driven. See ../src/test_ra_sdr.sv(78).
+#    Time: 0 ps  Iteration: 0  Instance: /test_ra_sdr/ra File: ../src/test_ra_sdr.sv Line: 99
+# ** Error (suppressible): (vsim-3839) Variable '/test_ra_sdr/rd_dat_1', driven via a port connection, is multiply driven. See ../src/test_ra_sdr.sv(78).
+#    Time: 0 ps  Iteration: 0  Instance: /test_ra_sdr/ra File: ../src/test_ra_sdr.sv Line: 99
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./top.do PAUSED at line 33
+do top.do
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 17:02:25 on Nov 11,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(27): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(64): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 17:02:25 on Nov 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 16:56:50 on Nov 11,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(27): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(65): (vopt-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(78): (vopt-2685) [TFMPC] - Too few port connections for 'bist'.  Expected 20, found 18.
+# ** Warning: ../src/test_ra_sdr.sv(78): (vopt-2718) [TFMPC] - Missing connection for port 'rd1_dat'.
+# ** Warning: ../src/test_ra_sdr.sv(78): (vopt-2718) [TFMPC] - Missing connection for port 'rd0_dat'.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=9.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf

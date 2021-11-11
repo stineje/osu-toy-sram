@@ -1,7 +1,7 @@
 # Copyright 1991-2016 Mentor Graphics Corporation
-# 
+#
 # Modification by Oklahoma State University
-# Use with Testbench 
+# Use with Testbench
 # James Stine, 2008
 # Go Cowboys!!!!!!
 #
@@ -27,7 +27,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v  ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v  ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v
 
 # start and run simulation
 vsim -debugdb -voptargs=+acc work.test_ra_sdr
@@ -46,7 +46,7 @@ add wave -noupdate -divider -height 32 "ra_2r1w_64x72_sdr"
 add wave -hex -r /ra/*
 
 
--- Set Wave Output Items 
+-- Set Wave Output Items
 TreeUpdate [SetDefaultTree]
 WaveRestoreZoom {0 ps} {75 ns}
 configure wave -namecolwidth 250
@@ -58,6 +58,6 @@ configure wave -datasetprefix 0
 configure wave -rowmargin 4
 configure wave -childrowmargin 2
 
--- Run the Simulation 
-run 1300ns
+-- Run the Simulation
+run 2000ns
 quit

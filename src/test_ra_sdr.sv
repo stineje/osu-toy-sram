@@ -26,7 +26,7 @@
 `include "toysram.vh"
 module  test_ra_sdr ();
 
-   logic                           clk;   
+   logic                           clk;
    logic 			   reset;
    logic 			   cfg_wr;
    logic [0:`LCBSDR_CONFIGWIDTH-1] cfg_dat;
@@ -41,7 +41,7 @@ module  test_ra_sdr ();
    logic 			   wr_enb_0;
    logic [5:0] 			   wr_adr_0;
    logic [71:0] 		   wr_dat_0;
-   
+
    logic 			   strobe;
    logic [0:`LCBSDR_CONFIGWIDTH-1] cfg;
    logic 			   mux_rd0_enb;
@@ -52,8 +52,8 @@ module  test_ra_sdr ();
    logic [5:0] 			   mux_wr0_adr;
    logic [71:0] 		   mux_wr0_dat;
 
-   initial  
-     begin	
+   initial
+     begin
 	clk = 1'b1;
 	forever #5 clk = ~clk;
      end
@@ -63,28 +63,29 @@ module  test_ra_sdr ();
    assign wr_dat_0 = 72'hdead_beef;
    assign bist_ctl = 32'hfeed_face_cafe_beef;
    assign status = 32'h0baad_f00d;
+   assign rd_adr_0 = 6'h2C;
 
    ra_lcb_sdr lcb (.clk      (clk),
 		   .reset    (reset),
 		   .cfg      (cfg),
 		   .strobe   (strobe));
-   
+
    ra_cfg_sdr #(.INIT(-1)) cfig (.clk (clk),
 				  .reset    (reset),
 				  .cfg_wr   (cfg_wr),
 				  .cfg_dat  (cfg_dat),
 				  .cfg      (cfg));
-   
+
    ra_bist_sdr bist (.clk         (clk),
 		     .reset       (reset),
 		     .ctl         (bist_ctl),
 		     .status      (bist_status),
 		     .rd0_enb_in  (rd_enb_0),
 		     .rd0_adr_in  (rd_adr_0),
-		     .rd0_dat     (rd_dat_0),
+//		     .rd0_dat     (rd_dat_0),
 		     .rd1_enb_in  (rd_enb_1),
 		     .rd1_adr_in  (rd_adr_1),
-		     .rd1_dat     (rd_dat_1),
+//		     .rd1_dat     (rd_dat_1),
 		     .wr0_enb_in  (wr_enb_0),
 		     .wr0_adr_in  (wr_adr_0),
 		     .wr0_dat_in  (wr_dat_0),
@@ -95,7 +96,7 @@ module  test_ra_sdr ();
 		     .wr0_enb_out (mux_wr0_enb),
 		     .wr0_adr_out (mux_wr0_adr),
 		     .wr0_dat_out (mux_wr0_dat));
-   
+
    ra_2r1w_64x72_sdr ra (.clk        (clk),
 			 .reset      (reset),
 			 .strobe     (strobe),
@@ -108,7 +109,7 @@ module  test_ra_sdr ();
 			 .wr_enb_0   (mux_wr0_enb),
 			 .wr_adr_0   (mux_wr0_adr),
 			 .wr_dat_0   (mux_wr0_dat));
-   
+
    initial
      begin
 	#0   reset = 1'b1;
@@ -117,4 +118,3 @@ module  test_ra_sdr ();
      end
 
 endmodule
-
