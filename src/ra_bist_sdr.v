@@ -78,10 +78,10 @@ module ra_bist_sdr (
    output [31:0]  status;
    output         rd0_enb_out;
    output [5:0]   rd0_adr_out;
-   output  [71:0]  rd0_dat;
+   input  [71:0]  rd0_dat;
    output         rd1_enb_out;
    output [5:0]   rd1_adr_out;
-   output  [71:0]  rd1_dat;
+   input  [71:0]  rd1_dat;
    output         wr0_enb_out;
    output [5:0]   wr0_adr_out;
    output [71:0]  wr0_dat_out;
@@ -109,8 +109,6 @@ module ra_bist_sdr (
    assign seq_d = seq_q;
    assign active = seq_q != 6'h3F;
    assign status = 0;
-    //outline for BIST
-
 
    // outputs
    assign rd0_enb_out = (active) ? bist_rd0_enb : rd0_enb_in;
@@ -122,3 +120,4 @@ module ra_bist_sdr (
    assign wr0_dat_out = (active) ? bist_wr0_dat : wr0_dat_in;
 
 endmodule
+

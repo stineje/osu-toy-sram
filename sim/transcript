@@ -1,4 +1,4 @@
-# //  ModelSim SE-64 10.7e May 30 2019 Linux 5.4.0-89-generic
+# //  ModelSim SE-64 10.7e May 30 2019 Linux 5.4.0-90-generic
 # //
 # //  Copyright 1991-2019 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -12,8 +12,10 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vlog 10.7e Compiler 2019.06 May 30 2019
-# Start time: 15:04:48 on Nov 05,2021
+# Start time: 10:56:16 on Nov 12,2021
 # vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
 # -- Compiling module address_clock_sdr_2r1w_64
 # -- Compiling module ra_bist_ddr
@@ -32,24 +34,25 @@
 # -- Compiling module ra_lcb_ddr
 # -- Compiling module test_ra_ddr
 # -- Compiling module test_ra_sdr
-# ** Warning: ../src/test_ra_sdr.sv(27): (vlog-2605) empty port name in port list.
-# ** Warning: ../src/test_ra_sdr.sv(64): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2623) Undefined variable: status.
-# ** Warning: ../src/test_ra_sdr.sv(65): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(127): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ../src/test_ra_sdr.sv(128): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # -- Compiling module test_ra_ddr_1x
 # 
 # Top level modules:
 # 	test_ra_ddr
 # 	test_ra_sdr
 # 	test_ra_ddr_1x
-# End time: 15:04:48 on Nov 05,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 5
+# End time: 10:56:16 on Nov 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
 # vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
-# Start time: 15:04:48 on Nov 05,2021
+# Start time: 10:56:16 on Nov 12,2021
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
-# ** Warning: ../src/test_ra_sdr.sv(27): (vopt-2605) empty port name in port list.
-# ** Warning: ../src/test_ra_sdr.sv(65): (vopt-2623) Undefined variable: status.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(75): (vopt-2685) [TFMPC] - Too few port connections for 'bist'.  Expected 20, found 18.
+# ** Warning: ../src/test_ra_sdr.sv(75): (vopt-2718) [TFMPC] - Missing connection for port 'rd1_dat'.
+# ** Warning: ../src/test_ra_sdr.sv(75): (vopt-2718) [TFMPC] - Missing connection for port 'rd0_dat'.
 # ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
 # Loading sv_std.std
 # Loading work.test_ra_sdr(fast)
@@ -62,5 +65,5 @@
 # Loading work.regfile_2r1w_64x24(fast)
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 15:06:12 on Nov 05,2021, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 3
+# End time: 10:56:41 on Nov 12,2021, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 5
