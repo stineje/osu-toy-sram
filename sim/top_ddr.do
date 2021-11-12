@@ -27,10 +27,10 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v  ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v
+vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v  ../src/ra_lcb_ddr.v ../src/test_ra_ddr.sv ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v
 
 # start and run simulation
-vsim -debugdb -voptargs=+acc work.test_ra_sdr
+vsim -debugdb -voptargs=+acc work.test_ra_ddr
 
 view wave
 

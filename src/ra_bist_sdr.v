@@ -78,10 +78,10 @@ module ra_bist_sdr (
    output [31:0]  status;
    output         rd0_enb_out;
    output [5:0]   rd0_adr_out;
-   output  [71:0]  rd0_dat;
+   input  [71:0]  rd0_dat;
    output         rd1_enb_out;
    output [5:0]   rd1_adr_out;
-   output  [71:0]  rd1_dat;
+   input  [71:0]  rd1_dat;
    output         wr0_enb_out;
    output [5:0]   wr0_adr_out;
    output [71:0]  wr0_dat_out;

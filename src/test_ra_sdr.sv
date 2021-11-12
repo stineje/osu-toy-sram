@@ -24,33 +24,34 @@
 
 `timescale 1 ns/1 ps
 `include "toysram.vh"
+
 module  test_ra_sdr ();
 
    logic                           clk;
    logic 			   reset;
    logic 			   cfg_wr;
    logic [0:`LCBSDR_CONFIGWIDTH-1] cfg_dat;
-   logic [31:0] 		   bist_ctl;
-   logic [31:0] 		   bist_status;
+   logic [0:31] 		   bist_ctl;
+   logic [0:31] 		   bist_status;
    logic 			   rd_enb_0;
-   logic [5:0] 			   rd_adr_0;
-   logic [71:0] 		   rd_dat_0;
+   logic [0:5] 			   rd_adr_0;
+   logic [0:71] 		   rd_dat_0;
    logic 			   rd_enb_1;
-   logic [5:0] 			   rd_adr_1;
-   logic [71:0] 		   rd_dat_1;
+   logic [0:5] 			   rd_adr_1;
+   logic [0:71] 		   rd_dat_1;
    logic 			   wr_enb_0;
-   logic [5:0] 			   wr_adr_0;
-   logic [71:0] 		   wr_dat_0;
+   logic [0:5] 			   wr_adr_0;
+   logic [0:71] 		   wr_dat_0;
 
    logic 			   strobe;
    logic [0:`LCBSDR_CONFIGWIDTH-1] cfg;
    logic 			   mux_rd0_enb;
-   logic [5:0] 			   mux_rd0_adr;
+   logic [0:5] 			   mux_rd0_adr;
    logic 			   mux_rd1_enb;
-   logic [5:0] 			   mux_rd1_adr;
+   logic [0:5] 			   mux_rd1_adr;
    logic 			   mux_wr0_enb;
-   logic [5:0] 			   mux_wr0_adr;
-   logic [71:0] 		   mux_wr0_dat;
+   logic [0:5] 			   mux_wr0_adr;
+   logic [0:71] 		   mux_wr0_dat;
 
    initial
      begin
@@ -58,12 +59,7 @@ module  test_ra_sdr ();
 	forever #5 clk = ~clk;
      end
 
-   assign wr_enb_0 = 1'b1;
-   assign wr_adr_0 = 6'h2C;
-   assign wr_dat_0 = 72'hdead_beef;
-   assign bist_ctl = 32'hfeed_face_cafe_beef;
-   assign status = 32'h0baad_f00d;
-   assign rd_adr_0 = 6'h2C;
+ 
 
    ra_lcb_sdr lcb (.clk      (clk),
 		   .reset    (reset),
@@ -82,10 +78,10 @@ module  test_ra_sdr ();
 		     .status      (bist_status),
 		     .rd0_enb_in  (rd_enb_0),
 		     .rd0_adr_in  (rd_adr_0),
-//		     .rd0_dat     (rd_dat_0),
+		     .rd0_dat     (rd_dat_0),
 		     .rd1_enb_in  (rd_enb_1),
 		     .rd1_adr_in  (rd_adr_1),
-//		     .rd1_dat     (rd_dat_1),
+		     .rd1_dat     (rd_dat_1),
 		     .wr0_enb_in  (wr_enb_0),
 		     .wr0_adr_in  (wr_adr_0),
 		     .wr0_dat_in  (wr_dat_0),
@@ -113,7 +109,26 @@ module  test_ra_sdr ();
    initial
      begin
 	#0   reset = 1'b1;
-	#341 reset = 1'b0;
+	#0   wr_enb_0 = 1'b0;
+	#0   wr_adr_0 = 6'h0;
+	#0   rd_adr_0 = 6'h0;
+	#0   rd_adr_1 = 6'h0;
+	#0   rd_enb_0 = 1'b0;
+	#0   rd_enb_1 = 1'b0;	
+	#0   bist_ctl = 32'h0;
+	#0   cfg_wr = 1'b0;
+	#0   cfg_dat = 16'h0;
+	#31  reset = 1'b0;	
+
+   	#400 wr_enb_0 = 1'b1;
+	#0   wr_adr_0 = 6'h0;
+	#0   wr_adr_0 = 6'b00_0000;
+   	#10  wr_adr_0 = 6'b00_0010;
+	#10  wr_adr_0 = 6'b00_0100;
+	#10  wr_adr_0 = 6'b00_0110;
+	#10  wr_adr_0 = 6'b00_1000;		
+
+	
 
      end
 
