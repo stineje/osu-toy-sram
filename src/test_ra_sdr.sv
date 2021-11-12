@@ -78,10 +78,10 @@ module  test_ra_sdr ();
 		     .status      (bist_status),
 		     .rd0_enb_in  (rd_enb_0),
 		     .rd0_adr_in  (rd_adr_0),
-//		     .rd0_dat     (rd_dat_0),
+		     .rd0_dat     (rd_dat_0),
 		     .rd1_enb_in  (rd_enb_1),
 		     .rd1_adr_in  (rd_adr_1),
-//		     .rd1_dat     (rd_dat_1),
+		     .rd1_dat     (rd_dat_1),
 		     .wr0_enb_in  (wr_enb_0),
 		     .wr0_adr_in  (wr_adr_0),
 		     .wr0_dat_in  (wr_dat_0),
@@ -111,7 +111,6 @@ module  test_ra_sdr ();
 	#0   reset = 1'b1;
 	#0   wr_enb_0 = 1'b0;
 	#0   wr_adr_0 = 6'h0;
-	#0   wr_dat_0 = 72'h0;	
 	#0   rd_adr_0 = 6'h0;
 	#0   rd_adr_1 = 6'h0;
 	#0   rd_enb_0 = 1'b0;
@@ -124,8 +123,7 @@ module  test_ra_sdr ();
    	#400 wr_enb_0 = 1'b1;
 	#0   wr_adr_0 = 6'h0;
 	#0   wr_adr_0 = 6'b00_0000;
-	#0   wr_dat_0 = 72'h5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555_5555;
-   	#10  wr_adr_0 = 6'h00_0010;
+   	#10  wr_adr_0 = 6'b00_0010;
 	#10  wr_adr_0 = 6'b00_0100;
 	#10  wr_adr_0 = 6'b00_0110;
 	#10  wr_adr_0 = 6'b00_1000;		
