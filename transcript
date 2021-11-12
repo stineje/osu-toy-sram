@@ -308,3 +308,5 @@ do top.do
 # Loading work.regfile_2r1w_64x24(fast)
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # .main_pane.wave.interior.cs.body.pw.wf
+# End time: 17:10:43 on Nov 11,2021, Elapsed time: 0:13:53
+# Errors: 2, Warnings: 9
