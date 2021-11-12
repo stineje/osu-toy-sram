@@ -1,0 +1,59 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_sram_sp {} {
+  make inout -orient R90 -name bit_v -origin {330 480}
+  make inout -orient R90 -name bit_b_v -origin {820 480}
+  make invM -origin {570 200}
+  make invM -orient RX -origin {600 320}
+  make input -name WL -origin {220 150}
+  make nmos -orient R90 -W 0.14 -origin {420 240}
+  make nmos -orient R90 -W 0.14 -origin {740 240}
+  make nmos -orient R270 -W 0.14 -L 0.025 -origin {740 90}
+  make nmos -orient R270 -W 0.14 -L 0.025 -origin {420 90}
+  make_wire 700 240 700 320
+  make_wire 700 240 700 200
+  make_wire 740 180 740 150
+  make_wire 740 150 940 150
+  make_wire 820 -10 820 240
+  make_wire 820 240 820 480
+  make_wire 700 200 670 200
+  make_wire 550 200 460 200
+  make_wire 500 320 460 320
+  make_wire 700 320 620 320
+  make_wire 420 150 420 180
+  make_wire 420 150 740 150
+  make_wire 420 150 220 150
+  make_wire 330 240 330 480
+  make_wire 330 240 330 -10
+  make_wire 460 240 460 200
+  make_wire 460 240 460 320
+  make_wire 780 240 820 240
+  make_wire 380 240 330 240
+  make_wire 460 200 460 90
+  make_wire 380 90 380 10
+  make_wire 380 10 460 10
+  make_wire 460 10 460 90
+  make_wire 780 10 700 10
+  make_wire 780 10 780 80
+  make_wire 700 10 700 90
+  make_wire 700 90 700 200
+}
+
+proc ICON_sram_sp args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}}}
+  icon_term -type input -origin {-120 -10} -name wdA_q
+  icon_term -type inout -origin {90 -60} -orient RX -name bit_v
+  icon_term -type inout -origin {90 60} -orient RXY -name bit_b_v
+  icon_term -type input -origin {-120 10} -name WL
+  icon_property -origin {-50 110} -type user -name name
+  icon_property -origin {-50 130} -type user -name M
+  icon_line -120 -40 -120 40 120 40 120 -40 -120 -40 -120 -40
+  icon_line 90 -40 90 -60
+  icon_line 90 60 90 40
+  icon_property -origin {-40 0} -label {SRAM Cell}
+  icon_property -origin {50 -30} -label bit_v
+  icon_property -origin {-110 -10} -label wdA_q
+  icon_property -origin {-110 10} -label wdB_q
+  icon_property -origin {90 30} -anchor e -label bit_b_v
+}
+

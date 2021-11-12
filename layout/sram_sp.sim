@@ -1,0 +1,25 @@
+| units: 0.5  tech: sky130A  format: MIT
+A bit_b_v inout
+A bit_v inout
+A WL1 input
+A WL2 input
+| begin invM 520 200
+| device invM.pmos 400 220
+p net_1 Vdd net_2 30 28
+| device invM.nmos 400 380
+n net_1 Gnd net_2 30 42
+| end invM
+| begin invM_1 600 320
+| device invM_1.pmos 400 220
+p net_2 Vdd net_1 30 28
+| device invM_1.nmos 400 380
+n net_2 Gnd net_1 30 42
+| end invM_1
+| device nmos 420 240
+n WL1 bit_v net_1 30 28
+| device nmos_1 740 240
+n WL2 net_2 bit_b_v 30 28
+| device pmos 740 50
+p WL2 net_2 net_2 19 14
+| device pmos_1 420 50
+p WL1 net_1 net_1 19 14

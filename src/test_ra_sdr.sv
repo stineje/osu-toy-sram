@@ -55,6 +55,16 @@ module  test_ra_sdr ();
 
    initial
      begin
+	$dumpfile("test_ra_sdr.vcd");	
+	$dumpvars (0,test_ra_sdr.lcb);
+	$dumpvars (0,test_ra_sdr.cfig);		
+	$dumpvars (0,test_ra_sdr.bist);
+	$dumpvars (0,test_ra_sdr.ra);		
+     end
+
+   
+   initial
+     begin
 	clk = 1'b1;
 	forever #5 clk = ~clk;
      end
