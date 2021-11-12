@@ -1,0 +1,82 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_12T-OSU {} {
+  make nmos -orient R90 -origin {140 320}
+  make nmos -orient R90 -origin {320 320}
+  make nmos -orient R90 -origin {940 310}
+  make nmos -orient R90 -origin {1150 310}
+  make nmos -orient RXY -origin {450 640}
+  make nmos -origin {800 640}
+  make pmos -W 0.42 -L 0.15 -origin {800 80}
+  make pmos -orient RXY -W 0.42 -L 0.15 -origin {450 80}
+  make nmos -origin {240 440}
+  make nmos -orient RXY -origin {1060 440}
+  make nmos -orient RXY -origin {240 590}
+  make nmos -origin {1060 530}
+  make global -orient RXY -name VDD -origin {640 -70}
+  make global -name GND -origin {640 870}
+  make input -orient R90 -name SEL -origin {940 190}
+  make input -orient R90 -name SEL -origin {320 190}
+  make input -orient R90 -name BL -origin {1280 60}
+  make input -orient R90 -name BR -origin {50 50}
+  make_wire 100 320 50 320
+  make_wire 50 320 50 50
+  make_wire 50 320 50 660
+  make_wire 740 640 720 640
+  make_wire 720 80 740 80
+  make_wire 240 400 240 320
+  make_wire 240 320 180 320
+  make_wire 240 320 280 320
+  make_wire 240 480 240 550
+  make_wire 140 260 140 -140
+  make_wire 140 -140 1150 -140
+  make_wire 140 440 180 440
+  make_wire 1150 440 1120 440
+  make_wire 720 480 720 640
+  make_wire 720 480 720 80
+  make_wire 560 370 800 370
+  make_wire 640 800 640 870
+  make_wire 510 80 560 80
+  make_wire 510 640 560 640
+  make_wire 560 80 560 370
+  make_wire 560 370 560 640
+  make_wire 450 480 450 590
+  make_wire 720 480 450 480
+  make_wire 450 590 450 600
+  make_wire 450 590 300 590
+  make_wire 240 800 240 630
+  make_wire 240 800 450 800
+  make_wire 450 800 640 800
+  make_wire 450 680 450 800
+  make_wire 640 800 800 800
+  make_wire 800 680 800 800
+  make_wire 320 260 320 190
+  make_wire 640 -70 640 -30
+  make_wire 140 440 140 260
+  make_wire 450 320 450 120
+  make_wire 450 320 450 480
+  make_wire 450 320 360 320
+  make_wire 450 -30 450 40
+  make_wire 450 -30 640 -30
+  make_wire 640 -30 800 -30
+  make_wire 800 -30 800 40
+  make_wire 1060 570 1060 800
+  make_wire 800 800 1060 800
+  make_wire 800 530 1000 530
+  make_wire 800 530 800 370
+  make_wire 800 600 800 530
+  make_wire 1060 480 1060 490
+  make_wire 800 310 900 310
+  make_wire 800 310 800 120
+  make_wire 800 370 800 310
+  make_wire 940 190 940 250
+  make_wire 1060 400 1060 310
+  make_wire 1150 -140 1150 250
+  make_wire 1150 440 1150 250
+  make_wire 980 310 1060 310
+  make_wire 1060 310 1110 310
+  make_wire 1190 310 1280 310
+  make_wire 1280 310 1280 60
+  make_wire 1280 650 1280 310
+}
+
