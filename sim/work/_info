@@ -1,390 +1,379 @@
 m255
 K4
 z2
-!s11f vlog 2020.3_1 2020.08, Aug 25 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/ptikals/IBM/osu-toy-sram/sim
+Z0 d/home/jstine/osu-toy-sram/sim
 T_opt
-!s110 1636671745
-V@nD:oGU;Q]41JY<Unfz[e1
-Z1 04 11 4 work test_ra_sdr fast 0
-=2-000ae431a4f1-618da101-95b30-135cb
-Z2 o-quiet -auto_acc_if_foreign -work work -debugdb +acc
-Z3 tCvgOpt 0
+Z1 !s110 1636747365
+VYhE[X]4CLl91;Uj1lK;>80
+04 11 4 work test_ra_sdr fast 0
+=1-04d4c455214a-618ec865-f817-61e4c
+o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+Z2 tCvgOpt 0
 n@_opt
-OL;O;2020.3_1;71
-R0
-T_opt1
-Z4 !s110 1636741650
-V@GB2F5kUadC?IBlX9TdS<0
-R1
-=1-04d4c455214a-618eb212-e1f4f-5e4bd
-R2
-R3
-n@_opt1
 OL;O;10.7e;67
 vaddress_clock_sdr_2r1w_64
-R4
+R1
 !i10b 1
 !s100 Mh<0PQd36eMkz^OaSfDf03
 ImBPoP:B[HkXVXe8T?mc@:3
-Z5 VDg1SIo80bB@j0V0VzS_@n1
-Z6 d/home/jstine/osu-toy-sram/sim
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
 w1636734919
 8../src/address_clock_sdr_2r1w_64.v
 F../src/address_clock_sdr_2r1w_64.v
-Z7 L0 28
-Z8 OL;L;10.7e;67
+Z4 L0 28
+Z5 OL;L;10.7e;67
 r1
 !s85 0
 31
-Z9 !s108 1636741650.000000
-Z10 !s107 ../src/test_ra_ddr_1x.v|../src/test_ra_sdr.sv|../src/test_ra_ddr.v|../src/ra_lcb_ddr.v|../src/ra_lcb_sdr.v|../src/ra_delay.v|../src/ra_4r2w_64x72_ddr.v|../src/regfile_4r2w_64x24.v|../src/ra_cfg_sdr.v|../src/ra_4r2w_64x72_ddr_1x.v|../src/toysram.vh|../src/regfile_2r1w_64x24.v|../src/ra_cfg_ddr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_bist_sdr.v|../src/predecode_sdr_64.v|../src/ra_bist_ddr.v|../src/address_clock_sdr_2r1w_64.v|
-Z11 !s90 -lint|../src/address_clock_sdr_2r1w_64.v|../src/ra_bist_ddr.v|../src/predecode_sdr_64.v|../src/ra_bist_sdr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_cfg_ddr.v|../src/regfile_2r1w_64x24.v|../src/toysram.vh|../src/ra_4r2w_64x72_ddr_1x.v|../src/ra_cfg_sdr.v|../src/regfile_4r2w_64x24.v|../src/ra_4r2w_64x72_ddr.v|../src/ra_delay.v|../src/ra_lcb_sdr.v|../src/ra_lcb_ddr.v|../src/test_ra_ddr.v|../src/test_ra_sdr.sv|../src/test_ra_ddr_1x.v|
+Z6 !s108 1636747364.000000
+Z7 !s107 ../src/test_ra_ddr_1x.v|../src/test_ra_sdr.sv|../src/test_ra_ddr.v|../src/ra_lcb_ddr.v|../src/ra_lcb_sdr.v|../src/ra_delay.v|../src/ra_4r2w_64x72_ddr.v|../src/regfile_4r2w_64x24.v|../src/ra_cfg_sdr.v|../src/ra_4r2w_64x72_ddr_1x.v|../src/toysram.vh|../src/regfile_2r1w_64x24.v|../src/ra_cfg_ddr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_bist_sdr.v|../src/predecode_sdr_64.v|../src/ra_bist_ddr.v|../src/address_clock_sdr_2r1w_64.v|
+Z8 !s90 -reportprogress|300|-lint|../src/address_clock_sdr_2r1w_64.v|../src/ra_bist_ddr.v|../src/predecode_sdr_64.v|../src/ra_bist_sdr.v|../src/ra_2r1w_64x72_sdr.v|../src/ra_cfg_ddr.v|../src/regfile_2r1w_64x24.v|../src/toysram.vh|../src/ra_4r2w_64x72_ddr_1x.v|../src/ra_cfg_sdr.v|../src/regfile_4r2w_64x24.v|../src/ra_4r2w_64x72_ddr.v|../src/ra_delay.v|../src/ra_lcb_sdr.v|../src/ra_lcb_ddr.v|../src/test_ra_ddr.v|../src/test_ra_sdr.sv|../src/test_ra_ddr_1x.v|
 !i113 0
-Z12 o-lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
+Z9 o-lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
 vpredecode_sdr_64
-R4
+R1
 !i10b 1
 !s100 G7YWbZeO=4iD=ohW<75Yl1
 IG5j@8nFK@SI3bjLXk21Nn0
-R5
-R6
-Z13 w1636733581
+R3
+R0
+Z10 w1636733581
 8../src/predecode_sdr_64.v
 F../src/predecode_sdr_64.v
 L0 24
-R8
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_2r1w_64x72_sdr
-R4
+R1
 !i10b 1
 !s100 8R4T3if6IPHY[b8:L0gJY3
 I1o6fA8eR:hn:;LPZ0bfY80
-R5
-R6
+R3
+R0
 w1636734947
 8../src/ra_2r1w_64x72_sdr.v
 F../src/ra_2r1w_64x72_sdr.v
-R7
-R8
+R4
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_4r2w_64x72_ddr
-R4
+R1
 !i10b 1
 !s100 <Xog_IAdglzlL^0d^YTQS2
 IIBfb>eUYncOi0`1AM_]G50
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_4r2w_64x72_ddr.v
 F../src/ra_4r2w_64x72_ddr.v
-Z14 L0 30
-R8
+Z11 L0 30
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_4r2w_64x72_ddr_1x
-R4
+R1
 !i10b 1
 !s100 7Pj0iHV2?C:?mQaNZ1bSd3
 Ie9e1<fL_iPOe?zSP3zQGn0
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_4r2w_64x72_ddr_1x.v
 F../src/ra_4r2w_64x72_ddr_1x.v
-R7
-R8
+R4
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_bist_ddr
-R4
+R1
 !i10b 1
 !s100 =i`X>94`Fc6KlPS?o0:<l1
 Ig]Oc7=JdH1AEb;n6LOJSR0
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_bist_ddr.v
 F../src/ra_bist_ddr.v
-Z15 L0 39
-R8
+Z12 L0 39
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
-!i113 0
-R12
-R3
-vra_bist_sdr
-R4
-!i10b 1
-!s100 ^f>=^S<`PI3o`;ocX^<Pk3
-I6Tfnm[hl4?9NLBO^B;P3P2
-R5
 R6
-w1636735110
+R7
+R8
+!i113 0
+R9
+R2
+vra_bist_sdr
+R1
+!i10b 1
+!s100 YGoUNa;g>@Ud169[fb9g^1
+IHGT88;`hLm2nA4FAZU>Do0
+R3
+R0
+w1636745497
 8../src/ra_bist_sdr.v
 F../src/ra_bist_sdr.v
-R15
-R8
+R12
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_cfg_ddr
-R4
+R1
 !i10b 1
 !s100 PLZNU;6C6U]CKGZ0PSIBl2
 I]^9GmCLl^]QNA`gBMSC5>3
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_cfg_ddr.v
 F../src/ra_cfg_ddr.v
-R7
-R8
+R4
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_cfg_sdr
-R4
+R1
 !i10b 1
 !s100 HQ>hmf<fb:W2IH?:<>?@J3
 IS86?h1X=_:^V>34Ham:472
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_cfg_sdr.v
 F../src/ra_cfg_sdr.v
-R7
-R8
+R4
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_delay
-R4
+R1
 !i10b 1
 !s100 ijYe0;cc^D>4=bVz:QERS0
 IZ72CYCHm4O9ajebd4UYnk1
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_delay.v
 F../src/ra_delay.v
-Z16 L0 27
-R8
+Z13 L0 27
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_lcb_ddr
-R4
+R1
 !i10b 1
 !s100 kE^e^?;2F`07R2X32?k_H1
 IV>AEC<6nWmh3W@W11nnNe2
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_lcb_ddr.v
 F../src/ra_lcb_ddr.v
 L0 29
-R8
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vra_lcb_sdr
-R4
+R1
 !i10b 1
 !s100 5RD<Q0PHAj7]KWU[5Yh3i1
 IK1JeT?Q87?Gl>Yd;FOB;=0
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/ra_lcb_sdr.v
 F../src/ra_lcb_sdr.v
-R7
-R8
+R4
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vregfile_2r1w_64x24
-R4
+R1
 !i10b 1
 !s100 <5C8POMOh7Ie]J;Q1ld<X1
 IR43283`EJN:kBfBO5:19A2
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/regfile_2r1w_64x24.v
 F../src/regfile_2r1w_64x24.v
-R16
-R8
+R13
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vregfile_4r2w_64x24
-R4
+R1
 !i10b 1
 !s100 ^DAK?ZYTK?iaiGfWfnKC63
 Ib`GkJ]>Od8F@9fbE2S_LX3
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/regfile_4r2w_64x24.v
 F../src/regfile_4r2w_64x24.v
-R16
-R8
+R13
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vtest_ra_ddr
-R4
+R1
 !i10b 1
 !s100 m>CMkdOoG<FZ<j>d@`7[H1
 Ia<Z0I8k[2fKce9Dn8O1;m3
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/test_ra_ddr.v
 F../src/test_ra_ddr.v
-R14
-R8
+R11
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vtest_ra_ddr_1x
-R4
+R1
 !i10b 1
 !s100 D6oM4IIU?N5b3TDo1?<dz2
 IW<`UGDifFXY?1oe9487^]2
-R5
-R6
-R13
+R3
+R0
+R10
 8../src/test_ra_ddr_1x.v
 F../src/test_ra_ddr_1x.v
-R14
-R8
+R11
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
 vtest_ra_sdr
 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
-R4
+R1
 !i10b 1
 !s100 KVEN`WVCQ7Vgk6]JBHWDR1
 IBYE<?Z<G9lh1a7j[EjI630
-R5
+R3
 !s105 test_ra_sdr_sv_unit
 S1
-R6
+R0
 w1636741638
 8../src/test_ra_sdr.sv
 F../src/test_ra_sdr.sv
-R7
-R8
+R4
+R5
 r1
 !s85 0
 31
-R9
-R10
-R11
+R6
+R7
+R8
 !i113 0
-R12
-R3
+R9
+R2
