@@ -1,2 +1,2 @@
-hspice sample.sp > sample.lis
+hspice sample.spice > sample.lis
 wv sample.tr0
