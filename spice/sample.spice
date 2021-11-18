@@ -1,0 +1,25 @@
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
+
+*** Define power and ground
+vvdd vdd 0 DC 1.8V
+vgnd gnd 0 DC 0V
+
+vin in gnd pulse 0 1.8V 0ns 750ps 750ps 14.8ns 30ns
+
+M1000 out in vdd vdd pshort w=1.26u l=0.15u
++  ad=0.3339p pd=3.05u as=0.3339p ps=3.05u
+M1001 out in gnd gnd nshort w=0.52u l=0.15u
++  ad=0.1378p pd=1.57u as=0.1378p ps=1.57u
+
+C1 out gnd 100fF
+
+.tran 1ns 45ns
+
+.print DC V(in) V(out) 
+.print tran V(in) V(out)
+.probe V(in) V(out)
+.op
+.options probe post measout captab
+.end
+
