@@ -1,0 +1,2 @@
+hspice sample.sp > sample.lis
+wv sample.tr0
