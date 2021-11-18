@@ -1,37 +1,3 @@
-// © IBM Corp. 2021
-// Licensed under the Apache License, Version 2.0 (the "License"), as modified by the terms below; you may not use the files in this
-// repository except in compliance with the License as modified.
-// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-//
-// Modified Terms:
-//
-//   1)	For the purpose of the patent license granted to you in Section 3 of the License, the "Work" hereby includes implementations of
-//   the work of authorship in physical form.
-//
-// Unless required by applicable law or agreed to in writing, the reference design distributed under the License is distributed on an
-// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language
-// governing permissions and limitations under the License.
-//
-// Brief explanation of modifications:
-//
-// Modification 1: This modification extends the patent license to an implementation of the Work in physical form – i.e.,
-// it unambiguously permits a user to make and use the physical chip.
-
-
-// Local BIST for arrays
-// Pass array inputs through, or generate locally for test/manual access.
-// May want status_valid, ctl_valid sigs.
-// Want separate cmds for enter/exit functional?
-// ctl:
-//    00000000 - functional mode
-//    800000aa - read adr aa
-//    900000aa - write adr aa (next 3 cycs are data)
-//    F00000tt - run bist test tt
-//
-// status:
-//
-//
-
 `timescale 1 ns / 1 ns
 
 `include "toysram.vh"
@@ -39,7 +5,7 @@
 module ra_bist_sdr (
 
     clk,
-    reset,
+    reset, picture,
     ctl,
     status,
     rd0_enb_in,
@@ -57,7 +23,10 @@ module ra_bist_sdr (
     rd1_dat,
     wr0_enb_out,
     wr0_adr_out,
-    wr0_dat_out
+    wr0_dat_out,
+    bist_fail,
+    bist_passed
+
 
 );
 
@@ -86,6 +55,8 @@ module ra_bist_sdr (
    output [5:0]   wr0_adr_out;
    output [71:0]  wr0_dat_out;
 
+
+
    reg    [5:0]   seq_q;
    wire   [5:0]   seq_d;
    wire           active;
@@ -96,6 +67,9 @@ module ra_bist_sdr (
    wire           bist_wr0_enb;
    wire   [5:0]   bist_wr0_adr;
    wire   [71:0]  bist_wr0_dat;
+
+   output         bist_fail;
+   output         bist_passed;
 
    // ff
    always @ (posedge clk) begin
@@ -109,6 +83,48 @@ module ra_bist_sdr (
    assign seq_d = seq_q;
    assign active = seq_q != 6'h3F;
    assign status = 0;
+   /*
+   Outline for BIST
+   ----------------------------------------------------------------------
+   first off, how I think this thing is supposed to work is that we need a
+   final flag signifying the BIST is successfully ran, and one where it fa-
+   ils.
+   uhhhhhh something's gotta happen here
+   like:
+   enable write data
+   assign all 0s to addr 0x00-0x3F (using signals wr0_adr_in &
+   wr0_dat_in)
+
+   enable read data (rd0_enb_in)
+
+   read addr 0x00-0x3f one at a time (rd0_adr_in/out and rd0_dat)
+
+   after each read, write all 1s to each addr 0x00-0x3F
+   ^^this happens after each read, so like, read data at 0x00, write all
+   ones to 0x00, step forward to next address, 0x01 (process A)
+
+   for each valid read of all 0s, save output in a 6-bit bus that counts
+   up for each valid read or something
+
+   now, step through the exact same read/write process but replacing
+   all 1s with all 0s.
+
+   read all 0s through same process (NO WRITE CHANGE THIS TIME)
+
+   Now, write all 1s to each address 0x3F-0x00.
+   repeat the process A, reading data at each address,replacing all 1s
+   with all 0s for each address 0x3F-0x00, and keeping track of whether
+   working or not.
+
+   finally, read all 0s through same process (NO WRITE HERE EITHER)
+   at the end, there's gotta be some kinda comparison where you check
+   that the tests were valid for both ascending and descending runs.
+
+   if both are valid, flag BIST_PASSED. if one of the runs is invalid,
+   flag BIST_FAIL_UP, or BIST_FAIL_DOWN or both.
+
+   */
+
 
    // outputs
    assign rd0_enb_out = (active) ? bist_rd0_enb : rd0_enb_in;
