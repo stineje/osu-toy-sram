@@ -1,4 +1,4 @@
-.include s8/V1.2.1/MODELS/SPECTRE/s8phirs_10r/Models/models.all
+.include "/home/tdene/Public/skywater-src-nda/s8/V1.2.1/MODELS/SPECTRE/s8phirs_10r/Models/models.all"
 *.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
 
