@@ -12,12 +12,12 @@ proc SCHEMATIC_10T-toy {} {
   make input -orient RXY -name RWL0 -origin {250 80}
   make output -orient R270 -name RBL1 -origin {990 40}
   make output -orient R270 -name RBL0 -origin {190 40}
-  make nmos -W 0.21 -origin {990 320}
-  make nmos -W 0.21 -origin {990 80}
-  make nmos -orient RXY -W 0.21 -L 0.21 -origin {190 80}
-  make nmos -orient RXY -W 0.21 -origin {190 320}
-  make nmos -orient R90 -W 0.21 -origin {420 200}
-  make nmos -orient R90 -W 0.21 -origin {740 200}
+  make nmos -name npass -W 0.14 -origin {990 320}
+  make nmos -orient R90 -name npass -W 0.14 -origin {740 200}
+  make nmos -orient R90 -name npass -W 0.14 -origin {420 200}
+  make nmos -name npd -W 0.21 -origin {990 80}
+  make nmos -orient RX -name npd -W 0.21 -origin {190 80}
+  make nmos -orient RX -name npass -W 0.14 -origin {190 320}
   make_wire 490 320 490 200
   make_wire 330 200 380 200
   make_wire 780 200 820 200
