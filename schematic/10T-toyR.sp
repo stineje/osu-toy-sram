@@ -1,25 +1,31 @@
-.include "/home/tdene/Public/skywater-src-nda/s8/V1.2.1/MODELS/SPECTRE/s8phirs_10r/Models/models.all"
-*.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
+*
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
+
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ttcell.cor"
+
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npd.pm3"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npass.pm3"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ppu.pm3"
 
 *** Define power and ground
 vvdd vdd 0 DC 1.8V
 vgnd gnd 0 DC 0V
 
 .SUBCKT invM A1 O 
-M_1 O A1 vdd vdd ppu w=0.14u l=0.15u
-M_2 O A1 gnd gnd npd w=0.21u l=0.15u
+M_1 O A1 vdd vdd ppu w=0.14 l=0.15
+M_2 O A1 gnd gnd npd w=0.21 l=0.15
 .ENDS
 
 * start main CELL 10T-toy
 .SUBCKT MEM10T-toy RBL0 RBL1 RWL0 RWL1 WBL WBLb WWL 
 XinvM net_1 net_4 invM 
-M_1 net_1 WWL WBL gnd npd w=0.21u l=0.15u
-M_2 WBLb WWL net_4 gnd npd w=0.21u l=0.15u 
-M_3 net_2 RWL0 RBL0 gnd npd w=0.21u l=0.15u 
-M_4 gnd net_1 net_2 gnd npd w=0.21u l=0.15u 
-M_5 RBL1 RWL1 net_3 gnd npd w=0.21u l=0.15u 
-M_6 net_3 net_4 gnd gnd npd w=0.21u l=0.15u 
+M_1 net_1 WWL WBL gnd npd w=0.21 l=0.15
+M_2 WBLb WWL net_4 gnd npd w=0.21 l=0.15 
+M_3 net_2 RWL0 RBL0 gnd npd w=0.21 l=0.15 
+M_4 gnd net_1 net_2 gnd npd w=0.21 l=0.15 
+M_5 RBL1 RWL1 net_3 gnd npd w=0.21 l=0.15 
+M_6 net_3 net_4 gnd gnd npd w=0.21 l=0.15
 XInv net_4 net_1 invM 
 .ENDS
 
