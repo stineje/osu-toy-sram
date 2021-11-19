@@ -13,12 +13,12 @@ M_2 O A1 gnd gnd npd w=0.21u l=0.15u
 * start main CELL 10T-toy
 .SUBCKT MEM10T-toy RBL0 RBL1 RWL0 RWL1 WBL WBLb WWL 
 XinvM net_1 net_4 invM 
-M_1 net_1 WWL WBL gnd nshort w=0.52u l=0.15u
-M_2 WBLb WWL net_4 gnd nshort w=0.52u l=0.15u 
-M_3 net_2 RWL0 RBL0 gnd nshort w=0.52u l=0.15u 
-M_4 gnd net_1 net_2 gnd nshort w=0.52u l=0.15u 
-M_5 RBL1 RWL1 net_3 gnd nshort w=0.52u l=0.15u 
-M_6 net_3 net_4 gnd gnd nshort w=0.52u l=0.15u 
+M_1 net_1 WWL WBL gnd npd w=0.21u l=0.15u
+M_2 WBLb WWL net_4 gnd npd w=0.21u l=0.15u 
+M_3 net_2 RWL0 RBL0 gnd npd w=0.21u l=0.15u 
+M_4 gnd net_1 net_2 gnd npd w=0.21u l=0.15u 
+M_5 RBL1 RWL1 net_3 gnd npd w=0.21u l=0.15u 
+M_6 net_3 net_4 gnd gnd npd w=0.21u l=0.15u 
 XInv net_4 net_1 invM 
 .ENDS
 
