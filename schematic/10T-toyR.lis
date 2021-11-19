@@ -1,0 +1,226 @@
+Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
+ ****** PrimeSim HSPICE -- R-2020.12-SP1 linux64 (Apr 10 2021 6983340) ******
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: 10T-toyR.sp                                                       
+  Command line options: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
+  Start time: Fri Nov 19 08:20:50 2021
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu 
+ lic: HOSTID: "2c44fd862b18"       PID:      115798 
+ lic: Using FLEXlm license file: 
+ lic: 27020@trelaina.ecen.okstate.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 27-jan-2022/2020.12 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@trelaina.ecen.okstate.edu 
+ lic:   
+1****** PrimeSim HSPICE -- R-2020.12-SP1 linux64 (Apr 10 2021 6983340) ******
+ ******  
+ .include '/home/tdene/public/skywater-src-nda/s8_spice_models/models.all'
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             mem10t-toy         1.00 
+        2 x1.xinvm.                       invm               1.00 
+        3 x1.xinv.                        invm               1.00 
+  **warning** (10T-toyR.sp:6) Both nodes of element vgnd are connected together; Line ignored.
+  **info** (10T-toyR.sp:25) DC voltage reset to initial transient source value in source 0:vin1. new dc=0.0000D+00
+  **error** (10T-toyR.sp:16) Reference nshort not found, or instance width or length does not fit into the wmax/wmin or lmax/lmin range.  It was referenced in element x1.m_1. The channel width=   1.400E-07 and length=   1.500E-07 .
+ ***Template model information
+
+
+ MODEL nshort.0 lmin=1.450000e-07 lmax=1.550000e-07 wmin=1.255000e-06 wmax=1.265000e-06 (w is out of range) 
+
+ MODEL nshort.1 lmin=1.450000e-07 lmax=1.550000e-07 wmin=1.675000e-06 wmax=1.685000e-06 (w is out of range) 
+
+ MODEL nshort.2 lmin=9.950000e-07 lmax=1.005000e-06 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.3 lmin=1.995000e-06 lmax=2.005000e-06 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.4 lmin=3.995000e-06 lmax=4.005000e-06 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.5 lmin=7.995000e-06 lmax=8.005000e-06 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.6 lmin=1.450000e-07 lmax=1.550000e-07 wmin=9.950000e-07 wmax=1.005000e-06 (w is out of range) 
+
+ MODEL nshort.7 lmin=1.750000e-07 lmax=1.850000e-07 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.8 lmin=2.450000e-07 lmax=2.550000e-07 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.9 lmin=4.950000e-07 lmax=5.050000e-07 wmin=9.950000e-07 wmax=1.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.10 lmin=1.450000e-07 lmax=1.550000e-07 wmin=1.995000e-06 wmax=2.005000e-06 (w is out of range) 
+
+ MODEL nshort.11 lmin=9.950000e-07 lmax=1.005000e-06 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.12 lmin=1.995000e-06 lmax=2.005000e-06 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.13 lmin=3.995000e-06 lmax=4.005000e-06 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.14 lmin=7.995000e-06 lmax=8.005000e-06 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.15 lmin=1.450000e-07 lmax=1.550000e-07 wmin=2.995000e-06 wmax=3.005000e-06 (w is out of range) 
+
+ MODEL nshort.16 lmin=1.750000e-07 lmax=1.850000e-07 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.17 lmin=2.450000e-07 lmax=2.550000e-07 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.18 lmin=4.950000e-07 lmax=5.050000e-07 wmin=2.995000e-06 wmax=3.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.19 lmin=9.950000e-07 lmax=1.005000e-06 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.20 lmin=1.995000e-06 lmax=2.005000e-06 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.21 lmin=3.995000e-06 lmax=4.005000e-06 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.22 lmin=7.995000e-06 lmax=8.005000e-06 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.23 lmin=1.450000e-07 lmax=1.550000e-07 wmin=4.995000e-06 wmax=5.005000e-06 (w is out of range) 
+
+ MODEL nshort.24 lmin=1.750000e-07 lmax=1.850000e-07 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.25 lmin=2.450000e-07 lmax=2.550000e-07 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.26 lmin=4.950000e-07 lmax=5.050000e-07 wmin=4.995000e-06 wmax=5.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.27 lmin=9.950000e-07 lmax=1.005000e-06 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.28 lmin=1.995000e-06 lmax=2.005000e-06 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.29 lmin=3.995000e-06 lmax=4.005000e-06 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.30 lmin=7.995000e-06 lmax=8.005000e-06 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.31 lmin=1.450000e-07 lmax=1.550000e-07 wmin=6.995000e-06 wmax=7.005000e-06 (w is out of range) 
+
+ MODEL nshort.32 lmin=1.750000e-07 lmax=1.850000e-07 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.33 lmin=2.450000e-07 lmax=2.550000e-07 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.34 lmin=4.950000e-07 lmax=5.050000e-07 wmin=6.995000e-06 wmax=7.005000e-06 (l&w is out of range) 
+
+ MODEL nshort.35 lmin=9.950000e-07 lmax=1.005000e-06 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.36 lmin=1.999500e-05 lmax=2.000500e-05 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.37 lmin=1.995000e-06 lmax=2.005000e-06 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.38 lmin=3.995000e-06 lmax=4.005000e-06 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.39 lmin=7.995000e-06 lmax=8.005000e-06 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.40 lmin=1.450000e-07 lmax=1.550000e-07 wmin=4.150000e-07 wmax=4.250000e-07 (w is out of range) 
+
+ MODEL nshort.41 lmin=1.750000e-07 lmax=1.850000e-07 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.42 lmin=4.950000e-07 lmax=5.050000e-07 wmin=4.150000e-07 wmax=4.250000e-07 (l&w is out of range) 
+
+ MODEL nshort.43 lmin=9.950000e-07 lmax=1.005000e-06 wmin=5.450000e-07 wmax=5.550000e-07 (l&w is out of range) 
+
+ MODEL nshort.44 lmin=1.995000e-06 lmax=2.005000e-06 wmin=5.450000e-07 wmax=5.550000e-07 (l&w is out of range) 
+
+ MODEL nshort.45 lmin=3.995000e-06 lmax=4.005000e-06 wmin=5.450000e-07 wmax=5.550000e-07 (l&w is out of range) 
+
+ MODEL nshort.46 lmin=7.995000e-06 lmax=8.005000e-06 wmin=5.450000e-07 wmax=5.550000e-07 (l&w is out of range) 
+
+ MODEL nshort.47 lmin=1.450000e-07 lmax=1.550000e-07 wmin=5.450000e-07 wmax=5.550000e-07 (w is out of range) 
+
+ MODEL nshort.48 lmin=4.950000e-07 lmax=5.050000e-07 wmin=5.450000e-07 wmax=5.550000e-07 (l&w is out of range) 
+
+ MODEL nshort.49 lmin=1.450000e-07 lmax=1.550000e-07 wmin=6.350000e-07 wmax=6.450000e-07 (w is out of range) 
+
+ MODEL nshort.50 lmin=1.450000e-07 lmax=1.550000e-07 wmin=8.350000e-07 wmax=8.450000e-07 (w is out of range) 
+
+ MODEL nshort.51 lmin=1.490000e-07 lmax=1.510000e-07 wmin=7.390000e-07 wmax=7.410000e-07 (w is out of range) 
+
+ MODEL nshort.52 lmin=1.490000e-07 lmax=1.510000e-07 wmin=3.590000e-07 wmax=3.610000e-07 (w is out of range) 
+
+ MODEL nshort.53 lmin=1.490000e-07 lmax=1.510000e-07 wmin=3.890000e-07 wmax=3.910000e-07 (w is out of range) 
+
+ MODEL nshort.54 lmin=1.490000e-07 lmax=1.510000e-07 wmin=5.190000e-07 wmax=5.210000e-07 (w is out of range) 
+
+ MODEL nshort.55 lmin=1.490000e-07 lmax=1.510000e-07 wmin=5.390000e-07 wmax=5.410000e-07 (w is out of range) 
+
+ MODEL nshort.56 lmin=1.490000e-07 lmax=1.510000e-07 wmin=5.790000e-07 wmax=5.810000e-07 (w is out of range) 
+
+ MODEL nshort.57 lmin=1.490000e-07 lmax=1.510000e-07 wmin=5.990000e-07 wmax=6.010000e-07 (w is out of range) 
+
+ MODEL nshort.58 lmin=1.490000e-07 lmax=1.510000e-07 wmin=6.090000e-07 wmax=6.110000e-07 (w is out of range) 
+
+ MODEL nshort.59 lmin=1.490000e-07 lmax=1.510000e-07 wmin=6.490000e-07 wmax=6.510000e-07 (w is out of range) 
+
+ MODEL nshort.60 lmin=1.790000e-07 lmax=1.810000e-07 wmin=6.490000e-07 wmax=6.510000e-07 (l&w is out of range) 
+
+ MODEL nshort.61 lmin=2.490000e-07 lmax=2.510000e-07 wmin=6.490000e-07 wmax=6.510000e-07 (l&w is out of range) 
+
+ MODEL nshort.62 lmin=4.990000e-07 lmax=5.010000e-07 wmin=6.490000e-07 wmax=6.510000e-07 (l&w is out of range) 
+
+
+          ***** job aborted
+ ******  
+ .include '/home/tdene/public/skywater-src-nda/s8_spice_models/models.all'
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) CPU E5-4617 0 @ 2.90GHz
+ cpu MHz	: 2900.000
+ CPU(s)		: 12
+  
+ OS:
+ Linux version 3.10.0-1160.42.2.el7.x86_64 (mockbuild@x86-vm-40.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Aug 31 20:15:00 UTC 2021
+
+ System loadavg : 18.22 9.44 7.95 27/3168 115804
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    12
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      15 # elements   =      14
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      10 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  transient          0.00          46           0           0 rev=         0
+  readin             0.57
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        639.74 megabytes
+           total cpu time            0.57 seconds
+           total elapsed time        0.67 seconds
+           job started at     08:20:50 11/19/2021
+           job ended   at     08:20:51 11/19/2021
+           job total runtime         0.67 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.08(s)
