@@ -1,0 +1,186 @@
+Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sampleV.spice
+ ****** PrimeSim HSPICE -- R-2020.12-SP1 linux64 (Apr 10 2021 6983340) ******
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: sampleV.spice                                                     
+  Command line options: /programs/synopsys/hspice/current/hspice/linux64/hspice sampleV.spice
+  Start time: Mon Dec  6 13:22:52 2021
+ lic:  
+ lic: FLEXlm: SDK_12.9.5 
+ lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu 
+ lic: HOSTID: "2c44fd862b18"       PID:      53250 
+ lic: Using FLEXlm license file: 
+ lic: 27020@trelaina.ecen.okstate.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 27-jan-2022/2020.12 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@trelaina.ecen.okstate.edu 
+ lic:   
+  **warning** (sampleV.spice:6) Both nodes of element vgnd are connected together; Line ignored.
+  **info** (sampleV.spice:8) DC voltage reset to initial transient source value in source 0:vwwl. new dc=0.0000D+00
+  
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(sampleV.spice:5)vvdd                    0:vdd              defined in subckt 0                     0:0                defined in subckt 0               
+(sampleV.spice:8)vwwl                    0:vwl              defined in subckt 0                     0:0                defined in subckt 0               
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+1****** PrimeSim HSPICE -- R-2020.12-SP1 linux64 (Apr 10 2021 6983340) ******
+ ******  
+ .include '/home/tdene/public/skywater-src-nda/s8_spice_models/models.all'
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage
+
+ +0:vdd     =   1.8000  0:vwl     =   0.     
+
+
+ maximum nodal capacitance=    0.00             on node     0:0               
+
+    nodal  capacitance table 
+
+    node    =    cap      node    =    cap
+
+ +0:vdd     =   0.      0:vwl     =   0.     
+
+ 
+
+ **** voltage sources
+
+ subckt                        
+ element  0:vvdd     0:vwwl    
+  volts      1.8000     0.     
+  current   -1.8000u    0.     
+  power      3.2400u    0.     
+
+     total voltage source power dissipation=    3.2400u       watts
+
+
+ ******
+ .include '/home/tdene/public/skywater-src-nda/s8_spice_models/models.all'
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+x
+
+ time         voltage   
+             vwl        
+    0.          0.      
+    1.00000n    0.      
+    2.00000n    0.      
+    3.00000n    0.      
+    4.00000n    0.      
+    5.00000n    0.      
+    6.00000n    1.8000  
+    7.00000n    1.8000  
+    8.00000n    1.8000  
+    9.00000n    1.8000  
+   10.00000n    1.8000  
+   11.00000n    0.      
+   12.00000n    0.      
+   13.00000n    0.      
+   14.00000n    0.      
+   15.00000n    0.      
+   16.00000n    0.      
+   17.00000n    0.      
+   18.00000n    0.      
+   19.00000n    0.      
+   20.00000n    0.      
+   21.00000n    0.      
+   22.00000n    0.      
+   23.00000n    0.      
+   24.00000n    0.      
+   25.00000n    0.      
+   26.00000n    0.      
+   27.00000n    0.      
+   28.00000n    0.      
+   29.00000n    0.      
+   30.00000n    0.      
+   31.00000n    0.      
+   32.00000n    0.      
+   33.00000n    0.      
+   34.00000n    0.      
+   35.00000n    0.      
+   36.00000n    0.      
+   37.00000n    0.      
+   38.00000n    0.      
+   39.00000n    0.      
+   40.00000n    0.      
+   41.00000n    0.      
+   42.00000n    0.      
+   43.00000n    0.      
+   44.00000n    0.      
+   45.00000n    0.      
+y
+
+          ***** job concluded
+ ******  
+ .include '/home/tdene/public/skywater-src-nda/s8_spice_models/models.all'
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) CPU E5-4617 0 @ 2.90GHz
+ cpu MHz	: 2900.000
+ CPU(s)		: 12
+  
+ OS:
+ Linux version 3.10.0-1160.42.2.el7.x86_64 (mockbuild@x86-vm-40.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Aug 31 20:15:00 UTC 2021
+
+ System loadavg : 0.85 0.82 0.90 2/4134 53257
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    12
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =       3 # elements   =       4
+  # resistors   =       2 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           1
+  transient          0.00          46          42          21 rev=         0
+  readin             0.21
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        632.89 megabytes
+           total cpu time            0.25 seconds
+           total elapsed time        0.31 seconds
+           job started at     13:22:52 12/06/2021
+           job ended   at     13:22:53 12/06/2021
+
+>info:         ***** hspice job concluded
+           job total runtime         0.31 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.05(s)
