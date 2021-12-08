@@ -6,6 +6,8 @@ vvdd vdd 0 DC 1.8V
 vgnd gnd 0 DC 0V
 
 VWWL vwl 0 pwl (0 0 5n 0.0 5.5n 1.8 10n 1.8 10.5n 0)
+VWBL wbl 0 pwl (0 0 5n 0.0 5.5n 1.8 10n 1.8 10.5n 0)
+VWBLB wblb 0 pwl (0 1.8 5n 1.8 5.5n 0.0 10n 0.0 10.5n 1.8)
 
 .tran 1ns 45ns
 
