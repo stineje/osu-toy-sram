@@ -1,0 +1,18 @@
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
+
+*** Define power and ground
+vvdd vdd 0 DC 1.8V
+vgnd gnd 0 DC 0V
+
+VWWL vwl 0 pwl (0 0 5n 0.0 5.5n 1.8 10n 1.8 10.5n 0)
+
+.tran 1ns 45ns
+
+.print DC V(vwl,0)
+.print tran V(vwl,0) 
+.probe V(vwl,0)
+.op
+.options probe post measout captab
+.end
+
