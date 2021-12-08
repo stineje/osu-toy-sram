@@ -11,9 +11,8 @@ VWBLB wblb 0 pwl (0 1.8 5n 1.8 5.5n 0.0 10n 0.0 10.5n 1.8)
 
 .tran 1ns 45ns
 
-.print DC V(vwl,0)
-.print tran V(vwl,0) 
-.probe V(vwl,0)
+.print tran V(vwl,0)  V(wwl,0)  V(wwl,0) 
+.probe V(vwl,0) V(wbl,0) V(wblb,0)
 .op
 .options probe post measout captab
 .end
