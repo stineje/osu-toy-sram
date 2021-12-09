@@ -1,5 +1,12 @@
+*
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
+
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ttcell.cor"
+
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npd.pm3"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npass.pm3"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ppu.pm3"
 
 *** Define power and ground
 vvdd vdd 0 DC 1.8V
@@ -7,10 +14,11 @@ vgnd gnd 0 DC 0V
 
 vin in gnd pulse 0 1.8V 0ns 750ps 750ps 14.8ns 30ns
 
-M1000 out in vdd vdd pshort w=1.26u l=0.15u
-+  ad=0.3339p pd=3.05u as=0.3339p ps=3.05u
-M1001 out in gnd gnd nshort w=0.52u l=0.15u
-+  ad=0.1378p pd=1.57u as=0.1378p ps=1.57u
+M1000 out in vdd vdd ppu w=0.14 l=0.15
++  ad=0.3339 pd=3.05 as=0.3339 ps=3.05
+*M1001 out in gnd gnd npass w=0.14 l=0.15
+M1001 out in gnd gnd npd w=0.21 l=0.15
++  ad=0.1378 pd=1.57 as=0.1378 ps=1.57
 
 C1 out gnd 100fF
 

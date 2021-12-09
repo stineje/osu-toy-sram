@@ -29,17 +29,35 @@ M_6 net_3 net_4 gnd gnd npass w=0.14 l=0.15
 XInv net_4 net_1 invM 
 .ENDS
 
-vin1 WWL gnd pulse 0 1.8V 0ns 750ps 750ps 14.8ns 30ns
-vin2 RWL1 gnd 0V
-vin3 RWL0 gnd 0V
+* Starts low
+* Allows for a write at 5ns
+* Goes back low at 10ns
+* Allows for another write at 20ns
+* Goes back low at 25ns
+vWWL WWL gnd pwl 0ns 0V 4.9ns 0V 5ns 1.8V 9.9ns 1.8V 10ns 0V 19.9ns 0V 20ns 1.8V 24.9ns 1.8V 25ns 0V
+* Starts low
+* At the 5ns write, we set this high
+* Goes back low at 10ns
+* At the 20ns write, we set this low
+* Goes back low at 25ns
+vWBL  WBL  gnd pwl 0ns 0V 4.9ns 0V 5n 1.8V 9.9ns 1.8V 10ns 0V 19.9ns 0V 20ns 0V   24.9ns   0V 25ns 0V
+vWBLb WBLb gnd pwl 0ns 0V 4.9ns 0V 5n 0.0V 9.9ns 0.0V 10ns 0V 19.9ns 0V 20ns 1.8V 24.9ns 1.8V 25ns 0V
+* Starts low
+* At the 5ns write, stays low
+* Goes high at 10ns to read
+* At the 20ns write, goes low
+* Goes high at 25ns to read
+vRWL0 RWL0 gnd pwl 0ns 0V 4.9ns 0V 5ns 0.0V 9.9ns 0.0V 10ns 1.8V 19.9ns 1.8V 20ns 0.0V 24.9ns 0.0V 25ns 1.8V
+vRWL1 RWL0 RWL1 0V
+
 X1 RBL0 RBL1 RWL0 RWL1 WBL WBLb WWL MEM10T-toy
 *X1 WWL Out invM
 
-.tran 1ns 45ns
+.tran 1ps 30ns
 
-.print DC V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)   
-.print tran V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)   
-.probe V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb) 
+*.print DC V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)   
+*.print tran V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)   
+*.probe V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb) 
 .op
 .options probe post measout captab
 .end
