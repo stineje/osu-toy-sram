@@ -53,11 +53,24 @@ vRWL1 RWL0 RWL1 0V
 X1 RBL0 RBL1 RWL0 RWL1 WBL WBLb WWL MEM10T-toy
 *X1 WWL Out invM
 
+* Loading
+M1000 out1 RBL0 vdd vdd pshort w=1.26 l=0.15
+M1001 out1 RBL0 gnd gnd nshort w=0.52 l=0.15
+
+M1002 out2 out1 vdd vdd pshort w=1.26 l=0.15
+M1003 out2 out1 gnd gnd nshort w=0.52 l=0.15
+
+M1004 out3 RBL1 vdd vdd pshort w=1.26 l=0.15
+M1005 out3 RBL1 gnd gnd nshort w=0.52 l=0.15
+
+M1006 out4 out3 vdd vdd pshort w=1.26 l=0.15
+M1007 out4 out3 gnd gnd nshort w=0.52 l=0.15
+
 .tran 1ps 30ns
 
 .print DC V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)   
 .print tran V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)   
-.probe V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb) 
+.probe V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb) V(out1) V(out2) V(out3) V(out4)
 .op
 .options probe post measout captab
 .end
