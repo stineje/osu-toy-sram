@@ -3,7 +3,7 @@ Input File: sram1.spice
 lic:
 lic: FLEXlm: SDK_12.9.5
 lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu
-lic: HOSTID: "2c44fd862b18"       PID:      68137
+lic: HOSTID: "2c44fd862b18"       PID:      71596
 lic: Using FLEXlm license file:
 lic: 27020@trelaina.ecen.okstate.edu
 lic: Checkout 1 hspice
@@ -11,7 +11,7 @@ lic: License/Maintenance for hspice will expire on 27-jan-2022/2020.12
 lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@trelaina.ecen.okstate.edu
 lic:
 
- init: begin read circuit files, cpu clock= 2.97E-01
+ init: begin read circuit files, cpu clock= 2.94E-01
        option search = /export/rivendell1/programs/synopsys/hspice/R-2020.12-SP1/hspice/parts/ad
        option search = /export/rivendell1/programs/synopsys/hspice/R-2020.12-SP1/hspice/parts/bjt
        option search = /export/rivendell1/programs/synopsys/hspice/R-2020.12-SP1/hspice/parts/dio
@@ -23,27 +23,7 @@ lic:
        option post
        option measout
        option captab
- init: end read circuit files, cpu clock= 3.49E-01 peak memory=     637 mb
- init: begin check errors, cpu clock= 3.49E-01
- init: end check errors, cpu clock= 3.63E-01 peak memory=     637 mb
- init: begin setup matrix, pivot=     0 cpu clock= 3.63E-01
-       establish matrix -- done, cpu clock= 3.64E-01 peak memory=     637 mb
-       re-order matrix -- done, cpu clock= 3.64E-01 peak memory=     637 mb
- init: end setup matrix, cpu clock= 3.68E-01 peak memory=     637 mb
- dcop: begin dcop, cpu clock= 3.68E-01
- dcop: end dcop, cpu clock= 3.73E-01 peak memory=     637 mb tot_iter=      17
- output: sram1.tr0
- sweep: tran tran0    begin, stop_t=  4.50E-08 #sweeps=  46 cpu clock= 3.74E-01
- tran: time= 5.0000E-09 tot_iter=       8 conv_iter=       4 cpu clock= 3.75E-01
- tran: time= 1.0000E-08 tot_iter=     120 conv_iter=      33 cpu clock= 3.81E-01
- tran: time= 1.4662E-08 tot_iter=     161 conv_iter=      48 cpu clock= 3.83E-01
- tran: time= 1.8126E-08 tot_iter=     259 conv_iter=      76 cpu clock= 3.88E-01
- tran: time= 2.2899E-08 tot_iter=     326 conv_iter=      96 cpu clock= 3.92E-01
- tran: time= 2.7312E-08 tot_iter=     332 conv_iter=      98 cpu clock= 3.92E-01
- tran: time= 3.2032E-08 tot_iter=     335 conv_iter=      99 cpu clock= 3.92E-01
- tran: time= 3.7032E-08 tot_iter=     338 conv_iter=     100 cpu clock= 3.92E-01
- tran: time= 4.2032E-08 tot_iter=     340 conv_iter=     101 cpu clock= 3.93E-01
- tran: time= 4.5000E-08 tot_iter=     342 conv_iter=     102 cpu clock= 3.93E-01
- sweep: tran tran0    end, cpu clock= 3.93E-01 peak memory=     638 mb
->info:         ***** hspice job concluded
+ init: end read circuit files, cpu clock= 3.46E-01 peak memory=     637 mb
+ init: begin check errors, cpu clock= 3.46E-01
+>error          ***** hspice job aborted
  lic: Release hspice token(s)

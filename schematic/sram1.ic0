@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "R-2020.12-SP1 linux64"
 * "format" "HSP"
-* "rundate" "10:21:21 12/09/2021 "
+* "rundate" "10:25:38 12/09/2021 "
 * "netlist" "sram1.spice "
 * "runtitle" "*"
 * time =    0.            
@@ -10,15 +10,16 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
++ a =   0.            
 + net_1 =   0.            
-+ net_2 =-2.402e-22       
++ net_2 = 2.433e-22       
 + net_3 =   0.            
 + net_4 = 442.8792m       
 + out =   0.            
 + out1 =   0.            
 + out2 =   0.            
-+ rbl0 = 1.055e-20       
-+ rbl1 =-3.751e-28       
++ rbl0 = 1.533e-20       
++ rbl1 =-3.080e-28       
 + rwl0 =   0.            
 + rwl1 =   0.            
 + vdd =   1.8000        
