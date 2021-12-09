@@ -1,0 +1,44 @@
+*
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
+
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ttcell.cor"
+
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npd.pm3"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npass.pm3"
+.include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ppu.pm3"
+
+*** Define power and ground
+vvdd vdd 0 DC 1.8V
+vgnd gnd 0 DC 0V
+
+VWWL wwl 0 pwl (0 0 5n 0.0 5.5n 1.8 10n 1.8 10.5n 0 15n 0.0 15.5n 1.8 20n 1.8 20.5n 0)
+VWBL wbl 0 pwl (0 0 5n 0.0 5.5n 1.8 10n 1.8 10.5n 0 20.5n 0)
+VWBLB wblb 0 pwl (0 1.8 5n 1.8 5.5n 0.0 10n 0.0 10.5n 1.8 20.5n 1.8)
+
+VRWL0 rwl0 0 pwl (0 0 5n 0.0 5.5n 0.0 10n 0.0 10.5n 0 15n 0.0 15.5n 1.8 20n 1.8 20.5n 0)
+VRWL1 rwl1 0 pwl (0 0 5n 0.0 5.5n 0.0 10n 0.0 10.5n 0 20.5n 0.0)
+
+.SUBCKT invM A1 O 
+M_1 O A1 vdd vdd ppu w=0.14 l=0.15 
+M_2 O A1 gnd gnd npd w=0.21 l=0.15 
+.ENDS	$ invM
+
+* start main CELL 10T-toy
+XinvM net_1 net_4 invM 
+M_1 net_1 WWL WBL gnd npass w=0.14 l=0.15
+M_2 WBLb WWL net_4 gnd npass w=0.14 l=0.15
+M_3 net_2 RWL0 RBL0 gnd npd w=0.21 l=0.15
+M_4 gnd net_1 net_2 gnd npass w=0.14 l=0.15 
+M_5 RBL1 RWL1 net_3 gnd npd w=0.21 l=0.15
+M_6 net_3 net_4 gnd gnd npass w=0.14 l=0.15 
+XInv net_4 net_1 invM 
+
+.tran 1ns 45ns
+
+.print tran V(vwl,0)  V(wwl,0)  V(rwl0,0) V(rwl1,0) V(rbl0,0) V(rbl1,0)
+.probe V(wwl,0) V(wbl,0) V(wblb,0) V(rwl0,0) V(rwl1,0) V(rbl0,0) V(rbl1,0)
+.op
+.options probe post measout captab
+.end
+

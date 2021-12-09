@@ -5,8 +5,8 @@ proc SCHEMATIC_invM {} {
   make global -name Gnd -origin {400 460}
   make output -name O -origin {440 300}
   make input -name A1 -origin {260 300}
-  make pmos -W 0.14 -L 0.15 -origin {400 220}
-  make nmos -W 0.21 -origin {400 380}
+  make pmos -name ppu -W 0.14 -L 0.15 -origin {400 220}
+  make nmos -name npd -W 0.21 -origin {400 380}
   make_wire 400 300 440 300
   make_wire 400 300 400 340
   make_wire 400 300 400 260

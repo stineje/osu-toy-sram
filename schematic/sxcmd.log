@@ -1,22 +1,39 @@
 ### Custom WaveView ADV log file, revision R-2020.12-SP1 (build Apr 08, ) ###
-### created at 17:01:15 on Wed Dec  8 2021 (Linux AMD64) ###
-### Host Name: rivendell.ecen.okstate.edu   User ID: jstine   PID: 68783   ###
+### created at 09:46:58 on Thu Dec  9 2021 (Linux AMD64) ###
+### Host Name: rivendell.ecen.okstate.edu   User ID: jstine   PID: 43575   ###
 wv_start_log
 # (0) running in waveview only mode
 # (0) SW_SX_PERL_LIB defined
 # (0) SW_SX_TCL_LIB defined
 # (0) HOME defined
-sx_open_sim_file_read {sampleV.tr0}
-wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:sampleV.tr0(0)} {+sep=@}
-wv_drag_tree_item {Custom WaveView} {} {hierview} {D0:sampleV.tr0(0)@toplevel(0)} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:sampleV.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_list_item {Custom WaveView} {} {sigview} {v(vwl)} 0
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(vwl)} 0
-wv_select_list_item {Custom WaveView} {} {sigview} {v(wbl)} 1
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wbl)} 1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(wblb)} 2
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wblb)} 2
+sx_open_sim_file_read {sram1.tr0}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:sram1.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:sram1.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(wwl)} 6
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wwl)} 6
+wv_select_list_item {Custom WaveView} {} {sigview} {v(rbl0)} 0
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rbl0)} 0
+wv_select_list_item {Custom WaveView} {} {sigview} {v(rbl1)} 1
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rbl1)} 1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(rwl0)} 2
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rwl0)} 2
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL2:1 1.85612e-08 0.703721
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL2:1 1.83584e-08 0.789905
+wv_select_panel WV1.PANEL2:1 1.83584e-08 0.789905 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Vertical Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL3:1.CURSOR1
+wv_drag_item_to WV1 828 273
+wv_move_wv_item WV1.PANEL3:1.CURSOR1 695 287
+wv_select_list_item {Custom WaveView} {} {sigview} {v(rwl1)} 3
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rwl1)} 3
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL2:1.YAXIS1
+wv_move_wv_item WV1.PANEL2:1.CURSOR1 180 149
 wv_close_window {Custom WaveView} 
 wv_select_dialog {Confirmation} 
 #wv_press_button {Confirmation} {} {Ok} 
-#*WARNING* Can not remove '/home/jstine/.cx_hostport/.cx_hostport_rivendell.ecen.okstate.edu_68783'.
+#*WARNING* Can not remove '/home/jstine/.cx_hostport/.cx_hostport_rivendell.ecen.okstate.edu_43575'.

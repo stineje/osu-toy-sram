@@ -1,8 +1,8 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "R-2020.12-SP1 linux64"
 * "format" "HSP"
-* "rundate" "09:32:04 12/09/2021 "
-* "netlist" "10T-toyR.sp "
+* "rundate" "09:46:56 12/09/2021 "
+* "netlist" "sram1.spice "
 * "runtitle" "*"
 * time =    0.            
 * temperature =   25.0000        
@@ -10,18 +10,18 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ rbl0 = 3.504e-20       
-+ rbl1 =-8.717e-22       
++ net_1 =   0.            
++ net_2 = 5.679e-22       
++ net_3 =   0.            
++ net_4 = 442.8792m       
++ rbl0 = 1.713e-20       
++ rbl1 =-4.048e-28       
 + rwl0 =   0.            
 + rwl1 =   0.            
 + vdd =   1.8000        
-+ wbl = 5.384e-21       
-+ wblb = 2.168e-21       
++ wbl =   0.            
++ wblb =   1.8000        
 + wwl =   0.            
-+ x1.net_1 = 5.145e-21       
-+ x1.net_2 = 9.683e-21       
-+ x1.net_3 =-1.391e-22       
-+ x1.net_4 = 2.072e-21       
-+ x1.xinvm.vdd = 2.073e-21       
-+ x1.xinv.vdd = 5.145e-21       
++ xinvm.vdd = 442.8792m       
++ xinv.vdd =   0.            
 ***   END: Saved Operating Point ***                     

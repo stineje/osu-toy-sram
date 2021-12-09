@@ -1,4 +1,4 @@
-Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
+Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
  ****** PrimeSim HSPICE -- R-2020.12-SP1 linux64 (Apr 10 2021 6983340) ******
   Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.
   This software and the associated documentation are proprietary
@@ -6,13 +6,13 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
   with the terms and conditions of a written license agreement with
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
-  Input File: 10T-toyR.sp                                                       
-  Command line options: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
-  Start time: Thu Dec  9 09:32:04 2021
+  Input File: sram1.spice                                                       
+  Command line options: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
+  Start time: Thu Dec  9 09:46:56 2021
  lic:  
  lic: FLEXlm: SDK_12.9.5 
  lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu 
- lic: HOSTID: "2c44fd862b18"       PID:      33837 
+ lic: HOSTID: "2c44fd862b18"       PID:      43530 
  lic: Using FLEXlm license file: 
  lic: 27020@trelaina.ecen.okstate.edu 
  lic: Checkout 1 hspice 
@@ -28,11 +28,10 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
  circuit number to circuit name directory
    number circuitname                     definition         multiplier
         0 main circuit
-        1 x1.                             mem10t-toy         1.00 
-        2 x1.xinvm.                       invm               1.00 
-        3 x1.xinv.                        invm               1.00 
-  **warning** (10T-toyR.sp:13) Both nodes of element vgnd are connected together; Line ignored.
-  **info** (10T-toyR.sp:32) DC voltage reset to initial transient source value in source 0:vin1. new dc=0.0000D+00
+        1 xinvm.                          invm               1.00 
+        2 xinv.                           invm               1.00 
+  **warning** (sram1.spice:13) Both nodes of element vgnd are connected together; Line ignored.
+  **info** (sram1.spice:19) DC voltage reset to initial transient source value in source 0:vrwl0. new dc=0.0000D+00
  ***************************************************************************
  ***        model parameters  model name:   0:npass.0          model type:nmos   ***
  ***************************************************************************
@@ -322,31 +321,30 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
 
  Warning: Pd = 0 is less than Weff = 1.4e-07 in BSIM3 model 0:npass.0 element m_1 with W = 1.4e-07, L = 1.5e-07
 
-  **warning** (10T-toyR.sp:40) Unable to find referenced node rbl; Output variable ignored. Specify a valid node.
+  **warning** (sram1.spice:39) Unable to find referenced node vwl; Output variable ignored. Specify a valid node.
   
 
   **warning** the following singular supplies were terminated to 1 meg resistor 
           supply       node1            node2
-(10T-toyR.sp:12)vvdd                    0:vdd              defined in subckt 0                     0:0                defined in subckt 0               
+(sram1.spice:12)vvdd                    0:vdd              defined in subckt 0                     0:0                defined in subckt 0               
              
- Warning:'1 connection nodes' occurs 4 times
+ Warning:'1 connection nodes' occurs 2 times
  Summary of 1 connection from the following nodes:
  -----------------------
  |Node      |Subckt    |
  |----------+----------|
  |rbl0      |0         |
  |rbl1      |0         |
- |wbl       |0         |
- |wblb      |0         |
  -----------------------
               
       
+ **info** set option symb=1 internally to help for convergence.
  *****************************************************************
  ******  option summary
  ******
  runlvl  = 3         bypass  = 2.0000    
   Opening plot unit= 15
- file=10T-toyR.pa0
+ file=sram1.pa0
 
  **info** dc convergence successful at Newton-Raphson method 
  ******  
@@ -356,34 +354,34 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
  ****** operating point status is all       simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:rbl0    = 3.504e-20 0:rbl1    =-8.717e-22 0:rwl0    =   0.     
- +0:rwl1    =   0.      0:vdd     =   1.8000  0:wbl     = 5.384e-21
- +0:wblb    = 2.168e-21 0:wwl     =   0.      1:net_1   = 5.145e-21
- +1:net_2   = 9.683e-21 1:net_3   =-1.391e-22 1:net_4   = 2.072e-21
- +2:vdd     = 2.073e-21 3:vdd     = 5.145e-21
+ +0:net_1   =   0.      0:net_2   = 5.679e-22 0:net_3   =   0.     
+ +0:net_4   = 442.8792m 0:rbl0    = 1.713e-20 0:rbl1    =-4.048e-28
+ +0:rwl0    =   0.      0:rwl1    =   0.      0:vdd     =   1.8000 
+ +0:wbl     =   0.      0:wblb    =   1.8000  0:wwl     =   0.     
+ +1:vdd     = 442.8792m 2:vdd     =   0.     
 
 
- maximum nodal capacitance=   5.393E-16         on node     1:net_1           
+ maximum nodal capacitance=   6.070E-16         on node     0:net_4           
 
     nodal  capacitance table 
 
     node    =    cap      node    =    cap      node    =    cap
 
- +0:rbl0    =  68.1528a 0:rbl1    =  66.0937a 0:rwl0    = 187.5569a
- +0:rwl1    = 187.5569a 0:vdd     =   0.      0:wbl     =  48.8671a
- +0:wblb    =  48.8671a 0:wwl     = 251.0909a 1:net_1   = 539.3013a
- +1:net_2   = 114.9608a 1:net_3   = 111.4019a 1:net_4   = 539.3013a
- +2:vdd     =  70.0809a 3:vdd     =  70.0809a
+ +0:net_1   = 527.3841a 0:net_2   = 114.9608a 0:net_3   = 109.7278a
+ +0:net_4   = 607.0390a 0:rbl0    =  68.1528a 0:rbl1    =  66.0937a
+ +0:rwl0    = 187.5569a 0:rwl1    = 187.5569a 0:vdd     =   0.     
+ +0:wbl     =  48.8671a 0:wblb    =  44.2888a 0:wwl     = 250.1303a
+ +1:vdd     =  78.4453a 2:vdd     = 122.5734a
 
  
 
  **** voltage sources
 
- subckt                                              
- element  0:vin1     0:vin2     0:vin3     0:vvdd    
-  volts      0.         0.         0.         1.8000 
-  current    0.         0.         0.        -1.8000u
-  power      0.         0.         0.         3.2400u
+ subckt                                                                    
+ element  0:vrwl0    0:vrwl1    0:vvdd     0:vwbl     0:vwblb    0:vwwl    
+  volts      0.         0.         1.8000     0.         1.8000     0.     
+  current    0.         0.        -1.8000u    0.        -3.1671p    0.     
+  power      0.         0.         3.2400u    0.         5.7008p    0.     
 
      total voltage source power dissipation=    3.2400u       watts
 
@@ -393,57 +391,57 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
  **** mosfets
 
 
- subckt   x1         x1         x1         x1         x1         x1        
- element  1:m_1      1:m_2      1:m_3      1:m_4      1:m_5      1:m_6     
+ subckt                                                                    
+ element  0:m_1      0:m_2      0:m_3      0:m_4      0:m_5      0:m_6     
  model    0:npass.0  0:npass.0  0:npd.0    0:npass.0  0:npd.0    0:npass.0 
- region   Cutoff     Cutoff     Cutoff     Cutoff     Cutoff     Cutoff    
-  id         0.         0.         0.         0.         0.         0.     
-  ibs        0.         0.         0.         0.         0.         0.     
-  ibd        0.         0.         0.         0.         0.         0.     
-  vgs     -5.384e-21 -2.072e-21 -3.504e-20 -4.538e-21  1.391e-22  2.072e-21
-  vds     -2.390e-22  9.562e-23 -2.536e-20 -9.683e-21 -7.327e-22 -1.391e-22
-  vbs     -5.384e-21 -2.072e-21 -3.504e-20 -9.683e-21  1.391e-22    0.     
-  vth      681.6529m  681.6529m  743.9195m  681.6529m  743.9195m  681.6529m
-  vdsat     43.1954m   43.1954m   49.0031m   43.1954m   49.0031m   43.1954m
-  vod     -681.6529m -681.6529m -743.9195m -681.6529m -743.9195m -681.6529m
-  beta     186.4353u  186.4353u  351.0012u  186.4353u  351.0012u  186.4353u
-  gam eff  777.3202m  777.3202m  704.6953m  777.3202m  704.6953m  777.3202m
-  gm         0.         0.         0.         0.         0.         0.     
-  gds        7.3617p    7.3617p  128.4175f    7.3617p  128.4175f    7.3617p
-  gmb        0.         0.         0.         0.         0.         0.     
-  cdtot     43.2491a   48.8671a   66.0937a   43.2491a   66.0937a   43.2491a
-  cgtot    125.5455a  125.5455a  187.5569a  125.5455a  187.5569a  125.5455a
-  cstot     48.8671a   43.2491a   68.1528a   48.8671a   68.1528a   48.8671a
-  cbtot     36.3693a   36.3693a   54.4889a   36.3693a   54.4889a   36.3693a
-  cgs       47.3766a   42.3669a   67.7877a   47.3766a   67.7877a   47.3766a
-  cgd       42.3669a   47.3766a   65.4945a   42.3669a   65.4945a   42.3669a
+ region   Cutoff     Cutoff     Cutoff     Cutoff     Cutoff     Subth     
+  id         0.         1.3529a    0.         0.         0.         0.     
+  ibs        0.       -10.0000f    0.         0.         0.         0.     
+  ibd        0.       -10.0000f    0.         0.         0.         0.     
+  vgs        0.      -442.8792m -1.713e-20 -5.679e-22    0.       442.8792m
+  vds        0.         1.3571  -1.656e-20 -5.679e-22 -4.048e-28    0.     
+  vbs        0.      -442.8792m -1.713e-20 -5.679e-22    0.         0.     
+  vth      681.6529m  703.2632m  743.9195m  681.6529m  743.9195m  681.6529m
+  vdsat     43.1954m   45.5089m   49.0031m   43.1954m   49.0031m   44.0727m
+  vod     -681.6529m   -1.1461  -743.9195m -681.6529m -743.9195m -238.7738m
+  beta     186.4353u  191.3829u  351.0012u  186.4353u  351.0012u  186.4993u
+  gam eff  777.3202m  830.0024m  704.6953m  777.3202m  704.6953m  777.3202m
+  gm         0.        33.7441a    0.         0.         0.         0.     
+  gds        7.3617p    1.1801a  128.4175f    7.3617p  128.4175f  162.9951n
+  gmb        0.         7.4258a    0.         0.         0.         0.     
+  cdtot     43.2491a   44.2888a   66.0937a   43.2491a   66.0937a   41.5750a
+  cgtot    125.5455a  124.5848a  187.5569a  125.5455a  187.5569a  140.4646a
+  cstot     48.8671a   44.3178a   68.1528a   48.8671a   68.1528a   89.1639a
+  cbtot     36.3693a   35.9813a   54.4889a   36.3693a   54.4889a   31.3710a
+  cgs       47.3766a   44.3242a   67.7877a   47.3766a   67.7877a   74.3342a
+  cgd       42.3669a   44.2888a   65.4945a   42.3669a   65.4945a   41.5050a
 
 
 
- subckt   x1.xinvm   x1.xinvm   x1.xinv    x1.xinv   
- element  2:m_1      2:m_2      3:m_1      3:m_2     
+ subckt   xinvm      xinvm      xinv       xinv      
+ element  1:m_1      1:m_2      2:m_1      2:m_2     
  model    0:ppu.0    0:npd.0    0:ppu.0    0:npd.0   
- region   Cutoff     Cutoff     Cutoff     Cutoff    
-  id         0.         0.         0.         0.     
+ region   Cutoff     Cutoff     Cutoff     Subth     
+  id       4.464e-27    8.4848f    0.         0.     
   ibs        0.         0.         0.         0.     
-  ibd        0.         0.         0.         0.     
-  vgs      3.072e-21  5.145e-21 -3.073e-21  2.072e-21
-  vds     -1.801e-25  2.072e-21    0.       5.145e-21
+  ibd        0.       -10.0000f    0.         0.     
+  vgs     -442.8792m    0.       442.8792m  442.8792m
+  vds       55.5112a  442.8792m    0.         0.     
   vbs        0.         0.         0.         0.     
-  vth     -886.6886m  743.9195m -886.6886m  743.9195m
-  vdsat    -41.1152m   49.0031m  -41.1152m   49.0031m
-  vod      886.6886m -743.9195m  886.6886m -743.9195m
-  beta      51.0387u  351.0012u   51.0387u  351.0012u
+  vth     -886.6886m  730.6331m -886.6886m  743.9195m
+  vdsat    -41.1186m   49.0077m  -41.1152m   49.0929m
+  vod      443.8094m -730.6331m    1.3296  -301.0404m
+  beta      51.0388u  350.4406u   51.0387u  351.0033u
   gam eff  648.3374m  704.6953m  648.3374m  704.6953m
-  gm         0.         0.         0.         0.     
-  gds      402.1664a  128.4175f  402.1664a  128.4175f
-  gmb        0.         0.         0.         0.     
-  cdtot     22.7082a   68.1528a   22.7082a   68.1528a
-  cgtot     92.0889a  187.5569a   92.0889a  187.5569a
-  cstot     21.4231a   66.0937a   21.4231a   66.0937a
-  cbtot     48.6577a   54.4889a   48.6577a   54.4889a
-  cgs       21.3219a   65.4945a   21.3219a   65.4945a
-  cgd       22.3514a   67.7877a   22.3514a   67.7877a
+  gm       1.216e-25  234.3822f    0.         0.     
+  gds       80.4185p   10.9764f  1.954e-21   23.9277n
+  gmb      3.226e-26   54.8889f    0.         0.     
+  cdtot     18.5182a   66.4269a   21.2103a   63.6877a
+  cgtot     86.2516a  187.4401a  143.7554a  193.5560a
+  cstot     41.9603a   66.8972a   21.1555a  104.9831a
+  cbtot     36.4850a   54.4664a  101.4179a   44.4273a
+  cgs       35.3722a   66.6995a   21.1568a   96.5768a
+  cgd       17.9305a   66.4282a   21.1946a   57.9392a
 
 
 
@@ -453,105 +451,105 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice 10T-toyR.sp
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
 x
 
- time         voltage    voltage     voltage     voltage   
-             wwl        rbl0        rbl1        rwl0       
-    0.          0.       3.5039e-20 -8.7174e-22    0.      
-    1.00000n    1.8000   -47.8076u   -47.4507u     0.      
-    2.00000n    1.8000   -85.4491u   -85.0834u     0.      
-    3.00000n    1.8000   -82.7081u   -82.3418u     0.      
-    4.00000n    1.8000   -78.3631u   -77.9967u     0.      
-    5.00000n    1.8000   -77.2449u   -76.8782u     0.      
-    6.00000n    1.8000   -76.1268u   -75.7597u     0.      
-    7.00000n    1.8000   -74.8556u   -74.4884u     0.      
-    8.00000n    1.8000   -73.5804u   -73.2131u     0.      
-    9.00000n    1.8000   -72.3051u   -71.9377u     0.      
-   10.00000n    1.8000   -71.7541u   -71.3865u     0.      
-   11.00000n    1.8000   -71.4372u   -71.0695u     0.      
-   12.00000n    1.8000   -71.1203u   -70.7525u     0.      
-   13.00000n    1.8000   -70.8035u   -70.4355u     0.      
-   14.00000n    1.8000   -70.4866u   -70.1186u     0.      
-   15.00000n    1.8000   -70.2236u   -69.8553u     0.      
-   16.00000n  720.0000m    2.6863m     2.6867m     0.      
-   17.00000n    0.         5.5513m     5.5516m     0.      
-   18.00000n    0.         3.4786m     3.4790m     0.      
-   19.00000n    0.         1.5114m     1.5118m     0.      
-   20.00000n    0.      -383.1373u  -382.7826u     0.      
-   21.00000n    0.        -1.9595m    -1.9592m     0.      
-   22.00000n    0.        -3.5317m    -3.5314m     0.      
-   23.00000n    0.        -4.9230m    -4.9227m     0.      
-   24.00000n    0.        -6.1502m    -6.1499m     0.      
-   25.00000n    0.        -7.3773m    -7.3771m     0.      
-   26.00000n    0.        -8.6045m    -8.6043m     0.      
-   27.00000n    0.        -9.6712m    -9.6710m     0.      
-   28.00000n    0.       -10.6230m   -10.6228m     0.      
-   29.00000n    0.       -11.5748m   -11.5747m     0.      
-   30.00000n    0.       -12.5266m   -12.5265m     0.      
-   31.00000n    1.8000   -17.8657m   -17.8656m     0.      
-   32.00000n    1.8000   -17.8427m   -17.8426m     0.      
-   33.00000n    1.8000   -17.8332m   -17.8331m     0.      
-   34.00000n    1.8000   -17.8260m   -17.8259m     0.      
-   35.00000n    1.8000   -17.8271m   -17.8270m     0.      
-   36.00000n    1.8000   -17.8282m   -17.8281m     0.      
-   37.00000n    1.8000   -17.8316m   -17.8315m     0.      
-   38.00000n    1.8000   -17.8364m   -17.8363m     0.      
-   39.00000n    1.8000   -17.8413m   -17.8412m     0.      
-   40.00000n    1.8000   -17.8462m   -17.8461m     0.      
-   41.00000n    1.8000   -17.8475m   -17.8474m     0.      
-   42.00000n    1.8000   -17.8473m   -17.8472m     0.      
-   43.00000n    1.8000   -17.8472m   -17.8471m     0.      
-   44.00000n    1.8000   -17.8470m   -17.8469m     0.      
-   45.00000n    1.8000   -17.8468m   -17.8467m     0.      
+ time         voltage    voltage    voltage    voltage    
+             wwl        rwl0       rwl1       rbl0        
+    0.          0.         0.         0.       1.7130e-20 
+    1.00000n    0.         0.         0.       1.7289e-20 
+    2.00000n    0.         0.         0.       1.7498e-20 
+    3.00000n    0.         0.         0.       1.7712e-20 
+    4.00000n    0.         0.         0.       1.7927e-20 
+    5.00000n    0.         0.         0.       1.8150e-20 
+    6.00000n    1.8000     0.         0.         2.2697u  
+    7.00000n    1.8000     0.         0.         3.7628u  
+    8.00000n    1.8000     0.         0.         4.0247u  
+    9.00000n    1.8000     0.         0.         3.9200u  
+   10.00000n    1.8000     0.         0.         3.9423u  
+   11.00000n    0.         0.         0.         5.6038u  
+   12.00000n    0.         0.         0.         5.6242u  
+   13.00000n    0.         0.         0.         5.5543u  
+   14.00000n    0.         0.         0.         5.6862u  
+   15.00000n    0.         0.         0.         5.8180u  
+   16.00000n    1.8000     1.8000     0.       788.3302m  
+   17.00000n    1.8000     1.8000     0.       788.3110m  
+   18.00000n    1.8000     1.8000     0.       788.2804m  
+   19.00000n    1.8000     1.8000     0.       788.2808m  
+   20.00000n    1.8000     1.8000     0.       788.2560m  
+   21.00000n    0.         0.         0.      -435.2633m  
+   22.00000n    0.         0.         0.      -393.9008m  
+   23.00000n    0.         0.         0.      -374.9146m  
+   24.00000n    0.         0.         0.      -362.9046m  
+   25.00000n    0.         0.         0.      -352.7626m  
+   26.00000n    0.         0.         0.      -346.0541m  
+   27.00000n    0.         0.         0.      -340.0892m  
+   28.00000n    0.         0.         0.      -334.1243m  
+   29.00000n    0.         0.         0.      -329.7678m  
+   30.00000n    0.         0.         0.      -326.2028m  
+   31.00000n    0.         0.         0.      -322.6377m  
+   32.00000n    0.         0.         0.      -319.0726m  
+   33.00000n    0.         0.         0.      -315.5076m  
+   34.00000n    0.         0.         0.      -312.7812m  
+   35.00000n    0.         0.         0.      -310.4675m  
+   36.00000n    0.         0.         0.      -308.1538m  
+   37.00000n    0.         0.         0.      -305.8401m  
+   38.00000n    0.         0.         0.      -303.5264m  
+   39.00000n    0.         0.         0.      -301.6242m  
+   40.00000n    0.         0.         0.      -299.9245m  
+   41.00000n    0.         0.         0.      -298.2249m  
+   42.00000n    0.         0.         0.      -296.5252m  
+   43.00000n    0.         0.         0.      -294.8256m  
+   44.00000n    0.         0.         0.      -293.2876m  
+   45.00000n    0.         0.         0.      -291.8292m  
 y
 x
 
- time         voltage   
-             rwl1       
-    0.          0.      
-    1.00000n    0.      
-    2.00000n    0.      
-    3.00000n    0.      
-    4.00000n    0.      
-    5.00000n    0.      
-    6.00000n    0.      
-    7.00000n    0.      
-    8.00000n    0.      
-    9.00000n    0.      
-   10.00000n    0.      
-   11.00000n    0.      
-   12.00000n    0.      
-   13.00000n    0.      
-   14.00000n    0.      
-   15.00000n    0.      
-   16.00000n    0.      
-   17.00000n    0.      
-   18.00000n    0.      
-   19.00000n    0.      
-   20.00000n    0.      
-   21.00000n    0.      
-   22.00000n    0.      
-   23.00000n    0.      
-   24.00000n    0.      
-   25.00000n    0.      
-   26.00000n    0.      
-   27.00000n    0.      
-   28.00000n    0.      
-   29.00000n    0.      
-   30.00000n    0.      
-   31.00000n    0.      
-   32.00000n    0.      
-   33.00000n    0.      
-   34.00000n    0.      
-   35.00000n    0.      
-   36.00000n    0.      
-   37.00000n    0.      
-   38.00000n    0.      
-   39.00000n    0.      
-   40.00000n    0.      
-   41.00000n    0.      
-   42.00000n    0.      
-   43.00000n    0.      
-   44.00000n    0.      
-   45.00000n    0.      
+ time         voltage    
+             rbl1        
+    0.       -4.0477e-28 
+    1.00000n -1.5141e-24 
+    2.00000n  1.2948e-25 
+    3.00000n  2.7242e-24 
+    4.00000n  5.6025e-24 
+    5.00000n  1.0223e-23 
+    6.00000n    5.5829m  
+    7.00000n    4.0630m  
+    8.00000n    2.7931m  
+    9.00000n    1.7040m  
+   10.00000n  717.3557u  
+   11.00000n  -51.3908u  
+   12.00000n -755.0894u  
+   13.00000n   -1.3824m  
+   14.00000n   -1.9588m  
+   15.00000n   -2.5351m  
+   16.00000n   -6.8639m  
+   17.00000n   -6.8633m  
+   18.00000n   -6.8626m  
+   19.00000n   -6.8625m  
+   20.00000n   -6.8620m  
+   21.00000n   -6.8620m  
+   22.00000n   -6.8618m  
+   23.00000n   -6.8615m  
+   24.00000n   -6.8612m  
+   25.00000n   -6.8610m  
+   26.00000n   -6.8608m  
+   27.00000n   -6.8605m  
+   28.00000n   -6.8602m  
+   29.00000n   -6.8599m  
+   30.00000n   -6.8597m  
+   31.00000n   -6.8595m  
+   32.00000n   -6.8592m  
+   33.00000n   -6.8590m  
+   34.00000n   -6.8587m  
+   35.00000n   -6.8584m  
+   36.00000n   -6.8582m  
+   37.00000n   -6.8579m  
+   38.00000n   -6.8576m  
+   39.00000n   -6.8574m  
+   40.00000n   -6.8571m  
+   41.00000n   -6.8569m  
+   42.00000n   -6.8567m  
+   43.00000n   -6.8564m  
+   44.00000n   -6.8561m  
+   45.00000n   -6.8558m  
 y
 
           ***** job concluded
@@ -569,7 +567,7 @@ y
  OS:
  Linux version 3.10.0-1160.42.2.el7.x86_64 (mockbuild@x86-vm-40.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Aug 31 20:15:00 UTC 2021
 
- System loadavg : 8.44 10.24 6.50 2/3767 33843
+ System loadavg : 3.32 8.78 7.92 2/3786 43538
 
 
   ******  HSPICE Threads Information  ******
@@ -583,10 +581,10 @@ y
   Voltage Sources :       1
 
   ******  Circuit Statistics  ******
-  # nodes       =      15 # elements   =      15
+  # nodes       =      15 # elements   =      17
   # resistors   =       1 # capacitors =       0 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
-  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
   # jfets       =       0 # mosfets    =      10 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
@@ -597,22 +595,22 @@ y
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.01           1          25
-  transient          0.01          46         157          50 rev=         4
-  readin             0.20
+  op point           0.01           1          17
+  transient          0.01          46         327          98 rev=        10
+  readin             0.25
   errchk             0.01
   setup              0.01
   output             0.00
 
 
            peak memory used        633.88 megabytes
-           total cpu time            0.23 seconds
-           total elapsed time        0.29 seconds
-           job started at     09:32:04 12/09/2021
-           job ended   at     09:32:04 12/09/2021
+           total cpu time            0.29 seconds
+           total elapsed time        0.36 seconds
+           job started at     09:46:56 12/09/2021
+           job ended   at     09:46:56 12/09/2021
 
 >info:         ***** hspice job concluded
-           job total runtime         0.29 seconds
+           job total runtime         0.36 seconds
 
 
  lic: Release hspice token(s) 

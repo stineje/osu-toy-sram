@@ -3,7 +3,7 @@ Input File: sampleV.spice
 lic:
 lic: FLEXlm: SDK_12.9.5
 lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu
-lic: HOSTID: "2c44fd862b18"       PID:      68746
+lic: HOSTID: "2c44fd862b18"       PID:      28004
 lic: Using FLEXlm license file:
 lic: 27020@trelaina.ecen.okstate.edu
 lic: Checkout 1 hspice
@@ -11,7 +11,7 @@ lic: License/Maintenance for hspice will expire on 27-jan-2022/2020.12
 lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@trelaina.ecen.okstate.edu
 lic:
 
- init: begin read circuit files, cpu clock= 2.15E-01
+ init: begin read circuit files, cpu clock= 4.80E-01
        option search = /export/rivendell1/programs/synopsys/hspice/R-2020.12-SP1/hspice/parts/ad
        option search = /export/rivendell1/programs/synopsys/hspice/R-2020.12-SP1/hspice/parts/bjt
        option search = /export/rivendell1/programs/synopsys/hspice/R-2020.12-SP1/hspice/parts/dio
@@ -22,26 +22,26 @@ lic:
        option post
        option measout
        option captab
- init: end read circuit files, cpu clock= 2.42E-01 peak memory=     630 mb
- init: begin check errors, cpu clock= 2.42E-01
- init: end check errors, cpu clock= 2.44E-01 peak memory=     630 mb
- init: begin setup matrix, pivot=     0 cpu clock= 2.44E-01
-       establish matrix -- done, cpu clock= 2.44E-01 peak memory=     630 mb
-       re-order matrix -- done, cpu clock= 2.44E-01 peak memory=     630 mb
- init: end setup matrix, cpu clock= 2.45E-01 peak memory=     630 mb
- dcop: begin dcop, cpu clock= 2.45E-01
- dcop: end dcop, cpu clock= 2.49E-01 peak memory=     630 mb tot_iter=       1
+ init: end read circuit files, cpu clock= 5.43E-01 peak memory=     630 mb
+ init: begin check errors, cpu clock= 5.43E-01
+ init: end check errors, cpu clock= 5.46E-01 peak memory=     630 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.46E-01
+       establish matrix -- done, cpu clock= 5.46E-01 peak memory=     630 mb
+       re-order matrix -- done, cpu clock= 5.46E-01 peak memory=     630 mb
+ init: end setup matrix, cpu clock= 5.46E-01 peak memory=     630 mb
+ dcop: begin dcop, cpu clock= 5.46E-01
+ dcop: end dcop, cpu clock= 5.85E-01 peak memory=     630 mb tot_iter=       1
  output: sampleV.tr0
- sweep: tran tran0    begin, stop_t=  4.50E-08 #sweeps=  46 cpu clock= 2.51E-01
- tran: time= 5.0000E-09 tot_iter=       8 conv_iter=       4 cpu clock= 2.51E-01
- tran: time= 1.0000E-08 tot_iter=      18 conv_iter=       9 cpu clock= 2.51E-01
- tran: time= 1.6276E-08 tot_iter=      28 conv_iter=      14 cpu clock= 2.51E-01
- tran: time= 2.1276E-08 tot_iter=      30 conv_iter=      15 cpu clock= 2.51E-01
- tran: time= 2.6276E-08 tot_iter=      32 conv_iter=      16 cpu clock= 2.51E-01
- tran: time= 3.1276E-08 tot_iter=      34 conv_iter=      17 cpu clock= 2.51E-01
- tran: time= 3.6276E-08 tot_iter=      36 conv_iter=      18 cpu clock= 2.51E-01
- tran: time= 4.1276E-08 tot_iter=      38 conv_iter=      19 cpu clock= 2.51E-01
- tran: time= 4.5000E-08 tot_iter=      40 conv_iter=      20 cpu clock= 2.51E-01
- sweep: tran tran0    end, cpu clock= 2.52E-01 peak memory=     630 mb
+ sweep: tran tran0    begin, stop_t=  4.50E-08 #sweeps=  46 cpu clock= 6.05E-01
+ tran: time= 5.0000E-09 tot_iter=       8 conv_iter=       4 cpu clock= 6.05E-01
+ tran: time= 1.0000E-08 tot_iter=      18 conv_iter=       9 cpu clock= 6.05E-01
+ tran: time= 1.5000E-08 tot_iter=      28 conv_iter=      14 cpu clock= 6.05E-01
+ tran: time= 2.0000E-08 tot_iter=      38 conv_iter=      19 cpu clock= 6.05E-01
+ tran: time= 2.6276E-08 tot_iter=      48 conv_iter=      24 cpu clock= 6.05E-01
+ tran: time= 3.1276E-08 tot_iter=      50 conv_iter=      25 cpu clock= 6.05E-01
+ tran: time= 3.6276E-08 tot_iter=      52 conv_iter=      26 cpu clock= 6.05E-01
+ tran: time= 4.1276E-08 tot_iter=      54 conv_iter=      27 cpu clock= 6.06E-01
+ tran: time= 4.5000E-08 tot_iter=      56 conv_iter=      28 cpu clock= 6.06E-01
+ sweep: tran tran0    end, cpu clock= 6.06E-01 peak memory=     630 mb
 >info:         ***** hspice job concluded
  lic: Release hspice token(s)

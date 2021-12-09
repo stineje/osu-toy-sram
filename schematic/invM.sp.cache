@@ -4,6 +4,6 @@ set netlist_level 1000
 set NETLIST_CACHE(invM,globals) {vdd gnd}
 set NETLIST_EXPLICIT_GLOBALS {}
 set NETLIST_CACHE(invM,version) MMI_SUE5.6.37
-set NETLIST_CACHE(invM) {{.SUBCKT invM A1 O } {M_1 O A1 Vdd vdd p W='0.14*1u' L='0.15*1u' } {M_2 O A1 Gnd gnd n W='0.21*1u' L='0.15*1u' } {.ENDS	$ invM} {}}
+set NETLIST_CACHE(invM) {{.SUBCKT invM A1 O } {M_1 O A1 Vdd vdd ppu W='0.14*1u' L='0.15*1u' } {M_2 O A1 Gnd gnd npd W='0.21*1u' L='0.15*1u' } {.ENDS	$ invM} {}}
 set NETLIST_CACHE(invM,names) {{340 380 {0 A1}} {400 220 {0 M_1}} {400 140 {1 Vdd}} {400 420 {0 Gnd}} {440 300 {1 O}} {260 300 {1 A1}} {340 220 {0 A1}} {400 340 {0 O}} {400 260 {0 O}} {400 180 {0 Vdd}} {400 460 {1 Gnd}} {400 380 {0 M_2}}}
 set NETLIST_CACHE(invM,wires) {{400 300 440 300 O} {400 300 400 340 O} {400 260 400 300 O} {300 380 340 380 A1} {300 220 340 220 A1} {260 300 300 300 A1} {300 300 300 380 A1} {300 220 300 300 A1} {400 140 400 180 Vdd} {400 420 400 460 Gnd}}

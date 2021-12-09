@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "R-2020.12-SP1 linux64"
 * "format" "HSP"
-* "rundate" "17:01:13 12/08/2021 "
+* "rundate" "09:23:40 12/09/2021 "
 * "netlist" "sampleV.spice "
 * "runtitle" ".include '/home/tdene/public/skywater-src-nda/s8_spice_models/models.all'"
 * time =    0.            
@@ -10,6 +10,8 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
++ rwl0 =   0.            
++ rwl1 =   0.            
 + vdd =   1.8000        
 + vwl =   0.            
 + wbl =   0.            
