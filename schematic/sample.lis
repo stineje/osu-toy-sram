@@ -8,11 +8,11 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sample.spice
   this software is strictly prohibited.
   Input File: sample.spice                                                      
   Command line options: /programs/synopsys/hspice/current/hspice/linux64/hspice sample.spice
-  Start time: Fri Nov 19 08:36:38 2021
+  Start time: Thu Dec  9 10:12:02 2021
  lic:  
  lic: FLEXlm: SDK_12.9.5 
  lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu 
- lic: HOSTID: "2c44fd862b18"       PID:      126569 
+ lic: HOSTID: "2c44fd862b18"       PID:      60248 
  lic: Using FLEXlm license file: 
  lic: 27020@trelaina.ecen.okstate.edu 
  lic: Checkout 1 hspice 
@@ -982,7 +982,7 @@ y
  OS:
  Linux version 3.10.0-1160.42.2.el7.x86_64 (mockbuild@x86-vm-40.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Aug 31 20:15:00 UTC 2021
 
- System loadavg : 2.37 6.96 7.34 3/3171 126575
+ System loadavg : 8.30 9.22 8.21 1/3795 60255
 
 
   ******  HSPICE Threads Information  ******
@@ -1012,20 +1012,20 @@ y
   analysis           time    # points   tot. iter  conv.iter
   op point           0.01           1           4
   transient          0.00          46         126          52 rev=         2
-  readin             0.26
+  readin             0.30
   errchk             0.01
   setup              0.00
   output             0.00
 
 
            peak memory used        638.76 megabytes
-           total cpu time            0.28 seconds
-           total elapsed time        0.34 seconds
-           job started at     08:36:38 11/19/2021
-           job ended   at     08:36:39 11/19/2021
+           total cpu time            0.33 seconds
+           total elapsed time        0.39 seconds
+           job started at     10:12:02 12/09/2021
+           job ended   at     10:12:02 12/09/2021
 
 >info:         ***** hspice job concluded
-           job total runtime         0.34 seconds
+           job total runtime         0.39 seconds
 
 
  lic: Release hspice token(s) 

@@ -8,11 +8,11 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
   this software is strictly prohibited.
   Input File: sram1.spice                                                       
   Command line options: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
-  Start time: Thu Dec  9 09:46:56 2021
+  Start time: Thu Dec  9 10:21:21 2021
  lic:  
  lic: FLEXlm: SDK_12.9.5 
  lic: USER:   jstine               HOSTNAME: rivendell.ecen.okstate.edu 
- lic: HOSTID: "2c44fd862b18"       PID:      43530 
+ lic: HOSTID: "2c44fd862b18"       PID:      68137 
  lic: Using FLEXlm license file: 
  lic: 27020@trelaina.ecen.okstate.edu 
  lic: Checkout 1 hspice 
@@ -30,8 +30,10 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
         0 main circuit
         1 xinvm.                          invm               1.00 
         2 xinv.                           invm               1.00 
-  **warning** (sram1.spice:13) Both nodes of element vgnd are connected together; Line ignored.
-  **info** (sram1.spice:19) DC voltage reset to initial transient source value in source 0:vrwl0. new dc=0.0000D+00
+        3 xload1.                         inv                1.00 
+        4 xload2.                         inv                1.00 
+  **warning** (sram1.spice:12) Both nodes of element vgnd are connected together; Line ignored.
+  **info** (sram1.spice:18) DC voltage reset to initial transient source value in source 0:vrwl0. new dc=0.0000D+00
  ***************************************************************************
  ***        model parameters  model name:   0:npass.0          model type:nmos   ***
  ***************************************************************************
@@ -317,28 +319,846 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
          php (not used)                  pbsw=    0.7418 V        
       cjgate (not used)                 cjswg=2.3894e-10 f/m      
        mjswg=    0.9274                pbswg=    1.4338 V        
+ Model file: /home/tdene/Public/skywater-src-nda/s8_spice_models/pshort.pm3
+ Model line:           20
+ Model Name: pshort.0  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 1
+    IGCMOD = 0
+    IGBMOD = 0
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.5 
+    TOXREF = 4.23e-09 
+    TOXE = 4.23e-09 
+    TOXP = 4.23e-09 
+    TOXM = 4.23e-09 
+    DTOX =      0 
+    EPSROX =    3.9 
+    CDSC = 0.00013 
+    CDSCB = 0.00078 
+    CDSCD =      0 
+    CIT =  1e-05 
+    NFACTOR =  2.561 
+    XJ = 1.5e-07 
+    VSAT = 8.504e+04 
+    A0 = 0.9129 
+    AGS =   1.25 
+    A1 =      0 
+    A2 = 0.8737 
+    AT = 5.094e+04 
+    KETA = -0.02046 
+    NSUB =  6e+16 
+    NDEP = 1.7e+17 
+    NSD =  1e+20 
+    NGATE =  1e+23 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =  1.315 
+    KT1 = -0.7098 
+    KT1L =      0 
+    KT2 =  -0.12 
+    K2 = -0.2974 
+    K3 = -15.85 
+    K3B =      2 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 =      0 
+    DVT0 =  4.495 
+    DVT1 =  0.294 
+    DVT2 =  0.015 
+    DVT0W = -4.977 
+    DVT1W = 1.147e+06 
+    DVT2W = -0.00896 
+    DROUT =      1 
+    DSUB =   0.26 
+    VTH0 = -1.029 
+    EU =   1.67 
+    UA = -2.453e-09 
+    UA1 = 1.83e-10 
+    UB = 2.308e-18 
+    UB1 = 3.689e-19 
+    UC = 1.613e-13 
+    UC1 = 6.448e-12 
+    U0 = 0.002903 
+    UTE = -0.2124 
+    VOFF = -0.3667 
+    VOFFL =      0 
+    MINV =      0 
+    FPROUT =      0 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA =   0.01 
+    RDSW =  547.9 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =      0 
+    RSW =      0 
+    PRWG = 0.1376 
+    PRWB = -0.3235 
+    PRT =      0 
+    ETA0 = 0.2106 
+    ETAB = -0.01473 
+    PCLM = 0.6163 
+    PDIBLC1 = 0.1422 
+    PDIBLC2 = 0.002651 
+    PDIBLCB = -0.1519 
+    PSCBE1 =  8e+08 
+    PSCBE2 = 9.179e-09 
+    PVAG =      0 
+    WR =      1 
+    DWG = -5.722e-09 
+    DWB = -1.786e-08 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  1e-10 
+    ALPHA1 =  1e-10 
+    AGIDL = 4.008e-10 
+    BGIDL =  1e+09 
+    CGIDL =    300 
+    PHIN =      0 
+    EGIDL =    0.1 
+    AIGC =   0.43 
+    BIGC =  0.054 
+    CIGC =  0.075 
+    AIGSD =   0.43 
+    BIGSD =  0.054 
+    CIGSD =  0.075 
+    AIGBACC =   0.43 
+    BIGBACC =  0.054 
+    CIGBACC =  0.075 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA = 2.5e+07 
+    TNOIB =      0 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =  7.938 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =  12.69 
+    BVS =  12.69 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 9.548e-12 
+    CGDL = 9.548e-12 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.2e-11 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC = -1.399e-08 
+    DLCIG =      0 
+    DWJ =      0 
+    VFBCV = -0.1447 
+    ACDE =    0.8 
+    MOIN =  18.13 
+    NOFF =    3.9 
+    VOFFCV = -0.107 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.001241 
+    TPB = 0.002039 
+    TCJSW = 0.0003736 
+    TPBSW = 0.001246 
+    TCJSWG =  2e-12 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  303.1 
+    CGSO = 5.249e-11 
+    CGDO = 5.249e-11 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      1 
+    JSS = 2.148e-05 
+    JSWS = 8.04e-10 
+    JSWGS =      0 
+    PBS = 0.6587 
+    MJS = 0.3463 
+    PBSWS = 0.7418 
+    MJSWS = 0.2978 
+    CJS = 0.000738 
+    CJSWS = 9.889e-11 
+    NJS =  1.363 
+    PBSWGS =  1.434 
+    MJSWGS = 0.9274 
+    CJSWGS = 2.392e-10 
+    XTIS =    5.2 
+    JSD = 2.148e-05 
+    JSWD = 8.04e-10 
+    JSWGD =      0 
+    PBD = 0.6587 
+    MJD = 0.3463 
+    PBSWD = 0.7418 
+    MJSWD = 0.2978 
+    CJD = 0.000738 
+    CJSWD = 9.889e-11 
+    NJD =  1.363 
+    PBSWGD =  1.434 
+    MJSWGD = 0.9274 
+    CJSWGD = 2.392e-10 
+    XTID =    5.2 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = -1.399e-08 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN = 1.45e-07 
+    LMAX = 1.55e-07 
+    WINT = 7.304e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 1.255e-06 
+    WMAX = 1.265e-06 
+    NOIA = 1.5e+42 
+    NOIB =      0 
+    NOIC =      0 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =      0 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =   0.69 
+    RNOIB    =   0.34 
+    SAREF(SA0) = 1.04e-06 m
+    SBREF(SB0) = 1.04e-06 m
+    WLOD     =      0 m
+    KU0      = 4.5e-08 1/m
+    KVSAT    =    0.5 
+    KVTH0    = 3.29e-08 m
+    TKU0     =      0 
+    LLODKU0  =      0 
+    WLODKU0  =      1 
+    LLODVTH  =      0 
+    WLODVTH  =      1 
+    LKU0     =      0 
+    WKU0     = 2.5e-07 
+    PKU0     =      0 
+    LKVTH0   =      0 
+    WKVTH0   =  2e-07 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =      1 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+     *** UCB's BSIM4.4.0 new diode model is activated. ***
+    *** UCB's Diode Model Parameters ***
+    JTSS         =      0 
+    JTSSWS       =      0 
+    JTSSWGS      =      0 
+    JTSD         =      0 
+    JTSSWD       =      0 
+    JTSSWGD      =      0 
+    NJTS         =     20 
+    NJTSSW       =     20 
+    NJTSSWG      =     20 
+    XTSS         =   0.02 
+    XTSSWS       =   0.02 
+    XTSSWGS      =   0.02 
+    XTSD         =   0.02 
+    XTSSWD       =   0.02 
+    XTSSWGD      =   0.02 
+    TNJTS        =      0 
+    TNJTSSW      =      0 
+    TNJTSSWG     =      0 
+    VFBSDOFF     =      0 
+    LVFBSDOFF    =      0 
+    WVFBSDOFF    =      0 
+    PVFBSDOFF    =      0 
+    LINTNOI      = -2e-07 
+    VTSS         =     10 
+    VTSD         =     10 
+    VTSSWS       =     10 
+    VTSSWD       =     10 
+    VTSSWGS      =     10 
+    VTSSWGD      =     10 
+    TTDIOMOD     =      1 
+     *** UCB's BSIM4.5.0 new model is activated. ***
+    UD         =      0 
+    UD1        =      0 
+    UP         =      0 
+    LP         =      1 
+    TVOFF      =      0 
+    TVFBSDOFF  =      0 
+    RBPS0      =     50 
+    RBPSL      =      0 
+    RBPSW      =      0 
+    RBPSNF     =      0 
+    RBPD0      =     50 
+    RBPDL      =      0 
+    RBPDW      =      0 
+    RBPDNF     =      0 
+    RBPBX0     =    100 
+    RBPBXL     =      0 
+    RBPBXW     =      0 
+    RBPBXNF    =      0 
+    RBPBY0     =    100 
+    RBPBYL     =      0 
+    RBPBYW     =      0 
+    RBPBYNF    =      0 
+    RBSBX0     =    100 
+    RBSBY0     =    100 
+    RBDBX0     =    100 
+    RBDBY0     =    100 
+    RBSDBXL    =      0 
+    RBSDBXW    =      0 
+    RBSDBXNF   =      0 
+    RBSDBYL    =      0 
+    RBSDBYW    =      0 
+    RBSDBYNF   =      0 
+    LUD        =      0 
+    LUD1       =      0 
+    LUP        =      0 
+    LLP        =      0 
+    LTVOFF     =      0 
+    LTVFBSDOFF =      0 
+    WUD        =      0 
+    WUD1       =      0 
+    WUP        =      0 
+    WLP        =      0 
+    WTVOFF     =      0 
+    WTVFBSDOFF =      0 
+    PUD        =      0 
+    PUD1       =      0 
+    PUP        =      0 
+    PLP        =      0 
+    PTVOFF     =      0 
+    PTVFBSDOFF =      0 
+    WEB        =      0 
+    WEC        =      0 
+    KVTH0WE    =      0 
+    K2WE       =      0 
+    KU0WE      =      0 
+    SCREF      =  1e-06 
+    WPEMOD     =      0 
+    LKVTH0WE   =      0 
+    LK2WE      =      0 
+    LKU0WE     =      0 
+    WKVTH0WE   =      0 
+    WK2WE      =      0 
+    WKU0WE     =      0 
+    PKVTH0WE   =      0 
+    PK2WE      =      0 
+    PKU0WE     =      0 
+ Model file: /home/tdene/Public/skywater-src-nda/s8_spice_models/nshort.pm3
+ Model line:        16340
+ Model Name: nshort.54  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 1
+    IGCMOD = 0
+    IGBMOD = 0
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.5 
+    TOXREF = 4.148e-09 
+    TOXE = 4.148e-09 
+    TOXP = 4.148e-09 
+    TOXM = 4.148e-09 
+    DTOX =      0 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD = 0.002052 
+    CIT =      0 
+    NFACTOR =  2.594 
+    XJ = 1.5e-07 
+    VSAT = 1.886e+05 
+    A0 =    1.5 
+    AGS =   1.25 
+    A1 =      0 
+    A2 = 0.4239 
+    AT = 5.372e+04 
+    KETA = -0.03892 
+    NSUB =  6e+16 
+    NDEP = 1.7e+17 
+    NSD =  1e+20 
+    NGATE =  1e+23 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.9071 
+    KT1 = -0.241 
+    KT1L =      0 
+    KT2 = -0.02888 
+    K2 = -0.1344 
+    K3 =      2 
+    K3B =   0.54 
+    LPE0 = 1.033e-07 
+    LPEB = -7.082e-08 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 =      0 
+    DVT0 =      0 
+    DVT1 =   0.53 
+    DVT2 = -0.032 
+    DVT0W =  -3.58 
+    DVT1W = 1.671e+06 
+    DVT2W =  0.068 
+    DROUT = 0.5033 
+    DSUB = 0.4887 
+    VTH0 = 0.4188 
+    EU =   1.67 
+    UA = -1.18e-09 
+    UA1 = -2.385e-11 
+    UB = 2.341e-18 
+    UB1 = 7.078e-19 
+    UC = 8.399e-11 
+    UC1 = 1.472e-10 
+    U0 = 0.0294 
+    UTE = -1.248 
+    VOFF = -0.2075 
+    VOFFL = 5.82e-09 
+    MINV =      0 
+    FPROUT =      0 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA =   0.01 
+    RDSW =  65.97 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =      0 
+    RSW =      0 
+    PRWG = 0.02151 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0005676 
+    ETAB = -0.044 
+    PCLM = 0.1598 
+    PDIBLC1 =  0.357 
+    PDIBLC2 = 0.008406 
+    PDIBLCB = -0.1033 
+    PSCBE1 = 7.914e+08 
+    PSCBE2 =  1e-12 
+    PVAG =      0 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  3e-08 
+    ALPHA1 =   0.85 
+    AGIDL =      0 
+    BGIDL = 2.3e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC =   0.43 
+    BIGC =  0.054 
+    CIGC =  0.075 
+    AIGSD =   0.43 
+    BIGSD =  0.054 
+    CIGSD =  0.075 
+    AIGBACC =      1 
+    BIGBACC =      0 
+    CIGBACC =      0 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      0 
+    NIGBINV =      0 
+    NIGBACC =      0 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA = 1.5e+07 
+    TNOIB = 9.9e+06 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =  13.85 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =   11.7 
+    BVS =   11.7 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL =      0 
+    CGDL =      0 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.407e-12 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC = 1.193e-08 
+    DLCIG =      0 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    0.4 
+    MOIN =    6.9 
+    NOFF =  3.404 
+    VOFFCV = -0.1729 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000792 
+    TPB = 0.001229 
+    TCJSW =  1e-05 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  303.1 
+    CGSO = 2.449e-10 
+    CGDO = 2.449e-10 
+    CGBO =  1e-13 
+    XPART =      0 
+    RSH =      1 
+    JSS = 0.00275 
+    JSWS =  6e-10 
+    JSWGS =      0 
+    PBS =  0.729 
+    MJS =   0.44 
+    PBSWS =    0.2 
+    MJSWS = 0.0009 
+    CJS = 0.00134 
+    CJSWS = 3.674e-11 
+    NJS =  1.293 
+    PBSWGS = 0.9558 
+    MJSWGS =    0.8 
+    CJSWGS = 2.382e-10 
+    XTIS =      2 
+    JSD = 0.00275 
+    JSWD =  6e-10 
+    JSWGD =      0 
+    PBD =  0.729 
+    MJD =   0.44 
+    PBSWD =    0.2 
+    MJSWD = 0.0009 
+    CJD = 0.00134 
+    CJSWD = 3.674e-11 
+    NJD =  1.293 
+    PBSWGD = 0.9558 
+    MJSWGD =    0.8 
+    CJSWGD = 2.382e-10 
+    XTID =      2 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 1.193e-08 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN = 1.49e-07 
+    LMAX = 1.51e-07 
+    WINT = 2.186e-08 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 5.19e-07 
+    WMAX = 5.21e-07 
+    NOIA = 2.5e+42 
+    NOIB =      0 
+    NOIC =      0 
+    EM = 4.1e+07 
+    EF =   0.84 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =      0 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =   0.94 
+    RNOIB    =   0.26 
+    SAREF(SA0) = 1.04e-06 m
+    SBREF(SB0) = 1.04e-06 m
+    WLOD     =      0 m
+    KU0      = -2.7e-08 1/m
+    KVSAT    =    0.2 
+    KVTH0    = 9.8e-09 m
+    TKU0     =      0 
+    LLODKU0  =      0 
+    WLODKU0  =      1 
+    LLODVTH  =      0 
+    WLODVTH  =      1 
+    LKU0     =      0 
+    WKU0     =      0 
+    PKU0     =      0 
+    LKVTH0   =      0 
+    WKVTH0   =  2e-07 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =      1 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+     *** UCB's BSIM4.4.0 new diode model is activated. ***
+    *** UCB's Diode Model Parameters ***
+    JTSS         =      0 
+    JTSSWS       =      0 
+    JTSSWGS      =      0 
+    JTSD         =      0 
+    JTSSWD       =      0 
+    JTSSWGD      =      0 
+    NJTS         =     20 
+    NJTSSW       =     20 
+    NJTSSWG      =     20 
+    XTSS         =   0.02 
+    XTSSWS       =   0.02 
+    XTSSWGS      =   0.02 
+    XTSD         =   0.02 
+    XTSSWD       =   0.02 
+    XTSSWGD      =   0.02 
+    TNJTS        =      0 
+    TNJTSSW      =      0 
+    TNJTSSWG     =      0 
+    VFBSDOFF     =      0 
+    LVFBSDOFF    =      0 
+    WVFBSDOFF    =      0 
+    PVFBSDOFF    =      0 
+    LINTNOI      = -1e-07 
+    VTSS         =     10 
+    VTSD         =     10 
+    VTSSWS       =     10 
+    VTSSWD       =     10 
+    VTSSWGS      =     10 
+    VTSSWGD      =     10 
+    TTDIOMOD     =      1 
+     *** UCB's BSIM4.5.0 new model is activated. ***
+    UD         =      0 
+    UD1        =      0 
+    UP         =      0 
+    LP         =      1 
+    TVOFF      =      0 
+    TVFBSDOFF  =      0 
+    RBPS0      =     50 
+    RBPSL      =      0 
+    RBPSW      =      0 
+    RBPSNF     =      0 
+    RBPD0      =     50 
+    RBPDL      =      0 
+    RBPDW      =      0 
+    RBPDNF     =      0 
+    RBPBX0     =    100 
+    RBPBXL     =      0 
+    RBPBXW     =      0 
+    RBPBXNF    =      0 
+    RBPBY0     =    100 
+    RBPBYL     =      0 
+    RBPBYW     =      0 
+    RBPBYNF    =      0 
+    RBSBX0     =    100 
+    RBSBY0     =    100 
+    RBDBX0     =    100 
+    RBDBY0     =    100 
+    RBSDBXL    =      0 
+    RBSDBXW    =      0 
+    RBSDBXNF   =      0 
+    RBSDBYL    =      0 
+    RBSDBYW    =      0 
+    RBSDBYNF   =      0 
+    LUD        =      0 
+    LUD1       =      0 
+    LUP        =      0 
+    LLP        =      0 
+    LTVOFF     =      0 
+    LTVFBSDOFF =      0 
+    WUD        =      0 
+    WUD1       =      0 
+    WUP        =      0 
+    WLP        =      0 
+    WTVOFF     =      0 
+    WTVFBSDOFF =      0 
+    PUD        =      0 
+    PUD1       =      0 
+    PUP        =      0 
+    PLP        =      0 
+    PTVOFF     =      0 
+    PTVFBSDOFF =      0 
+    WEB        =      0 
+    WEC        =      0 
+    KVTH0WE    =      0 
+    K2WE       =      0 
+    KU0WE      =      0 
+    SCREF      =  1e-06 
+    WPEMOD     =      0 
+    LKVTH0WE   =      0 
+    LK2WE      =      0 
+    LKU0WE     =      0 
+    WKVTH0WE   =      0 
+    WK2WE      =      0 
+    WKU0WE     =      0 
+    PKVTH0WE   =      0 
+    PK2WE      =      0 
+    PKU0WE     =      0 
  
 
  Warning: Pd = 0 is less than Weff = 1.4e-07 in BSIM3 model 0:npass.0 element m_1 with W = 1.4e-07, L = 1.5e-07
 
-  **warning** (sram1.spice:39) Unable to find referenced node vwl; Output variable ignored. Specify a valid node.
+  **warning** (sram1.spice:50) Unable to find referenced node vwl; Output variable ignored. Specify a valid node.
   
 
   **warning** the following singular supplies were terminated to 1 meg resistor 
           supply       node1            node2
-(sram1.spice:12)vvdd                    0:vdd              defined in subckt 0                     0:0                defined in subckt 0               
+(sram1.spice:11)vvdd                    0:vdd              defined in subckt 0                     0:0                defined in subckt 0               
              
- Warning:'1 connection nodes' occurs 2 times
+ Warning:'1 connection nodes' occurs 3 times
  Summary of 1 connection from the following nodes:
  -----------------------
  |Node      |Subckt    |
  |----------+----------|
+ |out       |0         |
  |rbl0      |0         |
  |rbl1      |0         |
  -----------------------
               
       
- **info** set option symb=1 internally to help for convergence.
  *****************************************************************
  ******  option summary
  ******
@@ -354,24 +1174,28 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
  ****** operating point status is all       simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:net_1   =   0.      0:net_2   = 5.679e-22 0:net_3   =   0.     
- +0:net_4   = 442.8792m 0:rbl0    = 1.713e-20 0:rbl1    =-4.048e-28
+ +0:net_1   =   0.      0:net_2   =-2.402e-22 0:net_3   =   0.     
+ +0:net_4   = 442.8792m 0:out     =   0.      0:out1    =   0.     
+ +0:out2    =   0.      0:rbl0    = 1.055e-20 0:rbl1    =-3.751e-28
  +0:rwl0    =   0.      0:rwl1    =   0.      0:vdd     =   1.8000 
  +0:wbl     =   0.      0:wblb    =   1.8000  0:wwl     =   0.     
- +1:vdd     = 442.8792m 2:vdd     =   0.     
+ +1:vdd     = 442.8792m 2:vdd     =   0.      3:vdd     =   0.     
+ +4:vdd     =   0.     
 
 
- maximum nodal capacitance=   6.070E-16         on node     0:net_4           
+ maximum nodal capacitance=   1.933E-15         on node     0:out1            
 
     nodal  capacitance table 
 
     node    =    cap      node    =    cap      node    =    cap
 
- +0:net_1   = 527.3841a 0:net_2   = 114.9608a 0:net_3   = 109.7278a
- +0:net_4   = 607.0390a 0:rbl0    =  68.1528a 0:rbl1    =  66.0937a
+ +0:net_1   = 527.3841a 0:net_2   = 109.3427a 0:net_3   = 109.7278a
+ +0:net_4   = 630.4811a 0:out     =   0.      0:out1    =   1.9325f
+ +0:out2    = 549.6682a 0:rbl0    =  68.1528a 0:rbl1    =  66.0937a
  +0:rwl0    = 187.5569a 0:rwl1    = 187.5569a 0:vdd     =   0.     
- +0:wbl     =  48.8671a 0:wblb    =  44.2888a 0:wwl     = 250.1303a
- +1:vdd     =  78.4453a 2:vdd     = 122.5734a
+ +0:wbl     =  48.8671a 0:wblb    =  44.2888a 0:wwl     =   1.6330f
+ +1:vdd     =  55.0032a 2:vdd     = 122.5734a 3:vdd     =   1.3582f
+ +4:vdd     =   1.3582f
 
  
 
@@ -398,9 +1222,9 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
   id         0.         1.3529a    0.         0.         0.         0.     
   ibs        0.       -10.0000f    0.         0.         0.         0.     
   ibd        0.       -10.0000f    0.         0.         0.         0.     
-  vgs        0.      -442.8792m -1.713e-20 -5.679e-22    0.       442.8792m
-  vds        0.         1.3571  -1.656e-20 -5.679e-22 -4.048e-28    0.     
-  vbs        0.      -442.8792m -1.713e-20 -5.679e-22    0.         0.     
+  vgs        0.      -442.8792m -1.055e-20  2.402e-22    0.       442.8792m
+  vds        0.         1.3571  -1.079e-20  2.402e-22 -3.751e-28    0.     
+  vbs        0.      -442.8792m -1.055e-20  2.402e-22    0.         0.     
   vth      681.6529m  703.2632m  743.9195m  681.6529m  743.9195m  681.6529m
   vdsat     43.1954m   45.5089m   49.0031m   43.1954m   49.0031m   44.0727m
   vod     -681.6529m   -1.1461  -743.9195m -681.6529m -743.9195m -238.7738m
@@ -409,39 +1233,66 @@ Using: /programs/synopsys/hspice/current/hspice/linux64/hspice sram1.spice
   gm         0.        33.7441a    0.         0.         0.         0.     
   gds        7.3617p    1.1801a  128.4175f    7.3617p  128.4175f  162.9951n
   gmb        0.         7.4258a    0.         0.         0.         0.     
-  cdtot     43.2491a   44.2888a   66.0937a   43.2491a   66.0937a   41.5750a
+  cdtot     43.2491a   44.2888a   66.0937a   48.8671a   66.0937a   41.5750a
   cgtot    125.5455a  124.5848a  187.5569a  125.5455a  187.5569a  140.4646a
-  cstot     48.8671a   44.3178a   68.1528a   48.8671a   68.1528a   89.1639a
+  cstot     48.8671a   44.3178a   68.1528a   43.2491a   68.1528a   89.1639a
   cbtot     36.3693a   35.9813a   54.4889a   36.3693a   54.4889a   31.3710a
-  cgs       47.3766a   44.3242a   67.7877a   47.3766a   67.7877a   74.3342a
-  cgd       42.3669a   44.2888a   65.4945a   42.3669a   65.4945a   41.5050a
+  cgs       47.3766a   44.3242a   67.7877a   42.3669a   67.7877a   74.3342a
+  cgd       42.3669a   44.2888a   65.4945a   47.3766a   65.4945a   41.5050a
 
 
 
- subckt   xinvm      xinvm      xinv       xinv      
- element  1:m_1      1:m_2      2:m_1      2:m_2     
- model    0:ppu.0    0:npd.0    0:ppu.0    0:npd.0   
- region   Cutoff     Cutoff     Cutoff     Subth     
-  id       4.464e-27    8.4848f    0.         0.     
-  ibs        0.         0.         0.         0.     
-  ibd        0.       -10.0000f    0.         0.     
-  vgs     -442.8792m    0.       442.8792m  442.8792m
-  vds       55.5112a  442.8792m    0.         0.     
-  vbs        0.         0.         0.         0.     
-  vth     -886.6886m  730.6331m -886.6886m  743.9195m
-  vdsat    -41.1186m   49.0077m  -41.1152m   49.0929m
-  vod      443.8094m -730.6331m    1.3296  -301.0404m
-  beta      51.0388u  350.4406u   51.0387u  351.0033u
-  gam eff  648.3374m  704.6953m  648.3374m  704.6953m
-  gm       1.216e-25  234.3822f    0.         0.     
-  gds       80.4185p   10.9764f  1.954e-21   23.9277n
-  gmb      3.226e-26   54.8889f    0.         0.     
-  cdtot     18.5182a   66.4269a   21.2103a   63.6877a
-  cgtot     86.2516a  187.4401a  143.7554a  193.5560a
-  cstot     41.9603a   66.8972a   21.1555a  104.9831a
-  cbtot     36.4850a   54.4664a  101.4179a   44.4273a
-  cgs       35.3722a   66.6995a   21.1568a   96.5768a
-  cgd       17.9305a   66.4282a   21.1946a   57.9392a
+ subckt   xinvm      xinvm      xinv       xinv       xload1     xload1    
+ element  1:m_1      1:m_2      2:m_1      2:m_2      3:m1000    3:m1001   
+ model    0:ppu.0    0:npd.0    0:ppu.0    0:npd.0    0:pshort.0 0:nshort.5
+ region   Cutoff     Cutoff     Cutoff     Subth      Cutoff     Cutoff    
+  id      -8.928e-27    8.4848f    0.         0.         0.         0.     
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.       -10.0000f    0.         0.         0.         0.     
+  vgs     -442.8792m    0.       442.8792m  442.8792m    0.         0.     
+  vds     -111.0223a  442.8792m    0.         0.         0.         0.     
+  vbs        0.         0.         0.         0.         0.         0.     
+  vth     -886.6886m  730.6331m -886.6886m  743.9195m -753.2087m  752.4909m
+  vdsat    -41.1186m   49.0077m  -41.1152m   49.0929m  -43.2735m   42.9393m
+  vod      443.8094m -730.6331m    1.3296  -301.0404m  753.2087m -752.4909m
+  beta      51.0388u  350.4406u   51.0387u  351.0033u  385.4839u    1.0308m
+  gam eff  648.3374m  704.6953m  648.3374m  704.6953m    1.3152   907.0735m
+  gm       2.431e-25  234.3822f    0.         0.         0.         0.     
+  gds       80.4185p   10.9764f  1.954e-21   23.9277n   30.5595p  274.2760f
+  gmb      6.452e-26   54.8889f    0.         0.         0.         0.     
+  cdtot     41.9603a   66.4269a   21.2103a   63.6877a  308.6906a  240.9776a
+  cgtot     86.2516a  187.4401a  143.7554a  193.5560a  934.2707a  448.6105a
+  cstot     18.5182a   66.8972a   21.1555a  104.9831a  261.3094a  231.3272a
+  cbtot     36.4850a   54.4664a  101.4179a   44.4273a    1.0969f  400.2426a
+  cgs       17.9305a   66.6995a   21.1568a   96.5768a   76.9363a  125.2502a
+  cgd       35.3722a   66.4282a   21.1946a   57.9392a  121.3984a  133.9521a
+
+
+
+ subckt   xload2     xload2    
+ element  4:m1000    4:m1001   
+ model    0:pshort.0 0:nshort.5
+ region   Cutoff     Cutoff    
+  id         0.         0.     
+  ibs        0.         0.     
+  ibd        0.         0.     
+  vgs        0.         0.     
+  vds        0.         0.     
+  vbs        0.         0.     
+  vth     -753.2087m  752.4909m
+  vdsat    -43.2735m   42.9393m
+  vod      753.2087m -752.4909m
+  beta     385.4839u    1.0308m
+  gam eff    1.3152   907.0735m
+  gm         0.         0.     
+  gds       30.5595p  274.2760f
+  gmb        0.         0.     
+  cdtot    308.6906a  240.9776a
+  cgtot    934.2707a  448.6105a
+  cstot    261.3094a  231.3272a
+  cbtot      1.0969f  400.2426a
+  cgs       76.9363a  125.2502a
+  cgd      121.3984a  133.9521a
 
 
 
@@ -453,103 +1304,103 @@ x
 
  time         voltage    voltage    voltage    voltage    
              wwl        rwl0       rwl1       rbl0        
-    0.          0.         0.         0.       1.7130e-20 
-    1.00000n    0.         0.         0.       1.7289e-20 
-    2.00000n    0.         0.         0.       1.7498e-20 
-    3.00000n    0.         0.         0.       1.7712e-20 
-    4.00000n    0.         0.         0.       1.7927e-20 
-    5.00000n    0.         0.         0.       1.8150e-20 
-    6.00000n    1.8000     0.         0.         2.2697u  
-    7.00000n    1.8000     0.         0.         3.7628u  
-    8.00000n    1.8000     0.         0.         4.0247u  
-    9.00000n    1.8000     0.         0.         3.9200u  
-   10.00000n    1.8000     0.         0.         3.9423u  
-   11.00000n    0.         0.         0.         5.6038u  
-   12.00000n    0.         0.         0.         5.6242u  
-   13.00000n    0.         0.         0.         5.5543u  
-   14.00000n    0.         0.         0.         5.6862u  
-   15.00000n    0.         0.         0.         5.8180u  
-   16.00000n    1.8000     1.8000     0.       788.3302m  
-   17.00000n    1.8000     1.8000     0.       788.3110m  
-   18.00000n    1.8000     1.8000     0.       788.2804m  
-   19.00000n    1.8000     1.8000     0.       788.2808m  
-   20.00000n    1.8000     1.8000     0.       788.2560m  
-   21.00000n    0.         0.         0.      -435.2633m  
-   22.00000n    0.         0.         0.      -393.9008m  
-   23.00000n    0.         0.         0.      -374.9146m  
-   24.00000n    0.         0.         0.      -362.9046m  
-   25.00000n    0.         0.         0.      -352.7626m  
-   26.00000n    0.         0.         0.      -346.0541m  
-   27.00000n    0.         0.         0.      -340.0892m  
-   28.00000n    0.         0.         0.      -334.1243m  
-   29.00000n    0.         0.         0.      -329.7678m  
-   30.00000n    0.         0.         0.      -326.2028m  
-   31.00000n    0.         0.         0.      -322.6377m  
-   32.00000n    0.         0.         0.      -319.0726m  
-   33.00000n    0.         0.         0.      -315.5076m  
-   34.00000n    0.         0.         0.      -312.7812m  
-   35.00000n    0.         0.         0.      -310.4675m  
-   36.00000n    0.         0.         0.      -308.1538m  
-   37.00000n    0.         0.         0.      -305.8401m  
-   38.00000n    0.         0.         0.      -303.5264m  
-   39.00000n    0.         0.         0.      -301.6242m  
-   40.00000n    0.         0.         0.      -299.9245m  
-   41.00000n    0.         0.         0.      -298.2249m  
-   42.00000n    0.         0.         0.      -296.5252m  
-   43.00000n    0.         0.         0.      -294.8256m  
-   44.00000n    0.         0.         0.      -293.2876m  
-   45.00000n    0.         0.         0.      -291.8292m  
+    0.          0.         0.         0.       1.0550e-20 
+    1.00000n    0.         0.         0.       1.0431e-20 
+    2.00000n    0.         0.         0.       1.0272e-20 
+    3.00000n    0.         0.         0.       1.0109e-20 
+    4.00000n    0.         0.         0.       9.9446e-21 
+    5.00000n    0.         0.         0.       9.7722e-21 
+    6.00000n    1.8000     0.         0.         1.5886u  
+    7.00000n    1.8000     0.         0.         3.0887u  
+    8.00000n    1.8000     0.         0.         3.3420u  
+    9.00000n    1.8000     0.         0.         3.2356u  
+   10.00000n    1.8000     0.         0.         3.2757u  
+   11.00000n    0.         0.         0.         4.8134u  
+   12.00000n    0.         0.         0.         4.7945u  
+   13.00000n    0.         0.         0.         4.7887u  
+   14.00000n    0.         0.         0.         4.9248u  
+   15.00000n    0.         0.         0.         4.6612u  
+   16.00000n    1.8000     1.8000     0.       752.2522m  
+   17.00000n    1.8000     1.8000     0.       752.2273m  
+   18.00000n    1.8000     1.8000     0.       752.2132m  
+   19.00000n    1.8000     1.8000     0.       752.2037m  
+   20.00000n    1.8000     1.8000     0.       752.1915m  
+   21.00000n    0.         0.         0.      -434.4899m  
+   22.00000n    0.         0.         0.      -393.5475m  
+   23.00000n    0.         0.         0.      -374.4338m  
+   24.00000n    0.         0.         0.      -362.7337m  
+   25.00000n    0.         0.         0.      -353.1350m  
+   26.00000n    0.         0.         0.      -346.2562m  
+   27.00000n    0.         0.         0.      -339.3775m  
+   28.00000n    0.         0.         0.      -334.4424m  
+   29.00000n    0.         0.         0.      -330.3879m  
+   30.00000n    0.         0.         0.      -326.3333m  
+   31.00000n    0.         0.         0.      -322.2787m  
+   32.00000n    0.         0.         0.      -318.2241m  
+   33.00000n    0.         0.         0.      -315.6362m  
+   34.00000n    0.         0.         0.      -313.0969m  
+   35.00000n    0.         0.         0.      -310.5575m  
+   36.00000n    0.         0.         0.      -308.0182m  
+   37.00000n    0.         0.         0.      -305.4789m  
+   38.00000n    0.         0.         0.      -303.6498m  
+   39.00000n    0.         0.         0.      -301.8442m  
+   40.00000n    0.         0.         0.      -300.0386m  
+   41.00000n    0.         0.         0.      -298.2330m  
+   42.00000n    0.         0.         0.      -296.4274m  
+   43.00000n    0.         0.         0.      -294.9111m  
+   44.00000n    0.         0.         0.      -293.4043m  
+   45.00000n    0.         0.         0.      -291.8975m  
 y
 x
 
  time         voltage    
              rbl1        
-    0.       -4.0477e-28 
-    1.00000n -1.5141e-24 
-    2.00000n  1.2948e-25 
-    3.00000n  2.7242e-24 
-    4.00000n  5.6025e-24 
-    5.00000n  1.0223e-23 
-    6.00000n    5.5829m  
-    7.00000n    4.0630m  
-    8.00000n    2.7931m  
-    9.00000n    1.7040m  
-   10.00000n  717.3557u  
-   11.00000n  -51.3908u  
-   12.00000n -755.0894u  
-   13.00000n   -1.3824m  
-   14.00000n   -1.9588m  
-   15.00000n   -2.5351m  
-   16.00000n   -6.8639m  
-   17.00000n   -6.8633m  
-   18.00000n   -6.8626m  
-   19.00000n   -6.8625m  
-   20.00000n   -6.8620m  
-   21.00000n   -6.8620m  
-   22.00000n   -6.8618m  
-   23.00000n   -6.8615m  
-   24.00000n   -6.8612m  
-   25.00000n   -6.8610m  
-   26.00000n   -6.8608m  
-   27.00000n   -6.8605m  
-   28.00000n   -6.8602m  
-   29.00000n   -6.8599m  
-   30.00000n   -6.8597m  
-   31.00000n   -6.8595m  
-   32.00000n   -6.8592m  
-   33.00000n   -6.8590m  
-   34.00000n   -6.8587m  
-   35.00000n   -6.8584m  
-   36.00000n   -6.8582m  
-   37.00000n   -6.8579m  
-   38.00000n   -6.8576m  
-   39.00000n   -6.8574m  
-   40.00000n   -6.8571m  
-   41.00000n   -6.8569m  
-   42.00000n   -6.8567m  
-   43.00000n   -6.8564m  
-   44.00000n   -6.8561m  
-   45.00000n   -6.8558m  
+    0.       -3.7507e-28 
+    1.00000n -9.0256e-23 
+    2.00000n -1.2756e-22 
+    3.00000n -1.4545e-22 
+    4.00000n -1.5752e-22 
+    5.00000n -1.3385e-22 
+    6.00000n    5.5525m  
+    7.00000n    4.0727m  
+    8.00000n    2.8319m  
+    9.00000n    1.7664m  
+   10.00000n  797.4967u  
+   11.00000n   40.5380u  
+   12.00000n -656.9812u  
+   13.00000n   -1.2673m  
+   14.00000n   -1.8496m  
+   15.00000n   -2.4091m  
+   16.00000n   -6.7249m  
+   17.00000n   -6.7241m  
+   18.00000n   -6.7234m  
+   19.00000n   -6.7234m  
+   20.00000n   -6.7228m  
+   21.00000n   -6.7229m  
+   22.00000n   -6.7226m  
+   23.00000n   -6.7223m  
+   24.00000n   -6.7221m  
+   25.00000n   -6.7219m  
+   26.00000n   -6.7216m  
+   27.00000n   -6.7213m  
+   28.00000n   -6.7210m  
+   29.00000n   -6.7208m  
+   30.00000n   -6.7206m  
+   31.00000n   -6.7203m  
+   32.00000n   -6.7201m  
+   33.00000n   -6.7198m  
+   34.00000n   -6.7196m  
+   35.00000n   -6.7193m  
+   36.00000n   -6.7190m  
+   37.00000n   -6.7187m  
+   38.00000n   -6.7185m  
+   39.00000n   -6.7183m  
+   40.00000n   -6.7181m  
+   41.00000n   -6.7178m  
+   42.00000n   -6.7176m  
+   43.00000n   -6.7173m  
+   44.00000n   -6.7170m  
+   45.00000n   -6.7167m  
 y
 
           ***** job concluded
@@ -567,7 +1418,7 @@ y
  OS:
  Linux version 3.10.0-1160.42.2.el7.x86_64 (mockbuild@x86-vm-40.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Aug 31 20:15:00 UTC 2021
 
- System loadavg : 3.32 8.78 7.92 2/3786 43538
+ System loadavg : 1.78 5.12 6.68 4/3816 68149
 
 
   ******  HSPICE Threads Information  ******
@@ -581,12 +1432,12 @@ y
   Voltage Sources :       1
 
   ******  Circuit Statistics  ******
-  # nodes       =      15 # elements   =      17
-  # resistors   =       1 # capacitors =       0 # inductors   =       0
+  # nodes       =      32 # elements   =      22
+  # resistors   =       1 # capacitors =       1 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =      10 # U elements  =       0
+  # jfets       =       0 # mosfets    =      14 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       0 # N elements =       0
@@ -596,21 +1447,21 @@ y
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.01           1          17
-  transient          0.01          46         327          98 rev=        10
-  readin             0.25
+  transient          0.02          46         344         103 rev=        10
+  readin             0.29
   errchk             0.01
-  setup              0.01
+  setup              0.00
   output             0.00
 
 
-           peak memory used        633.88 megabytes
-           total cpu time            0.29 seconds
-           total elapsed time        0.36 seconds
-           job started at     09:46:56 12/09/2021
-           job ended   at     09:46:56 12/09/2021
+           peak memory used        639.75 megabytes
+           total cpu time            0.36 seconds
+           total elapsed time        0.42 seconds
+           job started at     10:21:21 12/09/2021
+           job ended   at     10:21:21 12/09/2021
 
 >info:         ***** hspice job concluded
-           job total runtime         0.36 seconds
+           job total runtime         0.42 seconds
 
 
  lic: Release hspice token(s) 

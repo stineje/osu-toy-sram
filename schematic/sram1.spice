@@ -1,12 +1,11 @@
 *
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/models.all"
-
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/tt_discrete.cor"
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ttcell.cor"
-
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npd.pm3"
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/npass.pm3"
 .include "/home/tdene/Public/skywater-src-nda/s8_spice_models/ppu.pm3"
+
 
 *** Define power and ground
 vvdd vdd 0 DC 1.8V
@@ -24,6 +23,13 @@ M_1 O A1 vdd vdd ppu w=0.14 l=0.15
 M_2 O A1 gnd gnd npd w=0.21 l=0.15 
 .ENDS	$ invM
 
+.SUBCKT inv in out
+M1000 out in vdd vdd pshort w=1.26 l=0.15
++  ad=0.3339p pd=3.05u as=0.3339p ps=3.05u
+M1001 out in gnd gnd nshort w=0.52 l=0.15
++  ad=0.1378p pd=1.57u as=0.1378p ps=1.57u
+.ENDS $inv
+
 * start main CELL 10T-toy
 XinvM net_1 net_4 invM 
 M_1 net_1 WWL WBL gnd npass w=0.14 l=0.15
@@ -34,10 +40,15 @@ M_5 RBL1 RWL1 net_3 gnd npd w=0.21 l=0.15
 M_6 net_3 net_4 gnd gnd npass w=0.14 l=0.15 
 XInv net_4 net_1 invM 
 
+* Loading
+Xload1 wwl out1 inv
+Xload2 out1 out2 inv
+C1 out gnd 100fF
+
 .tran 1ns 45ns
 
 .print tran V(vwl,0)  V(wwl,0)  V(rwl0,0) V(rwl1,0) V(rbl0,0) V(rbl1,0)
-.probe V(wwl,0) V(wbl,0) V(wblb,0) V(rwl0,0) V(rwl1,0) V(rbl0,0) V(rbl1,0)
+.probe V(wwl,0) V(wbl,0) V(wblb,0) V(rwl0,0) V(rwl1,0) V(rbl0,0) V(rbl1,0) V(out1, 0) V(out2, 0)
 .op
 .options probe post measout captab
 .end
