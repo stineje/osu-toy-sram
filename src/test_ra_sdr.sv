@@ -55,21 +55,21 @@ module  test_ra_sdr ();
 
    initial
      begin
-	$dumpfile("test_ra_sdr.vcd");	
+	$dumpfile("test_ra_sdr.vcd");
 	$dumpvars (0,test_ra_sdr.lcb);
-	$dumpvars (0,test_ra_sdr.cfig);		
+	$dumpvars (0,test_ra_sdr.cfig);
 	$dumpvars (0,test_ra_sdr.bist);
-	$dumpvars (0,test_ra_sdr.ra);		
+	$dumpvars (0,test_ra_sdr.ra);
      end
 
-   
+
    initial
      begin
 	clk = 1'b1;
 	forever #5 clk = ~clk;
      end
 
- 
+
 
    ra_lcb_sdr lcb (.clk      (clk),
 		   .reset    (reset),
@@ -82,7 +82,7 @@ module  test_ra_sdr ();
 				  .cfg_dat  (cfg_dat),
 				  .cfg      (cfg));
 
-   ra_bist_sdr bist (.clk         (clk),
+   ra_bist_sdr_osu bist (.clk         (clk),
 		     .reset       (reset),
 		     .ctl         (bist_ctl),
 		     .status      (bist_status),
@@ -124,11 +124,11 @@ module  test_ra_sdr ();
 	#0   rd_adr_0 = 6'h0;
 	#0   rd_adr_1 = 6'h0;
 	#0   rd_enb_0 = 1'b0;
-	#0   rd_enb_1 = 1'b0;	
+	#0   rd_enb_1 = 1'b0;
 	#0   bist_ctl = 32'h0;
 	#0   cfg_wr = 1'b0;
 	#0   cfg_dat = 16'h0;
-	#31  reset = 1'b0;	
+	#31  reset = 1'b0;
 
    	#400 wr_enb_0 = 1'b1;
 	#0   wr_adr_0 = 6'h0;
@@ -136,9 +136,9 @@ module  test_ra_sdr ();
    	#10  wr_adr_0 = 6'b00_0010;
 	#10  wr_adr_0 = 6'b00_0100;
 	#10  wr_adr_0 = 6'b00_0110;
-	#10  wr_adr_0 = 6'b00_1000;		
+	#10  wr_adr_0 = 6'b00_1000;
 
-	
+
 
      end
 

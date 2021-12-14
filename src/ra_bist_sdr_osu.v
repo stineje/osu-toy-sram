@@ -83,6 +83,28 @@ module ra_bist_sdr (
    assign seq_d = seq_q;
    assign active = seq_q != 6'h3F;
    assign status = 0;
+
+   assign wr0_enb_in  = 1;
+
+/*
+   A more practical implementation:
+   make an up/down counter for interating through addresses.
+
+   state machine for each part of the step: the best part about this is that
+   states could be added for implementation withb GPIO/wishbone for external
+   controls/different steps.
+
+   s0: write 0s up (Idle)
+   s1: write 1s down
+   s2: read 1s down/check
+   s3: write 0s up
+   s4: read 0s up/check
+   s5: write 1s up
+   s6: read 1s up/check
+   s7: flags
+
+
+*/
    /*
    Outline for BIST
    ----------------------------------------------------------------------
@@ -124,7 +146,6 @@ module ra_bist_sdr (
    flag BIST_FAIL_UP, or BIST_FAIL_DOWN or both.
 
    */
-
 
    // outputs
    assign rd0_enb_out = (active) ? bist_rd0_enb : rd0_enb_in;
