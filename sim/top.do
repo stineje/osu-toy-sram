@@ -31,17 +31,17 @@ vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predec
 
 # start and run simulation
 vsim -debugdb -voptargs=+acc work.test_ra_sdr
-
+add log -recursive /*
 view wave
 
 -- display input and output signals as hexidecimal values
 # Diplays All Signals recursively
-add wave -noupdate -divider -height 32 "ra_lcb_sdr"
-add wave -hex -r /lcb/*
-add wave -noupdate -divider -height 32 "ra_cfg_sdr"
-add wave -hex -r /cfig/*
-add wave -noupdate -divider -height 32 "ra_bist_sdr"
-add wave -hex -r /bist/*
+#add wave -noupdate -divider -height 32 "ra_lcb_sdr"
+#add wave -hex -r /lcb/*
+#add wave -noupdate -divider -height 32 "ra_cfg_sdr"
+#add wave -hex -r /cfig/*
+#add wave -noupdate -divider -height 32 "ra_bist_sdr"
+#add wave -hex -r /bist/*
 add wave -noupdate -divider -height 32 "ra_2r1w_64x72_sdr"
 add wave -hex -r /ra/*
 

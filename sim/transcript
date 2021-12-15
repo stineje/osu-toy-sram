@@ -1,9 +1,10 @@
-# //  ModelSim SE-64 10.7e May 30 2019 Linux 5.4.0-90-generic
+# //  Questa Sim-64
+# //  Version 2020.3_1 linux_x86_64 Aug 25 2020
 # //
-# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  Copyright 1991-2020 Mentor Graphics Corporation
 # //  All Rights Reserved.
 # //
-# //  ModelSim SE-64 and its associated documentation contain trade
+# //  QuestaSim and its associated documentation contain trade
 # //  secrets and commercial or financial information that are the property of
 # //  Mentor Graphics Corporation and are privileged, confidential,
 # //  and exempt from disclosure under the Freedom of Information Act,
@@ -11,9 +12,11 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do top.do
-# Model Technology ModelSim SE-64 vlog 10.7e Compiler 2019.06 May 30 2019
-# Start time: 14:02:44 on Nov 12,2021
+pwd
+# /home/ptikals/IBM/osu-toy-sram/sim
+do top.do
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 11:54:13 on Dec 15,2021
 # vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
 # -- Compiling module address_clock_sdr_2r1w_64
 # -- Compiling module ra_bist_ddr
@@ -39,14 +42,15 @@
 # 	test_ra_ddr
 # 	test_ra_sdr
 # 	test_ra_ddr_1x
-# End time: 14:02:45 on Nov 12,2021, Elapsed time: 0:00:01
+# End time: 11:54:13 on Dec 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
 # vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
-# Start time: 14:02:45 on Nov 12,2021
+# Start time: 11:54:13 on Dec 15,2021
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
 # ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading sv_std.std
 # Loading work.test_ra_sdr(fast)
 # Loading work.ra_lcb_sdr(fast)
@@ -58,5 +62,364 @@
 # Loading work.regfile_2r1w_64x24(fast)
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 14:03:05 on Nov 12,2021, Elapsed time: 0:00:20
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 12:02:02 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# ** Warning: ../src/test_ra_sdr.sv(61): (vlog-2596) Component name 'bist' is not on a downward path.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	ra_bist_sdr
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 12:02:02 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# End time: 12:02:02 on Dec 15,2021, Elapsed time: 0:07:49
+# Errors: 0, Warnings: 2
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 12:02:02 on Dec 15,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Error (suppressible): ../src/test_ra_sdr.sv(61): (vopt-7063) Failed to find 'bist' in hierarchical name 'test_ra_sdr.bist'.
+#         Region: test_ra_sdr
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./top.do PAUSED at line 33
+pwd
+# /home/ptikals/IBM/osu-toy-sram/sim
+do top.do
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 12:02:32 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	ra_bist_sdr
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 12:02:32 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 12:02:02 on Dec 15,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** UI-Msg: (vish-4014) No objects found matching '/bist/*'.
+# Error in macro ./top.do line 44
+# ** UI-Msg: (vish-4014) No objects found matching '/bist/*'.
+#     while executing
+# "add wave -noupdate -divider -height 32 "ra_lcb_sdr""
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 12:53:36 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 12:53:36 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 12:53:36 on Dec 15,2021, Elapsed time: 0:51:34
+# Errors: 1, Warnings: 2
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 12:53:36 on Dec 15,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+clear
+# [H[2J[3J
+add wave -position insertpoint  \
+sim:/test_ra_sdr/clk
+add wave -position insertpoint  \
+sim:/test_ra_sdr/reset
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 13:23:33 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 13:23:33 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 13:23:33 on Dec 15,2021, Elapsed time: 0:29:57
+# Errors: 0, Warnings: 2
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 13:23:33 on Dec 15,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 13:50:43 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 13:50:43 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 13:50:43 on Dec 15,2021, Elapsed time: 0:27:10
+# Errors: 0, Warnings: 2
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 13:50:43 on Dec 15,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 14:23:48 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# ** Error: (vlog-13053) ../src/test_ra_sdr.sv(158): near "'6": Illegal base specifier in numeric constant.
+# ** Error: (vlog-13057) ../src/test_ra_sdr.sv(158): near "[end of file]": Expecting numeric digits.
+# ** Error: (vlog-13069) ../src/test_ra_sdr.sv(158): near "'b": syntax error, unexpected BASE, expecting ';'.
+# -- Compiling module test_ra_ddr_1x
+# End time: 14:23:48 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 2
+# ** Error: /opt/Mentor/questasim/linux_x86_64/vlog failed.
+# Error in macro ./top.do line 30
+# /opt/Mentor/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra..."
+do top.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ptikals@rye.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2020.3_1 Compiler 2020.08 Aug 25 2020
+# Start time: 14:24:00 on Dec 15,2021
+# vlog -reportprogress 300 -lint ../src/address_clock_sdr_2r1w_64.v ../src/ra_bist_ddr.v ../src/predecode_sdr_64.v ../src/ra_bist_sdr.v ../src/ra_2r1w_64x72_sdr.v ../src/ra_cfg_ddr.v ../src/regfile_2r1w_64x24.v ../src/toysram.vh ../src/ra_4r2w_64x72_ddr_1x.v ../src/ra_cfg_sdr.v ../src/regfile_4r2w_64x24.v ../src/ra_4r2w_64x72_ddr.v ../src/ra_delay.v ../src/ra_lcb_sdr.v ../src/ra_lcb_ddr.v ../src/test_ra_ddr.v ../src/test_ra_sdr.sv ../src/test_ra_ddr_1x.v 
+# -- Compiling module address_clock_sdr_2r1w_64
+# -- Compiling module ra_bist_ddr
+# -- Compiling module predecode_sdr_64
+# -- Compiling module ra_bist_sdr
+# -- Compiling module ra_2r1w_64x72_sdr
+# -- Compiling module ra_cfg_ddr
+# -- Compiling module regfile_2r1w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr_1x
+# -- Compiling module ra_cfg_sdr
+# -- Compiling module regfile_4r2w_64x24
+# -- Compiling module ra_4r2w_64x72_ddr
+# -- Compiling module ra_delay
+# -- Compiling module ra_lcb_sdr
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vlog-2623) Undefined variable: i.
+# -- Compiling module ra_lcb_ddr
+# -- Compiling module test_ra_ddr
+# -- Compiling module test_ra_sdr
+# ** Warning: ../src/test_ra_sdr.sv(28): (vlog-2605) empty port name in port list.
+# -- Compiling module test_ra_ddr_1x
+# 
+# Top level modules:
+# 	test_ra_ddr
+# 	test_ra_sdr
+# 	test_ra_ddr_1x
+# End time: 14:24:00 on Dec 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 14:24:00 on Dec 15,2021, Elapsed time: 0:33:17
+# Errors: 1, Warnings: 2
+# vsim -debugdb -voptargs="+acc" work.test_ra_sdr 
+# Start time: 14:24:00 on Dec 15,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../src/test_ra_sdr.sv(28): (vopt-2605) empty port name in port list.
+# ** Warning: ../src/ra_lcb_sdr.v(61): (vopt-2623) Undefined variable: i.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.test_ra_sdr(fast)
+# Loading work.ra_lcb_sdr(fast)
+# Loading work.ra_cfg_sdr(fast)
+# Loading work.ra_bist_sdr(fast)
+# Loading work.ra_2r1w_64x72_sdr(fast)
+# Loading work.address_clock_sdr_2r1w_64(fast)
+# Loading work.predecode_sdr_64(fast)
+# Loading work.regfile_2r1w_64x24(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# .main_pane.wave.interior.cs.body.pw.wf
+# Break key hit
+# End time: 14:25:04 on Dec 15,2021, Elapsed time: 0:01:04
 # Errors: 0, Warnings: 2
