@@ -6,4 +6,7 @@ This is an elementary testbench that drives set values in order to write and rea
 memory array, and then 2 addresses each are read at the same time until all values are outputted.
 
 at line 120 of ``test_ra_sdr.sv`` is when the test starts. all values were chosen to be unique so they can clearly be identified in the ModelSim runs. outputs should be
-seen in ``rd_dat_0`` and ``rd_dat_1``
+seen in ``rd_dat_0`` and ``rd_dat_1``.
+
+
+###### Peter Tikalsky, 2022
