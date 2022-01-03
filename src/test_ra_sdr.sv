@@ -82,7 +82,7 @@ module  test_ra_sdr ();
 				  .cfg_dat  (cfg_dat),
 				  .cfg      (cfg));
 
-   ra_bist_sdr_osu bist (.clk         (clk),
+   ra_bist_sdr bist (.clk         (clk),
 		     .reset       (reset),
 		     .ctl         (bist_ctl),
 		     .status      (bist_status),
@@ -102,6 +102,7 @@ module  test_ra_sdr ();
 		     .wr0_enb_out (mux_wr0_enb),
 		     .wr0_adr_out (mux_wr0_adr),
 		     .wr0_dat_out (mux_wr0_dat));
+
 
    ra_2r1w_64x72_sdr ra (.clk        (clk),
 			 .reset      (reset),
@@ -128,16 +129,41 @@ module  test_ra_sdr ();
 	#0   bist_ctl = 32'h0;
 	#0   cfg_wr = 1'b0;
 	#0   cfg_dat = 16'h0;
-	#31  reset = 1'b0;
+	#15  reset = 1'b0;
 
    	#400 wr_enb_0 = 1'b1;
 	#0   wr_adr_0 = 6'h0;
-	#0   wr_adr_0 = 6'b00_0000;
-   	#10  wr_adr_0 = 6'b00_0010;
-	#10  wr_adr_0 = 6'b00_0100;
-	#10  wr_adr_0 = 6'b00_0110;
-	#10  wr_adr_0 = 6'b00_1000;
 
+	#0   wr_adr_0 = 6'b00_0000;
+    #0   wr_dat_0 = 6'b00_1111;
+
+   	#10  wr_adr_0 = 6'b00_0010;
+    #0   wr_dat_0 = 6'b00_1001;
+
+	#10  wr_adr_0 = 6'b00_0100;
+    #0   wr_dat_0 = 6'b00_1100;
+
+	#10  wr_adr_0 = 6'b00_0110;
+    #0   wr_adr_0 = 6'b00_1101;
+
+	#10  wr_adr_0 = 6'b00_1000;
+    #0   wr_adr_0 = 6'b00_1000;
+
+    #5 wr_enb_0 = 0;
+
+    #5 rd_enb_0 = 1;
+    #0 rd_enb_1 = 1;
+
+    #10 rd_adr_0 = 6'b00_0000;
+    #0  rd_adr_1 = 6'b00_0010;
+
+    #10 rd_adr_0 = 6'b00_0100;
+    #0  rd_adr_1 = 6'b00_0110;
+
+    #10 rd_adr_0 = 6'b00_1000;
+
+    #5 rd_enb_0 = 0;
+    #0 rd_enb_1 = 0;
 
 
      end
