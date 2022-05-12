@@ -1,0 +1,17 @@
+
+Subcircuit summary:
+Circuit 1: sky130_fd_bd_sram__sram_sp_cell |Circuit 2: xschsky130_fd_bd_sram__sram_sp_ 
+-------------------------------------------|-------------------------------------------
+ppu (4)                                    |ppu (4)                                    
+npd (2)                                    |npd (2)                                    
+npass (2)                                  |npass (2)                                  
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes sky130_fd_bd_sram__sram_sp_cell.spice and xschsky130_fd_bd_sram__sram_sp_cell.spice are equivalent.
+Circuits match uniquely.
