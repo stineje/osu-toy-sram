@@ -1,17 +1,28 @@
 
 Subcircuit summary:
-Circuit 1: sky130_fd_bd_sram__sram_sp_cell |Circuit 2: xschsky130_fd_bd_sram__sram_sp_ 
+Circuit 1: 10T_toy_magic                   |Circuit 2: 10T_toy_xschem                  
 -------------------------------------------|-------------------------------------------
-ppu (4)                                    |ppu (4)                                    
-npd (2)                                    |npd (2)                                    
-npass (2)                                  |npass (2)                                  
-Number of devices: 8                       |Number of devices: 8                       
-Number of nets: 10                         |Number of nets: 10                         
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 13                         |Number of nets: 13                         
 ---------------------------------------------------------------------------------------
-Resolving automorphisms by property value.
-Resolving automorphisms by pin name.
+Circuits match uniquely.
 Netlists match uniquely.
-Circuits match correctly.
-Cells have no pins;  pin matching not needed.
-Device classes sky130_fd_bd_sram__sram_sp_cell.spice and xschsky130_fd_bd_sram__sram_sp_cell.spice are equivalent.
+
+Subcircuit pins:
+Circuit 1: 10T_toy_magic                   |Circuit 2: 10T_toy_xschem                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+GND                                        |GND                                        
+WBL                                        |WBL                                        
+WBLb                                       |WBLb                                       
+RBL0                                       |RBL0                                       
+RBL1                                       |RBL1                                       
+RWL0                                       |RWL0                                       
+RWL1                                       |RWL1                                       
+WWL                                        |WWL                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes 10T_toy_magic and 10T_toy_xschem are equivalent.
 Circuits match uniquely.

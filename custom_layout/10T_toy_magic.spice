@@ -1,0 +1,16 @@
+* SPICE3 file created from 10T_toy_magic.ext - technology: sky130A
+
+.subckt 10T_toy_magic WWL RWL0 RWL1 WBL WBLb RBL0 RBL1 VDD GND
+X0 a_16_24# WWL WBL GND sky130_fd_pr__nfet_01v8 W=0.14 L=0.15
+X1 RBL0 RWL0 a_38_9# GND sky130_fd_pr__nfet_01v8 W=0.21 L=0.15
+X2 WBLb WWL a_16_104# GND sky130_fd_pr__nfet_01v8 W=0.14 L=0.15
+X3 a_16_104# a_16_24# VDD VDD sky130_fd_pr__pfet_01v8 W=0.14 L=0.15
+X4 a_16_24# a_16_104# VDD VDD sky130_fd_pr__pfet_01v8 W=0.14 L=0.15
+X5 a_16_104# a_16_24# GND GND sky130_fd_pr__nfet_01v8 W=0.21 L=0.15
+X6 a_38_9# a_16_24# GND GND sky130_fd_pr__nfet_01v8 W=0.14 L=0.15
+X7 RBL1 RWL1 a_38_292# GND sky130_fd_pr__nfet_01v8 W=0.21 L=0.15
+X8 a_16_24# a_16_104# GND GND sky130_fd_pr__nfet_01v8 W=0.21 L=0.15
+X9 a_38_292# a_16_104# GND GND sky130_fd_pr__nfet_01v8 W=0.14 L=0.15
+.ends
+
+.end
