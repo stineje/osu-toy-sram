@@ -42,7 +42,6 @@ N 160 -10 170 -10 {
 lab=RBL0}
 N 160 10 170 10 {
 lab=RBL1}
-C {10T-toy.sym} 10 0 0 0 {name=x1 VDD=VDD GND=GND}
 C {devices/vsource.sym} -230 -170 0 0 {name=V1 value=3}
 C {devices/lab_pin.sym} -150 -40 0 0 {name=l1 sig_type=std_logic lab=WWL}
 C {devices/lab_pin.sym} -150 -20 0 0 {name=l2 sig_type=std_logic lab=WBL}
@@ -86,3 +85,4 @@ value="
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 "}
+C {10T_toy_xschem.sym} 10 0 0 0 {name=x1 VDD=VDD GND=GND}
