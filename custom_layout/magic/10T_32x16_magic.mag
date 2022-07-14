@@ -79403,6 +79403,70 @@ timestamp 1656019537
 transform 1 0 4640 0 1 7830
 box -7 -4 4631 312
 << labels >>
+rlabel locali 4640 38 4655 80 1 RBL1_0
+port 1 ns signal output
+rlabel locali 5177 38 5192 80 1 RBL0_0
+port 2 ns signal output
+rlabel locali 5220 38 5235 80 1 RBL1_1
+port 3 ns signal output
+rlabel locali 5757 38 5772 80 1 RBL0_1
+port 4 ns signal output
+rlabel locali 5800 38 5815 80 1 RBL1_2
+port 5 ns signal output
+rlabel locali 6337 38 6352 80 1 RBL0_2
+port 6 ns signal output
+rlabel locali 6380 38 6395 80 1 RBL1_3
+port 7 ns signal output
+rlabel locali 6917 38 6932 80 1 RBL0_3
+port 8 ns signal output
+rlabel locali 6960 38 6975 80 1 RBL1_4
+port 9 ns signal output
+rlabel locali 7497 38 7512 80 1 RBL0_4
+port 10 ns signal output
+rlabel locali 7540 38 7555 80 1 RBL1_5
+port 11 ns signal output
+rlabel locali 8077 38 8092 80 1 RBL0_5
+port 12 ns signal output
+rlabel locali 8120 38 8135 80 1 RBL1_6
+port 13 ns signal output
+rlabel locali 8657 38 8672 80 1 RBL0_6
+port 14 ns signal output
+rlabel locali 8700 38 8715 80 1 RBL1_7
+port 15 ns signal output
+rlabel locali 9237 38 9252 80 1 RBL0_7
+port 16 ns signal output
+rlabel locali 5104 184 5119 213 1 WBL_0
+port 17 ns signal input
+rlabel locali 4714 184 4729 212 1 WBLb_0
+port 18 ns signal input
+rlabel locali 5684 184 5699 213 1 WBL_1
+port 19 ns signal input
+rlabel locali 5294 184 5309 212 1 WBLb_1
+port 20 ns signal input
+rlabel locali 6264 184 6279 213 1 WBL_2
+port 21 ns signal input
+rlabel locali 5874 184 5889 212 1 WBLb_2
+port 22 ns signal input
+rlabel locali 6844 184 6859 213 1 WBL_3
+port 23 ns signal input
+rlabel locali 6454 184 6469 212 1 WBLb_3
+port 24 ns signal input
+rlabel locali 7424 184 7439 213 1 WBL_4
+port 25 ns signal input
+rlabel locali 7034 184 7049 212 1 WBLb_4
+port 26 ns signal input
+rlabel locali 8004 184 8019 213 1 WBL_5
+port 27 ns signal input
+rlabel locali 7614 184 7629 212 1 WBLb_5
+port 28 ns signal input
+rlabel locali 8584 184 8599 213 1 WBL_6
+port 29 ns signal input
+rlabel locali 8194 184 8209 212 1 WBLb_6
+port 30 ns signal input
+rlabel locali 9164 184 9179 213 1 WBL_7
+port 31 ns signal input
+rlabel locali 8774 184 8789 212 1 WBLb_7
+port 32 ns signal input
 rlabel metal1 0 4422 15 4456 1 RWL_15
 port 64 ew signal input
 rlabel poly 0 4560 30 4590 1 WWL_15
@@ -79761,104 +79825,6 @@ rlabel poly 4640 8340 4670 8370 1 WWL_1
 port 35 ew signal input
 rlabel metal1 4640 8472 4655 8506 1 RWL_0
 port 34 ew signal input
-rlabel locali 4640 38 4655 80 1 RBL1_0
-port 1 ns signal output
-rlabel locali 5177 38 5192 80 1 RBL0_0
-port 2 ns signal output
-rlabel locali 5220 38 5235 80 1 RBL1_1
-port 3 ns signal output
-rlabel locali 5757 38 5772 80 1 RBL0_1
-port 4 ns signal output
-rlabel locali 5800 38 5815 80 1 RBL1_2
-port 5 ns signal output
-rlabel locali 6337 38 6352 80 1 RBL0_2
-port 6 ns signal output
-rlabel locali 6380 38 6395 80 1 RBL1_3
-port 7 ns signal output
-rlabel locali 6917 38 6932 80 1 RBL0_3
-port 8 ns signal output
-rlabel locali 6960 38 6975 80 1 RBL1_4
-port 9 ns signal output
-rlabel locali 7497 38 7512 80 1 RBL0_4
-port 10 ns signal output
-rlabel locali 7540 38 7555 80 1 RBL1_5
-port 11 ns signal output
-rlabel locali 8077 38 8092 80 1 RBL0_5
-port 12 ns signal output
-rlabel locali 8120 38 8135 80 1 RBL1_6
-port 13 ns signal output
-rlabel locali 8657 38 8672 80 1 RBL0_6
-port 14 ns signal output
-rlabel locali 8700 38 8715 80 1 RBL1_7
-port 15 ns signal output
-rlabel locali 9237 38 9252 80 1 RBL0_7
-port 16 ns signal output
-rlabel locali 5104 184 5119 213 1 WBL_0
-port 17 ns signal input
-rlabel locali 4714 184 4729 212 1 WBLb_0
-port 18 ns signal input
-rlabel locali 5684 184 5699 213 1 WBL_1
-port 19 ns signal input
-rlabel locali 5294 184 5309 212 1 WBLb_1
-port 20 ns signal input
-rlabel locali 6264 184 6279 213 1 WBL_2
-port 21 ns signal input
-rlabel locali 5874 184 5889 212 1 WBLb_2
-port 22 ns signal input
-rlabel locali 6844 184 6859 213 1 WBL_3
-port 23 ns signal input
-rlabel locali 6454 184 6469 212 1 WBLb_3
-port 24 ns signal input
-rlabel locali 7424 184 7439 213 1 WBL_4
-port 25 ns signal input
-rlabel locali 7034 184 7049 212 1 WBLb_4
-port 26 ns signal input
-rlabel locali 8004 184 8019 213 1 WBL_5
-port 27 ns signal input
-rlabel locali 7614 184 7629 212 1 WBLb_5
-port 28 ns signal input
-rlabel locali 8584 184 8599 213 1 WBL_6
-port 29 ns signal input
-rlabel locali 8194 184 8209 212 1 WBLb_6
-port 30 ns signal input
-rlabel locali 9164 184 9179 213 1 WBL_7
-port 31 ns signal input
-rlabel locali 8774 184 8789 212 1 WBLb_7
-port 32 ns signal input
-rlabel metal1 4640 2116 4655 2130 1 VDD
-rlabel metal1 4640 1890 4655 1904 1 GND
-rlabel metal1 4640 1576 4655 1590 1 VDD
-rlabel metal1 4640 1306 4655 1320 1 VDD
-rlabel metal1 4640 1846 4655 1860 1 VDD
-rlabel metal1 4640 1036 4655 1050 1 VDD
-rlabel metal1 4640 496 4655 510 1 VDD
-rlabel metal1 4640 226 4655 240 1 VDD
-rlabel metal1 4640 766 4655 780 1 VDD
-rlabel metal1 4640 1080 4655 1094 1 GND
-rlabel metal1 4640 1350 4655 1364 1 GND
-rlabel metal1 4640 1620 4655 1634 1 GND
-rlabel metal1 4640 810 4655 824 1 GND
-rlabel metal1 4640 0 4655 14 1 GND
-rlabel metal1 4640 270 4655 284 1 GND
-rlabel metal1 4640 540 4655 554 1 GND
-rlabel metal1 4640 2700 4655 2714 1 GND
-rlabel metal1 4640 2430 4655 2444 1 GND
-rlabel metal1 4640 2160 4655 2174 1 GND
-rlabel metal1 4640 2970 4655 2984 1 GND
-rlabel metal1 4640 3780 4655 3794 1 GND
-rlabel metal1 4640 3510 4655 3524 1 GND
-rlabel metal1 4640 3240 4655 3254 1 GND
-rlabel metal1 4640 2926 4655 2940 1 VDD
-rlabel metal1 4640 2386 4655 2400 1 VDD
-rlabel metal1 4640 2656 4655 2670 1 VDD
-rlabel metal1 4640 3196 4655 3210 1 VDD
-rlabel metal1 4640 4006 4655 4020 1 VDD
-rlabel metal1 4640 3466 4655 3480 1 VDD
-rlabel metal1 4640 3736 4655 3750 1 VDD
-rlabel metal1 4640 4050 4655 4064 1 GND
-port 98 ew ground bidirectional abutment
-rlabel metal1 4640 4276 4655 4290 1 VDD
-port 97 ew power bidirectional abutment
 rlabel poly 4640 4290 4670 4320 1 WWL_16
 port 65 ew signal input
 rlabel metal1 4640 4152 4655 4186 1 RWL_16
@@ -79923,4 +79889,38 @@ rlabel poly 4640 240 4670 270 1 WWL_31
 port 95 ew signal input
 rlabel metal1 4640 102 4655 136 1 RWL_31
 port 96 ew signal input
+rlabel metal1 4640 4276 4655 4290 1 VDD
+port 97 ew power bidirectional abutment
+rlabel metal1 4640 4050 4655 4064 1 GND
+port 98 ew ground bidirectional abutment
+rlabel metal1 4640 2116 4655 2130 1 VDD
+rlabel metal1 4640 1890 4655 1904 1 GND
+rlabel metal1 4640 1576 4655 1590 1 VDD
+rlabel metal1 4640 1306 4655 1320 1 VDD
+rlabel metal1 4640 1846 4655 1860 1 VDD
+rlabel metal1 4640 1036 4655 1050 1 VDD
+rlabel metal1 4640 496 4655 510 1 VDD
+rlabel metal1 4640 226 4655 240 1 VDD
+rlabel metal1 4640 766 4655 780 1 VDD
+rlabel metal1 4640 1080 4655 1094 1 GND
+rlabel metal1 4640 1350 4655 1364 1 GND
+rlabel metal1 4640 1620 4655 1634 1 GND
+rlabel metal1 4640 810 4655 824 1 GND
+rlabel metal1 4640 0 4655 14 1 GND
+rlabel metal1 4640 270 4655 284 1 GND
+rlabel metal1 4640 540 4655 554 1 GND
+rlabel metal1 4640 2700 4655 2714 1 GND
+rlabel metal1 4640 2430 4655 2444 1 GND
+rlabel metal1 4640 2160 4655 2174 1 GND
+rlabel metal1 4640 2970 4655 2984 1 GND
+rlabel metal1 4640 3780 4655 3794 1 GND
+rlabel metal1 4640 3510 4655 3524 1 GND
+rlabel metal1 4640 3240 4655 3254 1 GND
+rlabel metal1 4640 2926 4655 2940 1 VDD
+rlabel metal1 4640 2386 4655 2400 1 VDD
+rlabel metal1 4640 2656 4655 2670 1 VDD
+rlabel metal1 4640 3196 4655 3210 1 VDD
+rlabel metal1 4640 4006 4655 4020 1 VDD
+rlabel metal1 4640 3466 4655 3480 1 VDD
+rlabel metal1 4640 3736 4655 3750 1 VDD
 << end >>
