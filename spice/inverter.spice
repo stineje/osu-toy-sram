@@ -1,8 +1,0 @@
-* SPICE3 file created from inverter.ext - technology: sky130A
-
-.subckt inverter Y A
-M1000 Y A vdd vdd pshort w=1.26u l=0.15u
-+  ad=0.3339p pd=3.05u as=0.3339p ps=3.05u
-M1001 Y A gnd gnd nshort w=0.52u l=0.15u
-+  ad=0.1378p pd=1.57u as=0.1378p ps=1.57u
-.ends

@@ -1,2 +1,0 @@
-hspice sample.spice > sample.lis
-wv sample.tr0
