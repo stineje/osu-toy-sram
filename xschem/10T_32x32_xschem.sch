@@ -1012,3 +1012,10 @@ C {devices/ipin.sym} 1630 -670 1 0 {name=l186 sig_type=std_logic lab=WBL_30}
 C {devices/ipin.sym} 1640 -670 1 0 {name=l187 sig_type=std_logic lab=WBLb_30}
 C {devices/ipin.sym} 1680 -670 1 0 {name=l190 sig_type=std_logic lab=WBL_31}
 C {devices/ipin.sym} 1690 -670 1 0 {name=l191 sig_type=std_logic lab=WBLb_31}
+C {devices/code.sym} -160 -840 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"}

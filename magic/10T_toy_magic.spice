@@ -1,7 +1,5 @@
 * HSPICE file created from 10T_toy_magic.ext - technology: sky130
 
-.option scale=5000u
-
 .subckt x10T_toy_magic WWL RWL0 RWL1 WBL WBLb RBL0 RBL1 VDD GND
 X0 junc0 junc1 VDD VDD sky130_fd_pr__special_pfet_pass ad=0 pd=0 as=2504 ps=288 w=28 l=30
 X1 GND junc0 junc1 GND sky130_fd_pr__special_nfet_latch ad=0 pd=0 as=0 ps=0 w=42 l=30
