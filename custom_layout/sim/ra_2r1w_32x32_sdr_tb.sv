@@ -5,16 +5,16 @@ module tb();
   // Define signals
   localparam T = 20;
 
-  logic         clk, reset, strobe,
-  logic         rd_enb_0(rd_enb_0),
-  logic [4:0]   rd_adr_0(rd_adr_0),
-  logic [31:0]  rd_dat_0(rd_dat_0),
-  logic         rd_enb_1(rd_enb_1),
-  logic [4:0]   rd_adr_1(rd_adr_1),
-  logic [31:0]  rd_dat_1(rd_dat_1),
-  logic         wr_enb_0(wr_enb_0),
-  logic [4:0]   wr_adr_0(wr_adr_0),
-  logic [31:0]  wr_dat_0(wr_dat_0)
+  logic         clk, reset, strobe;
+  logic         rd_enb_0;
+  logic [4:0]   rd_adr_0;
+  logic [31:0]  rd_dat_0;
+  logic         rd_enb_1;
+  logic [4:0]   rd_adr_1;
+  logic [31:0]  rd_dat_1;
+  logic         wr_enb_0;
+  logic [4:0]   wr_adr_0;
+  logic [31:0]  wr_dat_0;
 
   // Instatiate dut (device under test)
   ra_2r1w_32x32_sdr dut (

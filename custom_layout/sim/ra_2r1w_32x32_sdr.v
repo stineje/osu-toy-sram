@@ -143,7 +143,7 @@ module  ra_2r1w_32x32_sdr(
    end
 end
 
-// latch read data conditionally
+// latch read data conddtionally
 generate
    if (LATCHRD) begin
      always @ (posedge clk) begin
