@@ -1,7 +1,7 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1656018194
+timestamp 1667336911
 << error_s >>
 rect 9 258 22 274
 rect 111 272 124 322
@@ -719,22 +719,22 @@ rect 647 -164 1053 -130
 rect 1083 -164 1126 -130
 rect -54 -266 -6 -252
 rect 546 -266 574 -252
-use 10T_toy_magic  10T_toy_magic_1
-timestamp 1655238822
-transform 1 0 674 0 1 23
-box -107 -23 471 293
-use 10T_toy_magic  10T_toy_magic_2
-timestamp 1655238822
-transform 1 0 94 0 1 -247
-box -107 -23 471 293
 use 10T_toy_magic  10T_toy_magic_0
-timestamp 1655238822
+timestamp 1658880696
 transform 1 0 94 0 1 23
-box -107 -23 471 293
+box -100 -19 452 251
+use 10T_toy_magic  10T_toy_magic_1
+timestamp 1658880696
+transform 1 0 674 0 1 23
+box -100 -19 452 251
+use 10T_toy_magic  10T_toy_magic_2
+timestamp 1658880696
+transform 1 0 94 0 1 -247
+box -100 -19 452 251
 use 10T_toy_magic  10T_toy_magic_3
-timestamp 1655238822
+timestamp 1658880696
 transform 1 0 674 0 1 -247
-box -107 -23 471 293
+box -100 -19 452 251
 << labels >>
 rlabel poly -54 244 -24 274 1 WWL_0
 rlabel poly -54 -26 -24 4 1 WWL_1

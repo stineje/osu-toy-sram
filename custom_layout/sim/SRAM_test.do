@@ -13,7 +13,7 @@ if [file exists work] {
 vlib work
 
 ## compile source files
-vlog ra_2r1w_32x32_sdr_tb.v ra_2r1w_32x32_sdr.v toysram.vh address_clock_sdr_2r1w_32.v regfile_2r1w_32x32.v predecode_sdr_32.v
+vlog ra_2r1w_32x32_sdr_tb.sv ra_2r1w_32x32_sdr.v toysram.vh address_clock_sdr_2r1w_32.v regfile_2r1w_32x32.v predecode_sdr_32.v
 
 # start and run simulation
 vsim -voptargs=+acc work.tb
@@ -44,13 +44,21 @@ add wave -binary -color gold /tb/rd_dat_1
 add wave -noupdate -divider -height 32 "add_clk"
 add wave -binary -color blue /tb/dut/add_clk/*
 
+
 add wave -noupdate -divider -height 32 "array0"
 add wave -binary -color blue /tb/dut/array0/*
 
 
+add wave -noupdate -divider -height 32 "predecode_w0"
+add wave -binary -color blue /tb/dut/add_clk/predecode_w0/*
 
 
+add wave -noupdate -divider -height 32 "predecode_r0"
+add wave -binary -color blue /tb/dut/add_clk/predecode_r0/*
 
+
+add wave -noupdate -divider -height 32 "predecode_r1"
+add wave -binary -color blue /tb/dut/add_clk/predecode_r1/*
 
 
 -- Set Wave Output Items

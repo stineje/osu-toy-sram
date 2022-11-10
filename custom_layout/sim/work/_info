@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/abishek/SRAM_WORK/osu-toy-sram/custom_layout/sim
+T_opt
+!s110 1665439398
+V^Thd0FJNKb:8ATVdoKVh60
+04 2 4 work tb fast 0
+=1-40a8f028beef-634496a5-d4f87-11603
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vaddress_clock_sdr_2r1w_32
+Z2 !s110 1665439397
+!i10b 1
+!s100 N>D2b@D:bkQ:XiW2ggIYO2
+IN`;[BX^h78j;JF=`bfbBX0
+R0
+Z3 w1662164370
+8address_clock_sdr_2r1w_32.v
+Faddress_clock_sdr_2r1w_32.v
+!i122 0
+L0 28 162
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1665439397.000000
+Z7 !s107 predecode_sdr_32.v|regfile_2r1w_32x32.v|address_clock_sdr_2r1w_32.v|toysram.vh|ra_2r1w_32x32_sdr.v|ra_2r1w_32x32_sdr_tb.sv|
+Z8 !s90 -reportprogress|300|ra_2r1w_32x32_sdr_tb.sv|ra_2r1w_32x32_sdr.v|toysram.vh|address_clock_sdr_2r1w_32.v|regfile_2r1w_32x32.v|predecode_sdr_32.v|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpredecode_sdr_32
+R2
+!i10b 1
+!s100 DM8J[8;?:P__Yd@D[?V<31
+IfBWAIzQQMB0Q<U5Z<ci[R0
+R0
+R3
+8predecode_sdr_32.v
+Fpredecode_sdr_32.v
+!i122 0
+L0 24 86
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vra_2r1w_32x32_sdr
+R2
+!i10b 1
+!s100 90Z:IDzR`9F]RA>jI<9D13
+INWzJNF=]0`G9:0jBD5lOf0
+R0
+w1662166266
+8ra_2r1w_32x32_sdr.v
+Fra_2r1w_32x32_sdr.v
+!i122 0
+L0 28 239
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vregfile_2r1w_32x32
+R2
+!i10b 1
+!s100 Gf72[J]lOBFM9d6l?ToN@3
+I81?A;QQ;Ao<ff0ecja8823
+R0
+R3
+8regfile_2r1w_32x32.v
+Fregfile_2r1w_32x32.v
+!i122 0
+L0 27 167
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 ?Ub><g@TVXjDk6;1n6hi40
+I]];594Y:TC=JPhhP>@SU61
+S1
+R0
+w1665439379
+8ra_2r1w_32x32_sdr_tb.sv
+Fra_2r1w_32x32_sdr_tb.sv
+!i122 0
+L0 3 148
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
