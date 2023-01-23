@@ -1,0 +1,486 @@
+INFO (ABS-19020): Starting @(#)$CDS: Abstract version ICADVM18.1-64b 08/04/2020 18:16 (sjfhw315) $, sub-version  ICADVM18.1-64b.500.13 , on  2.6.32-431.11.2.el6.x86_64
+INFO (ABS-19012): Replaying abstract_SKILL_script file.
+INFO (ABS-19035): 1 ... /*
+INFO (ABS-19035): 2 ...  Abstract Skill Generation
+INFO (ABS-19035): 3 ...  Oklahoma State University
+INFO (ABS-19035): 4 ...  VLSI Computer Architecture Reserch Group
+INFO (ABS-19035): 5 ...  Apache 2.0 Licensing
+INFO (ABS-19030): 6 */
+
+INFO (ABS-19030): 7 absSkillMode()
+t
+INFO (ABS-19030): 8 absSetOption("NewLibraryName" "library")
+1
+INFO (ABS-19030): 9 absSetLibrary("library")
+ddCreateLib: Creating a new cds.lib file at '/home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/cds.lib'.
+INFO (ABS-10500): Library library Opening /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/library
+*WARNING* (ABS-20001): The manufacturing grid value has not been specified in the technology file. Either the default value 0.001 will be used or specify the manufacturing grid value in the controls section of the technology file.
+INFO (ABS-10502): Library library Loaded 0 cells
+INFO (ABS-10507): Library library opened
+INFO (ABS-19046): Abstract Generator no longer uses the '.abstract.options' file in the selected design library as the default options file. The new default file location is <current working directory>/.abstract/<library name>/.abstract.options. 
+INFO (ABS-19047): Abstract Generator no longer uses the '.abstract.status' file present in the selected lib/cell directory . The new default file location for each cell is <current working directory>/.abstract/<library name>/cellStatus/.abstract.status.<cellName>. 
+*WARNING* (ABS-20061): Abstract Generator will ignore the value of the 'ReadOnlyTechnology' option and will not save the layer-purpose pairs in the technology file. Support for the 'ReadOnlyTechnology' option will be removed in a future release.
+t
+INFO (ABS-19030): 10 absSetOption("ImportLefFiles" " ~/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef")
+1
+INFO (ABS-19030): 11 absImportLEF()
+INFO (ABS-10516): Library library ImportLefFiles /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+
+********************************************************************************
+Product   : Virtuoso(R) LEF In 
+Program   : @(#)$CDS: lefin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
+SubVersion: sub-version  ICADVM18.1-64b.500.13 
+Started at: 23-Jan-2023  16:24:06
+User Name : abishek
+Host Name : combe.ecen.okstate.edu
+Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
+DB Version: 	20200804 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefin -lib library -lef "/home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(271-281) : VIARULE L1M1_PR: Name conflict with an existing VIA, L1M1_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(291-301) : VIARULE L1M1_PR_R: Name conflict with an existing VIA, L1M1_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(311-321) : VIARULE L1M1_PR_M: Name conflict with an existing VIA, L1M1_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(331-341) : VIARULE L1M1_PR_MR: Name conflict with an existing VIA, L1M1_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(351-361) : VIARULE L1M1_PR_C: Name conflict with an existing VIA, L1M1_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(371-381) : VIARULE M1M2_PR: Name conflict with an existing VIA, M1M2_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(391-401) : VIARULE M1M2_PR_R: Name conflict with an existing VIA, M1M2_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(411-421) : VIARULE M1M2_PR_M: Name conflict with an existing VIA, M1M2_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(431-441) : VIARULE M1M2_PR_MR: Name conflict with an existing VIA, M1M2_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(451-461) : VIARULE M1M2_PR_C: Name conflict with an existing VIA, M1M2_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(471-481) : VIARULE M2M3_PR: Name conflict with an existing VIA, M2M3_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(491-501) : VIARULE M2M3_PR_R: Name conflict with an existing VIA, M2M3_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(511-521) : VIARULE M2M3_PR_M: Name conflict with an existing VIA, M2M3_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(531-541) : VIARULE M2M3_PR_MR: Name conflict with an existing VIA, M2M3_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(551-561) : VIARULE M2M3_PR_C: Name conflict with an existing VIA, M2M3_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(571-581) : VIARULE M3M4_PR: Name conflict with an existing VIA, M3M4_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(591-601) : VIARULE M3M4_PR_R: Name conflict with an existing VIA, M3M4_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(611-621) : VIARULE M3M4_PR_M: Name conflict with an existing VIA, M3M4_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(631-641) : VIARULE M3M4_PR_MR: Name conflict with an existing VIA, M3M4_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(651-661) : VIARULE M3M4_PR_C: Name conflict with an existing VIA, M3M4_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(671-681) : VIARULE M4M5_PR: Name conflict with an existing VIA, M4M5_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(691-701) : VIARULE M4M5_PR_R: Name conflict with an existing VIA, M4M5_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(711-721) : VIARULE M4M5_PR_M: Name conflict with an existing VIA, M4M5_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(731-741) : VIARULE M4M5_PR_MR: Name conflict with an existing VIA, M4M5_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(751-761) : VIARULE M4M5_PR_C: Name conflict with an existing VIA, M4M5_PR_C_rule was created.
+
+Elapsed Time: 0.6s
+
+lefin translation completed (errors: 0, warnings: 25).
+INFO (ABS-20046): The diff poly type layer will be considered as diffusion layer 
+and will be removed from poly layer list.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 5 metal layer(s), 5 via layer(s), 2 poly layer(s), and 1 diff layer(s) found
+INFO (ABS-20023): Via summary: 25 valid via(s) found
+INFO (ABS-19022): Refreshing library library 10 percent complete...
+INFO (ABS-19022): Refreshing library library 20 percent complete...
+INFO (ABS-19022): Refreshing library library 30 percent complete...
+INFO (ABS-19022): Refreshing library library 40 percent complete...
+INFO (ABS-19022): Refreshing library library 50 percent complete...
+INFO (ABS-19022): Refreshing library library 60 percent complete...
+INFO (ABS-19022): Refreshing library library 70 percent complete...
+INFO (ABS-19022): Refreshing library library 80 percent complete...
+INFO (ABS-19022): Refreshing library library 90 percent complete...
+INFO (ABS-19022): Refreshing library library 100 percent complete...
+1
+INFO (ABS-19030): 12 inp = infile("GDSlist")
+port:"GDSlist"
+INFO (ABS-19030): 13 absSetOption("ImportGDSIIFiles" gets(_ inp))
+1
+INFO (ABS-19030): 14 close(inp)
+t
+INFO (ABS-19030): 15 absSetOption("ImportGDSIILayerMapFile" "~/sky130_osu_sc/char/techfiles/s8.layermap")
+1
+INFO (ABS-19030): 16 absImportGDS()
+INFO (ABS-10516): Library library ImportGDSIIFiles GDS/10T_16x12_2r1w_magic_flattened.gds
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
+          : sub-version  ICADVM18.1-64b.500.13 
+Started at: 23-Jan-2023  16:24:07
+User Name : abishek
+Host Name : combe.ecen.okstate.edu
+Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /home/abishek/sky130_osu_sc/char/techfiles/s8.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream In. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				library
+	strmFile			GDS/10T_16x12_2r1w_magic_flattened.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/home/abishek/sky130_osu_sc/char/techfiles/s8.layermap
+	propSeparator			,
+
+INFO (XSTRM-61): Creating a new layer nwell in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair nwell:drawing in the technology file.
+INFO (XSTRM-220): 1. Translating STRUCTURE 10T_16x12_2r1w_magic_flattened as cellView library/10T_16x12_2r1w_magic_flattened/layout.
+INFO (XSTRM-61): Creating a new layer tap in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair tap:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer psdm in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair psdm:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer nsdm in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair nsdm:drawing in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair met1:label in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair poly:label in the technology file.
+INFO (XSTRM-61): Creating a new layer met2p in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair met2p:label in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair li1:label in the technology file.
+
+Summary of Objects Translated:
+	Instances:                              0
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               10703
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             18843
+	Text:                                   128
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  1
+
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4952KB  CPUs Used: 1
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
+INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-20046): The diff poly type layer will be considered as diffusion layer 
+and will be removed from poly layer list.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 5 metal layer(s), 5 via layer(s), 2 poly layer(s), and 1 diff layer(s) found
+INFO (ABS-20023): Via summary: 25 valid via(s) found
+INFO (ABS-10503): Loading options for library library from file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-19022): Refreshing library library 10 percent complete...
+INFO (ABS-19022): Refreshing library library 20 percent complete...
+INFO (ABS-19022): Refreshing library library 30 percent complete...
+INFO (ABS-19022): Refreshing library library 40 percent complete...
+INFO (ABS-19022): Refreshing library library 50 percent complete...
+INFO (ABS-19022): Refreshing library library 60 percent complete...
+INFO (ABS-19022): Refreshing library library 70 percent complete...
+INFO (ABS-19022): Refreshing library library 80 percent complete...
+INFO (ABS-19022): Refreshing library library 90 percent complete...
+INFO (ABS-19022): Refreshing library library 100 percent complete...
+1
+INFO (ABS-19030): 17 absSelectCellFrom("10T_16x12_2r1w_magic_flattened" "10T_16x12_2r1w_magic_flattened")
+1
+INFO (ABS-19030): 18 absSetBinOption("Core" "PinsTextPinMap" "(li1 li1)(met1 met1)")
+1
+INFO (ABS-19030): 19 absSetBinOption("Core" "PinsPowerNames" "VDD")
+1
+INFO (ABS-19030): 20 absSetBinOption("Core" "PinsGroundNames" "GND")
+1
+INFO (ABS-19030): 21 absSetBinOption("Core" "PinsClockNames" "clk")
+1
+INFO (ABS-19030): 22 absSetBinOption("Core" "PinsOutputNames" "RBL0_0 RBL0_1 RBL0_2 RBL0_3 RBL0_4 RBL0_5 RBL0_6 RBL0_7 RBL0_8 RBL0_9 RBL0_10 RBL0_11 RBL1_0 RBL1_1 RBL1_2 RBL1_3 RBL1_4 RBL1_5 RBL1_6 RBL1_7 RBL0_1 RBL1_9 RBL1_10 RBL1_11")
+1
+INFO (ABS-19030): 28 absSetBinOption("Core" "ExtractPinLayersSig" "li1 met1 met2 met3 met4 met5 mcon via1 via2 via3 via4")
+*Error* (ABS-17008): The Bin Core option 'ExtractPinLayersSig' has been assigned to an invalid value 'li1 met1 met2 met3 met4 met5 mcon via1 via2 via3 via4'
+
+INFO (ABS-17010): Bin Core option ExtractPinLayersSig valid values are: 
+ Enter a list of layer names separated by spaces
+0
+INFO (ABS-19030): 29 absSetBinOption("Core" "ExtractDiffAntennaLayers" "true")
+1
+INFO (ABS-19030): 30 absSetBinOption("Core" "ExtractAntennaLayers" "li1 met1 met2 met3 met4 met5 mcon via1 via2 via3 via4 poly licon1 (diff (diff andnot poly)) ")
+*Error* (ABS-17008): The Bin Core option 'ExtractAntennaLayers' has been assigned to an invalid value 'li1 met1 met2 met3 met4 met5 mcon via1 via2 via3 via4 poly licon1 (diff (diff andnot poly)) '
+
+INFO (ABS-17010): Bin Core option ExtractAntennaLayers valid values are: 
+ Enter a parenthesized layer-geometry spec.
+Example: "metal1 net andnot metal1 drawing"
+Specifies metal1 net minus metal1 drawing
+0
+INFO (ABS-19030): 31 absSetBinOption("Core" "ExtractAntennaHier" "true")
+1
+INFO (ABS-19030): 32 absSetBinOption("Core" "ExtractAntennaSizeInput" "true")
+1
+INFO (ABS-19030): 33 absSetBinOption("Core" "ExtractAntennaSizeOutput" "true")
+1
+INFO (ABS-19030): 34 absSetBinOption("Core" "ExtractAntennaSizeInout" "true")
+1
+INFO (ABS-19030): 35 absSetBinOption( "Core" "ExtractAntennaGate" "(poly (poly and diff)) ")
+1
+INFO (ABS-19030): 36 absSetBinOption( "Core" "ExtractAntennaDrain" "(diff (diff andnot poly)) ")
+1
+INFO (ABS-19030): 37 absSetBinOption("Core" "ExtractConnectivity" "(poly li1 licon1)(diff li1 licon1)(li1 met1 mcon)(met1 met2 via1)(met2 met3 via2)(met3 met4 via3)(met4 met5 via4)")
+*Error* (ABS-17008): The Bin Core option 'ExtractConnectivity' has been assigned to an invalid value '(poly li1 licon1)(diff li1 licon1)(li1 met1 mcon)(met1 met2 via1)(met2 met3 via2)(met3 met4 via3)(met4 met5 via4)'
+
+INFO (ABS-17010): Bin Core option ExtractConnectivity valid values are: 
+ Expected layer name or empty string, but found licon1
+
+Enter a list of layer pairs or triples, of the form
+"(layer1 layer2 cutlayer3) (layer4 layer5) .."
+A triple means the first two layers are connected by the 
+third cut layer. A pair means that the two layers connect by overlap
+0
+INFO (ABS-19030): 38 absSetBinOption("Core" "AbstractAdjustPowerRailOp" "gnd abutment 0.3 0 vdd abutment 0.3 -0.18")
+1
+INFO (ABS-19030): 39 absSetBinOption("Core" "AbstractBlockageCutAroundPin" "li1 met1 met2 met3 met4 met5 mcon via1 via2 via3 via4 ")
+*Error* (ABS-17008): The Bin Core option 'AbstractBlockageCutAroundPin' has been assigned to an invalid value 'li1 met1 met2 met3 met4 met5 mcon via1 via2 via3 via4 '
+
+INFO (ABS-17010): Bin Core option AbstractBlockageCutAroundPin valid values are: 
+ Select this option to cut blockage around the pin.
+0
+INFO (ABS-19030): 40 absSetBinOption("Core" "AbstractSiteNameDefine" "12T")
+1
+INFO (ABS-19030): 41 absSetOption("ExportLEFFile" "10T_16x12_2r1w_top.lef")
+1
+INFO (ABS-19030): 42 absPins()
+INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
+INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-11900): Cell 10T_16x12_2r1w_magic_flattened: Step Pins started
+INFO (ABS-12014): Cell 10T_16x12_2r1w_magic_flattened: The prBoundary has been created successfully.
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_0 has been created for the label RBL0_0 at (2687,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_1 has been created for the label RBL0_1 at (5587,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_10 has been created for the label RBL0_10 at (31687,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_11 has been created for the label RBL0_11 at (34587,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_2 has been created for the label RBL0_2 at (8487,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_3 has been created for the label RBL0_3 at (11387,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_4 has been created for the label RBL0_4 at (14287,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_5 has been created for the label RBL0_5 at (17187,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_6 has been created for the label RBL0_6 at (20087,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_7 has been created for the label RBL0_7 at (22987,-155).
+INFO (ABS-19022): Running Pins 10 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_8 has been created for the label RBL0_8 at (25887,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_9 has been created for the label RBL0_9 at (28787,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_0 has been created for the label RBL1_0 at (2,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_1 has been created for the label RBL1_1 at (2902,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_10 has been created for the label RBL1_10 at (29002,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_11 has been created for the label RBL1_11 at (31902,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_2 has been created for the label RBL1_2 at (5802,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_3 has been created for the label RBL1_3 at (8702,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_4 has been created for the label RBL1_4 at (11602,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_5 has been created for the label RBL1_5 at (14502,-155).
+INFO (ABS-19022): Running Pins 20 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_6 has been created for the label RBL1_6 at (17402,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_7 has been created for the label RBL1_7 at (20302,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_8 has been created for the label RBL1_8 at (23202,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_9 has been created for the label RBL1_9 at (26102,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_0 has been created for the label WBL_0 at (2182,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_1 has been created for the label WBL_1 at (5082,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_10 has been created for the label WBL_10 at (31182,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_11 has been created for the label WBL_11 at (34082,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_2 has been created for the label WBL_2 at (7982,-155).
+INFO (ABS-19022): Running Pins 30 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_3 has been created for the label WBL_3 at (10882,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_4 has been created for the label WBL_4 at (13782,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_5 has been created for the label WBL_5 at (16682,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_6 has been created for the label WBL_6 at (19582,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_7 has been created for the label WBL_7 at (22482,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_8 has been created for the label WBL_8 at (25382,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_9 has been created for the label WBL_9 at (28282,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_0 has been created for the label WBLb_0 at (507,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_1 has been created for the label WBLb_1 at (3407,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_10 has been created for the label WBLb_10 at (29507,-155).
+INFO (ABS-19022): Running Pins 40 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_11 has been created for the label WBLb_11 at (32407,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_2 has been created for the label WBLb_2 at (6307,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_3 has been created for the label WBLb_3 at (9207,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_4 has been created for the label WBLb_4 at (12107,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_5 has been created for the label WBLb_5 at (15007,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_6 has been created for the label WBLb_6 at (17907,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_7 has been created for the label WBLb_7 at (20807,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_8 has been created for the label WBLb_8 at (23707,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_9 has been created for the label WBLb_9 at (26607,-155).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,14850).
+INFO (ABS-19022): Running Pins 50 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,8100).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,6750).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,9450).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,10800).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,5400).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,12150).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,13500).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,4050).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,16200).
+INFO (ABS-19022): Running Pins 60 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,2700).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,17550).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,18900).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,1350).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,20250).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,0).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_0 has been created for the label RWL1_0 at (-95,560).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_1 has been created for the label RWL1_1 at (-95,1910).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_10 has been created for the label RWL1_10 at (-95,14060).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_11 has been created for the label RWL1_11 at (-95,15410).
+INFO (ABS-19022): Running Pins 70 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_12 has been created for the label RWL1_12 at (-95,16760).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_13 has been created for the label RWL1_13 at (-95,18110).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_14 has been created for the label RWL1_14 at (-95,19460).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_15 has been created for the label RWL1_15 at (-95,20810).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_2 has been created for the label RWL1_2 at (-95,3260).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_3 has been created for the label RWL1_3 at (-95,4610).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_4 has been created for the label RWL1_4 at (-95,5960).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_5 has been created for the label RWL1_5 at (-95,7310).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_6 has been created for the label RWL1_6 at (-95,8660).
+INFO (ABS-19022): Running Pins 80 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_7 has been created for the label RWL1_7 at (-95,10010).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_8 has been created for the label RWL1_8 at (-95,11360).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_9 has been created for the label RWL1_9 at (-95,12710).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,1130).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,20030).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,21380).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,18680).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,7880).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,2480).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,17330).
+INFO (ABS-19022): Running Pins 90 percent complete...
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,15980).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,3830).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,14630).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,13280).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,5180).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,11930).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,10580).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,6530).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,9230).
+INFO (ABS-19022): Running Pins 100 percent complete...
+INFO (ABS-12003): Cell 10T_16x12_2r1w_magic_flattened: 96 pins have been created.
+INFO (ABS-11901): Cell 10T_16x12_2r1w_magic_flattened: Step Pins finished
+1
+INFO (ABS-19030): 43 absExtract()
+INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
+INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-11900): Cell 10T_16x12_2r1w_magic_flattened: Step Extract started
+INFO (ABS-13002): Cell 10T_16x12_2r1w_magic_flattened: extracting 66 nets
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_0, 1 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_1, 2 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_10, 3 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_11, 4 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_2, 5 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_3, 6 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_4, 7 of 66.
+INFO (ABS-19022): Running Extract 10 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_5, 8 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_6, 9 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_7, 10 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_8, 11 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_9, 12 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_0, 13 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_1, 14 of 66.
+INFO (ABS-19022): Running Extract 20 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_10, 15 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_11, 16 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_2, 17 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_3, 18 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_4, 19 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_5, 20 of 66.
+INFO (ABS-19022): Running Extract 30 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_6, 21 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_7, 22 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_8, 23 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_9, 24 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_0, 25 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_1, 26 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_10, 27 of 66.
+INFO (ABS-19022): Running Extract 40 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_11, 28 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_2, 29 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_3, 30 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_4, 31 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_5, 32 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_6, 33 of 66.
+INFO (ABS-19022): Running Extract 50 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_7, 34 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_8, 35 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_9, 36 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_0, 37 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_1, 38 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_10, 39 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_11, 40 of 66.
+INFO (ABS-19022): Running Extract 60 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_2, 41 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_3, 42 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_4, 43 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_5, 44 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_6, 45 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_7, 46 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_8, 47 of 66.
+INFO (ABS-19022): Running Extract 70 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_9, 48 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_0, 49 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_1, 50 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_10, 51 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_11, 52 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_12, 53 of 66.
+INFO (ABS-19022): Running Extract 80 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_13, 54 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_14, 55 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_15, 56 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_2, 57 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_3, 58 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_4, 59 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_5, 60 of 66.
+INFO (ABS-19022): Running Extract 90 percent complete...
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_6, 61 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_7, 62 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_8, 63 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_9, 64 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net GND, 65 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net VDD, 66 of 66.
+INFO (ABS-19022): Running Extract 100 percent complete...
+INFO (ABS-11901): Cell 10T_16x12_2r1w_magic_flattened: Step Extract finished
+1
+INFO (ABS-19030): 44 absAbstract()
+INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
+INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-11900): Cell 10T_16x12_2r1w_magic_flattened: Step Abstract started
+INFO (ABS-19022): Running Abstract 10 percent complete...
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met3
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via3
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met5
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met2
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via2
+INFO (ABS-19022): Running Abstract 20 percent complete...
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met4
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via4
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met1
+*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell 10T_16x12_2r1w_magic_flattened is invalid.
+INFO (ABS-19022): Running Abstract 50 percent complete...
+INFO (ABS-11901): Cell 10T_16x12_2r1w_magic_flattened: Step Abstract finished
+*WARNING* (ABS-14027): Cell 10T_16x12_2r1w_magic_flattened: the site name 12T is present in the tech file with different properties so the original site will be used.
+INFO (ABS-19022): Running Abstract 100 percent complete...
+1
+INFO (ABS-19030): 45 absExportLEF()
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+
+********************************************************************************
+Product   : Virtuoso(R) LEF Out 
+Program   : @(#)$CDS: lefout version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
+SubVersion: sub-version  ICADVM18.1-64b.500.13 
+Started at: 23-Jan-2023  16:24:13
+User Name : abishek
+Host Name : combe.ecen.okstate.edu
+Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
+DB Version: 	20200804 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefout -lib library -cells "10T_16x12_2r1w_magic_flattened" -views "abstract" -log lefout.log -lef 10T_16x12_2r1w_top.lef -ver 5.8 -noTech
+
+Elapsed Time: 0.2s
+
+lefout translation completed (errors: 0, warnings: 0).
+1
+INFO (ABS-19030): 46 absExit()
+INFO (ABS-10508): Library library closing /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/library
+INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
+INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-10515): Library library closed
+INFO (ABS-10529): Abstract Generation finished for Library library 
+t
+INFO (ABS-19013): Finished replaying abstract_SKILL_script file.
+INFO (ABS-19021): Finished sub-version  ICADVM18.1-64b.500.13 

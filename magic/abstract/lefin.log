@@ -1,0 +1,42 @@
+
+********************************************************************************
+Product   : Virtuoso(R) LEF In 
+Program   : @(#)$CDS: lefin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
+SubVersion: sub-version  ICADVM18.1-64b.500.13 
+Started at: 23-Jan-2023  16:24:06
+User Name : abishek
+Host Name : combe.ecen.okstate.edu
+Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
+DB Version: 	20200804 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefin -lib library -lef "/home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(271-281) : VIARULE L1M1_PR: Name conflict with an existing VIA, L1M1_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(291-301) : VIARULE L1M1_PR_R: Name conflict with an existing VIA, L1M1_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(311-321) : VIARULE L1M1_PR_M: Name conflict with an existing VIA, L1M1_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(331-341) : VIARULE L1M1_PR_MR: Name conflict with an existing VIA, L1M1_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(351-361) : VIARULE L1M1_PR_C: Name conflict with an existing VIA, L1M1_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(371-381) : VIARULE M1M2_PR: Name conflict with an existing VIA, M1M2_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(391-401) : VIARULE M1M2_PR_R: Name conflict with an existing VIA, M1M2_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(411-421) : VIARULE M1M2_PR_M: Name conflict with an existing VIA, M1M2_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(431-441) : VIARULE M1M2_PR_MR: Name conflict with an existing VIA, M1M2_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(451-461) : VIARULE M1M2_PR_C: Name conflict with an existing VIA, M1M2_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(471-481) : VIARULE M2M3_PR: Name conflict with an existing VIA, M2M3_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(491-501) : VIARULE M2M3_PR_R: Name conflict with an existing VIA, M2M3_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(511-521) : VIARULE M2M3_PR_M: Name conflict with an existing VIA, M2M3_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(531-541) : VIARULE M2M3_PR_MR: Name conflict with an existing VIA, M2M3_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(551-561) : VIARULE M2M3_PR_C: Name conflict with an existing VIA, M2M3_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(571-581) : VIARULE M3M4_PR: Name conflict with an existing VIA, M3M4_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(591-601) : VIARULE M3M4_PR_R: Name conflict with an existing VIA, M3M4_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(611-621) : VIARULE M3M4_PR_M: Name conflict with an existing VIA, M3M4_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(631-641) : VIARULE M3M4_PR_MR: Name conflict with an existing VIA, M3M4_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(651-661) : VIARULE M3M4_PR_C: Name conflict with an existing VIA, M3M4_PR_C_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(671-681) : VIARULE M4M5_PR: Name conflict with an existing VIA, M4M5_PR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(691-701) : VIARULE M4M5_PR_R: Name conflict with an existing VIA, M4M5_PR_R_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(711-721) : VIARULE M4M5_PR_M: Name conflict with an existing VIA, M4M5_PR_M_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(731-741) : VIARULE M4M5_PR_MR: Name conflict with an existing VIA, M4M5_PR_MR_rule was created.
+WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(751-761) : VIARULE M4M5_PR_C: Name conflict with an existing VIA, M4M5_PR_C_rule was created.
+
+Elapsed Time: 0.6s
+
+lefin translation completed (errors: 0, warnings: 25).

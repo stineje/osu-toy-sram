@@ -1,0 +1,2 @@
+SOFTINCLUDE /home/abishek/cds.lib
+DEFINE library ./library

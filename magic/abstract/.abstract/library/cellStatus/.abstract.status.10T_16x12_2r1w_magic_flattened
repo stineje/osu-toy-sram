@@ -1,0 +1,6 @@
+cUiSelectCellP {10T_16x12_2r1w_magic_flattened}
+cUiSetViewStatus {10T_16x12_2r1w_magic_flattened} {layout} {1}
+cUiSetViewStatus {10T_16x12_2r1w_magic_flattened} {logical} {0}
+cUiSetViewStatus {10T_16x12_2r1w_magic_flattened} {abstract.pin} {1}
+cUiSetViewStatus {10T_16x12_2r1w_magic_flattened} {abstract.ext} {1}
+cUiSetViewStatus {10T_16x12_2r1w_magic_flattened} {abstract} {3}

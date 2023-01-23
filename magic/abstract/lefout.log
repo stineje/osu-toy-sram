@@ -1,0 +1,17 @@
+
+********************************************************************************
+Product   : Virtuoso(R) LEF Out 
+Program   : @(#)$CDS: lefout version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
+SubVersion: sub-version  ICADVM18.1-64b.500.13 
+Started at: 23-Jan-2023  16:24:13
+User Name : abishek
+Host Name : combe.ecen.okstate.edu
+Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
+DB Version: 	20200804 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: lefout -lib library -cells "10T_16x12_2r1w_magic_flattened" -views "abstract" -log lefout.log -lef 10T_16x12_2r1w_top.lef -ver 5.8 -noTech
+
+Elapsed Time: 0.2s
+
+lefout translation completed (errors: 0, warnings: 0).

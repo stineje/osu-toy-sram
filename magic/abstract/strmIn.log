@@ -1,0 +1,58 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
+          : sub-version  ICADVM18.1-64b.500.13 
+Started at: 23-Jan-2023  16:24:07
+User Name : abishek
+Host Name : combe.ecen.okstate.edu
+Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /home/abishek/sky130_osu_sc/char/techfiles/s8.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream In. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				library
+	strmFile			GDS/10T_16x12_2r1w_magic_flattened.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/home/abishek/sky130_osu_sc/char/techfiles/s8.layermap
+	propSeparator			,
+
+INFO (XSTRM-61): Creating a new layer nwell in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair nwell:drawing in the technology file.
+INFO (XSTRM-220): 1. Translating STRUCTURE 10T_16x12_2r1w_magic_flattened as cellView library/10T_16x12_2r1w_magic_flattened/layout.
+INFO (XSTRM-61): Creating a new layer tap in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair tap:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer psdm in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair psdm:drawing in the technology file.
+INFO (XSTRM-61): Creating a new layer nsdm in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair nsdm:drawing in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair met1:label in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair poly:label in the technology file.
+INFO (XSTRM-61): Creating a new layer met2p in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair met2p:label in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair li1:label in the technology file.
+
+Summary of Objects Translated:
+	Instances:                              0
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               10703
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             18843
+	Text:                                   128
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  1
+
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4952KB  CPUs Used: 1
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
