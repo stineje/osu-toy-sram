@@ -32,7 +32,7 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 Product   : Virtuoso(R) LEF In 
 Program   : @(#)$CDS: lefin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
 SubVersion: sub-version  ICADVM18.1-64b.500.13 
-Started at: 23-Jan-2023  16:24:06
+Started at: 01-Feb-2023  14:42:32
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
@@ -101,7 +101,7 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 Product   : Virtuoso(R) XStream In
 Program   : @(#)$CDS: strmin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
           : sub-version  ICADVM18.1-64b.500.13 
-Started at: 23-Jan-2023  16:24:07
+Started at: 01-Feb-2023  14:42:34
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
@@ -133,10 +133,9 @@ INFO (XSTRM-62): Creating a new layer:purpose pair psdm:drawing in the technolog
 INFO (XSTRM-61): Creating a new layer nsdm in the technology file.
 INFO (XSTRM-62): Creating a new layer:purpose pair nsdm:drawing in the technology file.
 INFO (XSTRM-62): Creating a new layer:purpose pair met1:label in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair poly:label in the technology file.
+INFO (XSTRM-62): Creating a new layer:purpose pair li1:label in the technology file.
 INFO (XSTRM-61): Creating a new layer met2p in the technology file.
 INFO (XSTRM-62): Creating a new layer:purpose pair met2p:label in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair li1:label in the technology file.
 
 Summary of Objects Translated:
 	Instances:                              0
@@ -147,13 +146,13 @@ Summary of Objects Translated:
 	Polygons:                               10703
 	Paths:                                  0
 	PathSegs:                               0
-	Rectangles:                             18843
+	Rectangles:                             18859
 	Text:                                   128
 	Node:                                   0
 	Line:                                   0
 	Cells:                                  1
 
-Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4952KB  CPUs Used: 1
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 4948KB  CPUs Used: 1
 INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
 INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
 INFO (ABS-20046): The diff poly type layer will be considered as diffusion layer 
@@ -251,9 +250,9 @@ INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_4 has been c
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_5 has been created for the label RBL0_5 at (17187,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_6 has been created for the label RBL0_6 at (20087,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_7 has been created for the label RBL0_7 at (22987,-155).
-INFO (ABS-19022): Running Pins 10 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_8 has been created for the label RBL0_8 at (25887,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL0_9 has been created for the label RBL0_9 at (28787,-155).
+INFO (ABS-19022): Running Pins 10 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_0 has been created for the label RBL1_0 at (2,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_1 has been created for the label RBL1_1 at (2902,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_10 has been created for the label RBL1_10 at (29002,-155).
@@ -262,174 +261,206 @@ INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_2 has been c
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_3 has been created for the label RBL1_3 at (8702,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_4 has been created for the label RBL1_4 at (11602,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_5 has been created for the label RBL1_5 at (14502,-155).
-INFO (ABS-19022): Running Pins 20 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_6 has been created for the label RBL1_6 at (17402,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_7 has been created for the label RBL1_7 at (20302,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_8 has been created for the label RBL1_8 at (23202,-155).
+INFO (ABS-19022): Running Pins 20 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RBL1_9 has been created for the label RBL1_9 at (26102,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_0 has been created for the label WBL_0 at (2182,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_1 has been created for the label WBL_1 at (5082,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_10 has been created for the label WBL_10 at (31182,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_11 has been created for the label WBL_11 at (34082,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_2 has been created for the label WBL_2 at (7982,-155).
-INFO (ABS-19022): Running Pins 30 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_3 has been created for the label WBL_3 at (10882,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_4 has been created for the label WBL_4 at (13782,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_5 has been created for the label WBL_5 at (16682,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_6 has been created for the label WBL_6 at (19582,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_7 has been created for the label WBL_7 at (22482,-155).
+INFO (ABS-19022): Running Pins 30 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_8 has been created for the label WBL_8 at (25382,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBL_9 has been created for the label WBL_9 at (28282,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_0 has been created for the label WBLb_0 at (507,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_1 has been created for the label WBLb_1 at (3407,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_10 has been created for the label WBLb_10 at (29507,-155).
-INFO (ABS-19022): Running Pins 40 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_11 has been created for the label WBLb_11 at (32407,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_2 has been created for the label WBLb_2 at (6307,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_3 has been created for the label WBLb_3 at (9207,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_4 has been created for the label WBLb_4 at (12107,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_5 has been created for the label WBLb_5 at (15007,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_6 has been created for the label WBLb_6 at (17907,-155).
+INFO (ABS-19022): Running Pins 40 percent complete...
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_7 has been created for the label WBLb_7 at (20807,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_8 has been created for the label WBLb_8 at (23707,-155).
 INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WBLb_9 has been created for the label WBLb_9 at (26607,-155).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,14850).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_0 has been created for the label WWL_0 at (-335,1240).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_1 has been created for the label WWL_1 at (-335,2590).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_10 has been created for the label WWL_10 at (-335,14740).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_11 has been created for the label WWL_11 at (-335,16090).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_12 has been created for the label WWL_12 at (-335,17440).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_13 has been created for the label WWL_13 at (-335,18790).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_14 has been created for the label WWL_14 at (-335,20140).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_15 has been created for the label WWL_15 at (-335,21490).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_2 has been created for the label WWL_2 at (-335,3940).
 INFO (ABS-19022): Running Pins 50 percent complete...
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,8100).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,6750).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,9450).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,10800).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,5400).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,12150).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,13500).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,4050).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,16200).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_3 has been created for the label WWL_3 at (-335,5290).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_4 has been created for the label WWL_4 at (-335,6640).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_5 has been created for the label WWL_5 at (-335,7990).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_6 has been created for the label WWL_6 at (-335,9340).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_7 has been created for the label WWL_7 at (-335,10690).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_8 has been created for the label WWL_8 at (-335,12040).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin WWL_9 has been created for the label WWL_9 at (-335,13390).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,14850).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,8100).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,6750).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,9450).
 INFO (ABS-19022): Running Pins 60 percent complete...
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,2700).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,17550).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,18900).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,1350).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,20250).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-155,0).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_0 has been created for the label RWL1_0 at (-95,560).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_1 has been created for the label RWL1_1 at (-95,1910).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_10 has been created for the label RWL1_10 at (-95,14060).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_11 has been created for the label RWL1_11 at (-95,15410).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,10800).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,5400).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,12150).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,13500).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,4050).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,16200).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,2700).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,17550).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,18900).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,1350).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,20250).
 INFO (ABS-19022): Running Pins 70 percent complete...
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_12 has been created for the label RWL1_12 at (-95,16760).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_13 has been created for the label RWL1_13 at (-95,18110).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_14 has been created for the label RWL1_14 at (-95,19460).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_15 has been created for the label RWL1_15 at (-95,20810).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_2 has been created for the label RWL1_2 at (-95,3260).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_3 has been created for the label RWL1_3 at (-95,4610).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_4 has been created for the label RWL1_4 at (-95,5960).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_5 has been created for the label RWL1_5 at (-95,7310).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_6 has been created for the label RWL1_6 at (-95,8660).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin GND has been created for the label GND at (-335,0).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_0 has been created for the label RWL1_0 at (-275,560).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_1 has been created for the label RWL1_1 at (-275,1910).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_10 has been created for the label RWL1_10 at (-275,14060).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_11 has been created for the label RWL1_11 at (-275,15410).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_12 has been created for the label RWL1_12 at (-275,16760).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_13 has been created for the label RWL1_13 at (-275,18110).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_14 has been created for the label RWL1_14 at (-275,19460).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_15 has been created for the label RWL1_15 at (-275,20810).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_2 has been created for the label RWL1_2 at (-275,3260).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_3 has been created for the label RWL1_3 at (-275,4610).
 INFO (ABS-19022): Running Pins 80 percent complete...
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_7 has been created for the label RWL1_7 at (-95,10010).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_8 has been created for the label RWL1_8 at (-95,11360).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_9 has been created for the label RWL1_9 at (-95,12710).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,1130).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,20030).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,21380).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,18680).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,7880).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,2480).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,17330).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_4 has been created for the label RWL1_4 at (-275,5960).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_5 has been created for the label RWL1_5 at (-275,7310).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_6 has been created for the label RWL1_6 at (-275,8660).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_7 has been created for the label RWL1_7 at (-275,10010).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_8 has been created for the label RWL1_8 at (-275,11360).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin RWL1_9 has been created for the label RWL1_9 at (-275,12710).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,1130).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,20030).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,21380).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,18680).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,7880).
 INFO (ABS-19022): Running Pins 90 percent complete...
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,15980).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,3830).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,14630).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,13280).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,5180).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,11930).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,10580).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,6530).
-INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-155,9230).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,2480).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,17330).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,15980).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,3830).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,14630).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,13280).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,5180).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,11930).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,10580).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,6530).
+INFO (ABS-12005): Cell 10T_16x12_2r1w_magic_flattened: The pin VDD has been created for the label VDD at (-335,9230).
 INFO (ABS-19022): Running Pins 100 percent complete...
-INFO (ABS-12003): Cell 10T_16x12_2r1w_magic_flattened: 96 pins have been created.
+INFO (ABS-12003): Cell 10T_16x12_2r1w_magic_flattened: 112 pins have been created.
 INFO (ABS-11901): Cell 10T_16x12_2r1w_magic_flattened: Step Pins finished
 1
 INFO (ABS-19030): 43 absExtract()
 INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
 INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
 INFO (ABS-11900): Cell 10T_16x12_2r1w_magic_flattened: Step Extract started
-INFO (ABS-13002): Cell 10T_16x12_2r1w_magic_flattened: extracting 66 nets
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_0, 1 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_1, 2 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_10, 3 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_11, 4 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_2, 5 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_3, 6 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_4, 7 of 66.
+INFO (ABS-13002): Cell 10T_16x12_2r1w_magic_flattened: extracting 82 nets
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_0, 1 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_1, 2 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_10, 3 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_11, 4 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_2, 5 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_3, 6 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_4, 7 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_5, 8 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_6, 9 of 82.
 INFO (ABS-19022): Running Extract 10 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_5, 8 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_6, 9 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_7, 10 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_8, 11 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_9, 12 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_0, 13 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_1, 14 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_7, 10 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_8, 11 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL0_9, 12 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_0, 13 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_1, 14 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_10, 15 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_11, 16 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_2, 17 of 82.
 INFO (ABS-19022): Running Extract 20 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_10, 15 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_11, 16 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_2, 17 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_3, 18 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_4, 19 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_5, 20 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_3, 18 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_4, 19 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_5, 20 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_6, 21 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_7, 22 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_8, 23 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_9, 24 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_0, 25 of 82.
 INFO (ABS-19022): Running Extract 30 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_6, 21 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_7, 22 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_8, 23 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RBL1_9, 24 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_0, 25 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_1, 26 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_10, 27 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_1, 26 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_10, 27 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_11, 28 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_2, 29 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_3, 30 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_4, 31 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_5, 32 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_6, 33 of 82.
 INFO (ABS-19022): Running Extract 40 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_11, 28 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_2, 29 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_3, 30 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_4, 31 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_5, 32 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_6, 33 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_7, 34 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_8, 35 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_9, 36 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_0, 37 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_1, 38 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_10, 39 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_11, 40 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_2, 41 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_3, 42 of 82.
 INFO (ABS-19022): Running Extract 50 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_7, 34 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_8, 35 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBL_9, 36 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_0, 37 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_1, 38 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_10, 39 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_11, 40 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_4, 43 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_5, 44 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_6, 45 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_7, 46 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_8, 47 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_9, 48 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_0, 49 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_1, 50 of 82.
 INFO (ABS-19022): Running Extract 60 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_2, 41 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_3, 42 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_4, 43 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_5, 44 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_6, 45 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_7, 46 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_8, 47 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_10, 51 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_11, 52 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_12, 53 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_13, 54 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_14, 55 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_15, 56 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_2, 57 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_3, 58 of 82.
 INFO (ABS-19022): Running Extract 70 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WBLb_9, 48 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_0, 49 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_1, 50 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_10, 51 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_11, 52 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_12, 53 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_4, 59 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_5, 60 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_6, 61 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_7, 62 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_8, 63 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net WWL_9, 64 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_0, 65 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_1, 66 of 82.
 INFO (ABS-19022): Running Extract 80 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_13, 54 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_14, 55 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_15, 56 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_2, 57 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_3, 58 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_4, 59 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_5, 60 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_10, 67 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_11, 68 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_12, 69 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_13, 70 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_14, 71 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_15, 72 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_2, 73 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_3, 74 of 82.
 INFO (ABS-19022): Running Extract 90 percent complete...
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_6, 61 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_7, 62 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_8, 63 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_9, 64 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net GND, 65 of 66.
-INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net VDD, 66 of 66.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_4, 75 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_5, 76 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_6, 77 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_7, 78 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_8, 79 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net RWL1_9, 80 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net GND, 81 of 82.
+INFO (ABS-13004): Cell 10T_16x12_2r1w_magic_flattened: extracting the net VDD, 82 of 82.
 INFO (ABS-19022): Running Extract 100 percent complete...
 INFO (ABS-11901): Cell 10T_16x12_2r1w_magic_flattened: Step Extract finished
 1
@@ -444,9 +475,9 @@ INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed block
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met2
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via2
 INFO (ABS-19022): Running Abstract 20 percent complete...
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met4
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via4
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met1
 *WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell 10T_16x12_2r1w_magic_flattened is invalid.
 INFO (ABS-19022): Running Abstract 50 percent complete...
@@ -462,7 +493,7 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 Product   : Virtuoso(R) LEF Out 
 Program   : @(#)$CDS: lefout version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
 SubVersion: sub-version  ICADVM18.1-64b.500.13 
-Started at: 23-Jan-2023  16:24:13
+Started at: 01-Feb-2023  14:42:39
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
