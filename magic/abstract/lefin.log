@@ -3,7 +3,7 @@
 Product   : Virtuoso(R) LEF In 
 Program   : @(#)$CDS: lefin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
 SubVersion: sub-version  ICADVM18.1-64b.500.13 
-Started at: 01-Feb-2023  14:42:32
+Started at: 14-Feb-2023  17:00:08
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
@@ -11,6 +11,7 @@ DB Version: 	20200804 (SJ)
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Running: lefin -lib library -lef "/home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-90024): The existing display.drf is saved as display.drf.orig. The new packet display information will be appended to a copy of display.drf. 
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(271-281) : VIARULE L1M1_PR: Name conflict with an existing VIA, L1M1_PR_rule was created.
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(291-301) : VIARULE L1M1_PR_R: Name conflict with an existing VIA, L1M1_PR_R_rule was created.
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(311-321) : VIARULE L1M1_PR_M: Name conflict with an existing VIA, L1M1_PR_M_rule was created.
@@ -37,6 +38,6 @@ WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(731-741) : VIARULE M4M5_PR_MR: Name conflict with an existing VIA, M4M5_PR_MR_rule was created.
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(751-761) : VIARULE M4M5_PR_C: Name conflict with an existing VIA, M4M5_PR_C_rule was created.
 
-Elapsed Time: 0.6s
+Elapsed Time: 0.2s
 
-lefin translation completed (errors: 0, warnings: 25).
+lefin translation completed (errors: 0, warnings: 26).

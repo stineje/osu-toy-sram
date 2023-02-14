@@ -10,12 +10,31 @@ INFO (ABS-19030): 6 */
 INFO (ABS-19030): 7 absSkillMode()
 t
 INFO (ABS-19030): 8 absSetOption("NewLibraryName" "library")
-1
+*Error* (ABS-17008): The Global option 'NewLibraryName' has been assigned to an invalid value 'library'
+
+INFO (ABS-17010): Global option NewLibraryName valid values are: 
+ Enter a valid library name.
+0
 INFO (ABS-19030): 9 absSetLibrary("library")
-ddCreateLib: Creating a new cds.lib file at '/home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/cds.lib'.
 INFO (ABS-10500): Library library Opening /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/library
-*WARNING* (ABS-20001): The manufacturing grid value has not been specified in the technology file. Either the default value 0.001 will be used or specify the manufacturing grid value in the controls section of the technology file.
-INFO (ABS-10502): Library library Loaded 0 cells
+INFO (ABS-20046): The diff poly type layer will be considered as diffusion layer 
+and will be removed from poly layer list.
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 5 metal layer(s), 5 via layer(s), 2 poly layer(s), and 1 diff layer(s) found
+INFO (ABS-20023): Via summary: 25 valid via(s) found
+INFO (ABS-10503): Loading options for library library from file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
+INFO (ABS-10501): Library library Loading 26 cells
+INFO (ABS-19022): Loading library library 10 percent complete...
+INFO (ABS-19022): Loading library library 20 percent complete...
+INFO (ABS-19022): Loading library library 30 percent complete...
+INFO (ABS-19022): Loading library library 40 percent complete...
+INFO (ABS-19022): Loading library library 50 percent complete...
+INFO (ABS-19022): Loading library library 60 percent complete...
+INFO (ABS-19022): Loading library library 70 percent complete...
+INFO (ABS-19022): Loading library library 80 percent complete...
+INFO (ABS-19022): Loading library library 90 percent complete...
+INFO (ABS-19022): Loading library library 100 percent complete...
+INFO (ABS-10502): Library library Loaded 26 cells
 INFO (ABS-10507): Library library opened
 INFO (ABS-19046): Abstract Generator no longer uses the '.abstract.options' file in the selected design library as the default options file. The new default file location is <current working directory>/.abstract/<library name>/.abstract.options. 
 INFO (ABS-19047): Abstract Generator no longer uses the '.abstract.status' file present in the selected lib/cell directory . The new default file location for each cell is <current working directory>/.abstract/<library name>/cellStatus/.abstract.status.<cellName>. 
@@ -32,7 +51,7 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 Product   : Virtuoso(R) LEF In 
 Program   : @(#)$CDS: lefin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
 SubVersion: sub-version  ICADVM18.1-64b.500.13 
-Started at: 01-Feb-2023  14:42:32
+Started at: 14-Feb-2023  17:00:08
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
@@ -40,6 +59,7 @@ DB Version: 	20200804 (SJ)
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Running: lefin -lib library -lef "/home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef" -log lefin.log -view abstract
+WARNING: (OALEFDEF-90024): The existing display.drf is saved as display.drf.orig. The new packet display information will be appended to a copy of display.drf. 
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(271-281) : VIARULE L1M1_PR: Name conflict with an existing VIA, L1M1_PR_rule was created.
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(291-301) : VIARULE L1M1_PR_R: Name conflict with an existing VIA, L1M1_PR_R_rule was created.
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(311-321) : VIARULE L1M1_PR_M: Name conflict with an existing VIA, L1M1_PR_M_rule was created.
@@ -66,14 +86,17 @@ WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(731-741) : VIARULE M4M5_PR_MR: Name conflict with an existing VIA, M4M5_PR_MR_rule was created.
 WARNING: (OALEFDEF-50136): /home/abishek/sky130_osu_sc/char/techfiles/sky130_osu_sc_12T.tlef(751-761) : VIARULE M4M5_PR_C: Name conflict with an existing VIA, M4M5_PR_C_rule was created.
 
-Elapsed Time: 0.6s
+Elapsed Time: 0.2s
 
-lefin translation completed (errors: 0, warnings: 25).
+lefin translation completed (errors: 0, warnings: 26).
+INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
+INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
 INFO (ABS-20046): The diff poly type layer will be considered as diffusion layer 
 and will be removed from poly layer list.
 INFO (ABS-10011): Verifying Technology Data ...
 INFO (ABS-10012): Layer summary: 5 metal layer(s), 5 via layer(s), 2 poly layer(s), and 1 diff layer(s) found
 INFO (ABS-20023): Via summary: 25 valid via(s) found
+INFO (ABS-10503): Loading options for library library from file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
 INFO (ABS-19022): Refreshing library library 10 percent complete...
 INFO (ABS-19022): Refreshing library library 20 percent complete...
 INFO (ABS-19022): Refreshing library library 30 percent complete...
@@ -101,7 +124,7 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 Product   : Virtuoso(R) XStream In
 Program   : @(#)$CDS: strmin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
           : sub-version  ICADVM18.1-64b.500.13 
-Started at: 01-Feb-2023  14:42:34
+Started at: 14-Feb-2023  17:00:09
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
@@ -123,19 +146,7 @@ Summary of Options:
 	layerMap			/home/abishek/sky130_osu_sc/char/techfiles/s8.layermap
 	propSeparator			,
 
-INFO (XSTRM-61): Creating a new layer nwell in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair nwell:drawing in the technology file.
 INFO (XSTRM-220): 1. Translating STRUCTURE 10T_16x12_2r1w_magic_flattened as cellView library/10T_16x12_2r1w_magic_flattened/layout.
-INFO (XSTRM-61): Creating a new layer tap in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair tap:drawing in the technology file.
-INFO (XSTRM-61): Creating a new layer psdm in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair psdm:drawing in the technology file.
-INFO (XSTRM-61): Creating a new layer nsdm in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair nsdm:drawing in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair met1:label in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair li1:label in the technology file.
-INFO (XSTRM-61): Creating a new layer met2p in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair met2p:label in the technology file.
 
 Summary of Objects Translated:
 	Instances:                              0
@@ -152,8 +163,9 @@ Summary of Objects Translated:
 	Line:                                   0
 	Cells:                                  1
 
-Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 4948KB  CPUs Used: 1
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4936KB  CPUs Used: 1
 INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
+INFO (ABS-10509): Saving existing options file for library library to /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.prev
 INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
 INFO (ABS-20046): The diff poly type layer will be considered as diffusion layer 
 and will be removed from poly layer list.
@@ -173,8 +185,8 @@ INFO (ABS-19022): Refreshing library library 90 percent complete...
 INFO (ABS-19022): Refreshing library library 100 percent complete...
 1
 INFO (ABS-19030): 17 absSelectCellFrom("10T_16x12_2r1w_magic_flattened" "10T_16x12_2r1w_magic_flattened")
-1
-INFO (ABS-19030): 18 absSetBinOption("Core" "PinsTextPinMap" "(li1 li1)(met1 met1)")
+0
+INFO (ABS-19030): 18 absSetBinOption("Core" "PinsTextPinMap" "(li1 li1)(met1 met1)(met2 met2)")
 1
 INFO (ABS-19030): 19 absSetBinOption("Core" "PinsPowerNames" "VDD")
 1
@@ -231,7 +243,7 @@ INFO (ABS-19030): 39 absSetBinOption("Core" "AbstractBlockageCutAroundPin" "li1 
 INFO (ABS-17010): Bin Core option AbstractBlockageCutAroundPin valid values are: 
  Select this option to cut blockage around the pin.
 0
-INFO (ABS-19030): 40 absSetBinOption("Core" "AbstractSiteNameDefine" "12T")
+INFO (ABS-19030): 40 absSetBinOption("Core" "AbstractSiteNameDefine" "18T")
 1
 INFO (ABS-19030): 41 absSetOption("ExportLEFFile" "10T_16x12_2r1w_top.lef")
 1
@@ -469,20 +481,20 @@ INFO (ABS-10509): Saving existing options file for library library to /home/abis
 INFO (ABS-10511): Saving current option settings for library library to the file /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract/.abstract/library/.abstract.options.
 INFO (ABS-11900): Cell 10T_16x12_2r1w_magic_flattened: Step Abstract started
 INFO (ABS-19022): Running Abstract 10 percent complete...
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met3
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via3
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met5
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met2
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via2
-INFO (ABS-19022): Running Abstract 20 percent complete...
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met4
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via4
-INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via
 INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met1
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met3
+INFO (ABS-19022): Running Abstract 20 percent complete...
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met2
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via2
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer met5
+INFO (ABS-19026): Cell 10T_16x12_2r1w_magic_flattened: Generating detailed blockages for layer via3
 *WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell 10T_16x12_2r1w_magic_flattened is invalid.
 INFO (ABS-19022): Running Abstract 50 percent complete...
 INFO (ABS-11901): Cell 10T_16x12_2r1w_magic_flattened: Step Abstract finished
-*WARNING* (ABS-14027): Cell 10T_16x12_2r1w_magic_flattened: the site name 12T is present in the tech file with different properties so the original site will be used.
+INFO (ABS-10001): Created the 18T site.
 INFO (ABS-19022): Running Abstract 100 percent complete...
 1
 INFO (ABS-19030): 45 absExportLEF()
@@ -493,7 +505,7 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 Product   : Virtuoso(R) LEF Out 
 Program   : @(#)$CDS: lefout version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
 SubVersion: sub-version  ICADVM18.1-64b.500.13 
-Started at: 01-Feb-2023  14:42:39
+Started at: 14-Feb-2023  17:00:15
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract

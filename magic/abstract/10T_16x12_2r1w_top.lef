@@ -8,7 +8,7 @@ MACRO 10T_16x12_2r1w_magic_flattened
   FOREIGN 10T_16x12_2r1w_magic_flattened -0.455 -0.275 ;
   SIZE 35.215 BY 22.085 ;
   SYMMETRY X Y ;
-  SITE 12T ;
+  SITE 18T ;
   PIN RBL0_0
     DIRECTION OUTPUT ;
     USE SIGNAL ;

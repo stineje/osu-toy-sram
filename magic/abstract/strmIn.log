@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream In
 Program   : @(#)$CDS: strmin version ICADVM18.1-64b 08/04/2020 18:27 (cpgsrv13) $
           : sub-version  ICADVM18.1-64b.500.13 
-Started at: 01-Feb-2023  14:42:34
+Started at: 14-Feb-2023  17:00:09
 User Name : abishek
 Host Name : combe.ecen.okstate.edu
 Directory : /home/abishek/SRAM_WORK/osu-toy-sram/magic/abstract
@@ -24,19 +24,7 @@ Summary of Options:
 	layerMap			/home/abishek/sky130_osu_sc/char/techfiles/s8.layermap
 	propSeparator			,
 
-INFO (XSTRM-61): Creating a new layer nwell in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair nwell:drawing in the technology file.
 INFO (XSTRM-220): 1. Translating STRUCTURE 10T_16x12_2r1w_magic_flattened as cellView library/10T_16x12_2r1w_magic_flattened/layout.
-INFO (XSTRM-61): Creating a new layer tap in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair tap:drawing in the technology file.
-INFO (XSTRM-61): Creating a new layer psdm in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair psdm:drawing in the technology file.
-INFO (XSTRM-61): Creating a new layer nsdm in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair nsdm:drawing in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair met1:label in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair li1:label in the technology file.
-INFO (XSTRM-61): Creating a new layer met2p in the technology file.
-INFO (XSTRM-62): Creating a new layer:purpose pair met2p:label in the technology file.
 
 Summary of Objects Translated:
 	Instances:                              0
@@ -53,5 +41,5 @@ Summary of Objects Translated:
 	Line:                                   0
 	Cells:                                  1
 
-Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 4948KB  CPUs Used: 1
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4936KB  CPUs Used: 1
 INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

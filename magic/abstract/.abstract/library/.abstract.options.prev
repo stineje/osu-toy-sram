@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Abstract Options File
-;; Abstract_Generator version sub-version  ICADVM18.1-64b.500.13  on Feb  1 14:42:37 2023
+;; Abstract_Generator version sub-version  ICADVM18.1-64b.500.13  on Feb 14 17:00:13 2023
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 absSetOption( "DateTimeLog"                "false")
@@ -111,7 +111,7 @@ absSetOption( "numOfPointsInEllipseOrDonut" "64")
 
 
 absSelectBin("Core" )
-absSetBinOption( "Core" "PinsTextPinMap"             "(li1 li1)(met1 met1)")
+absSetBinOption( "Core" "PinsTextPinMap"             "(li1 li1)(met1 met1)(met2 met2)")
 absSetBinOption( "Core" "PinsPowerNames"             "VDD")
 absSetBinOption( "Core" "PinsGroundNames"            "GND")
 absSetBinOption( "Core" "PinsClockNames"             "clk")
@@ -258,8 +258,8 @@ absSetBinOption( "Core" "AbstractAdjustStairStepCover" "partial")
 absSetBinOption( "Core" "AbstractAdjustStairStepWidth" "0.07")
 absSetBinOption( "Core" "AbstractFractureRectilinearShapes" "false")
 absSetBinOption( "Core" "AbstractRemoveRedundantBlockages" "false")
-absSetBinOption( "Core" "AbstractSiteName"           "")
-absSetBinOption( "Core" "AbstractSiteNameDefine"     "12T")
+absSetBinOption( "Core" "AbstractSiteName"           "12T")
+absSetBinOption( "Core" "AbstractSiteNameDefine"     "18T")
 absSetBinOption( "Core" "AbstractSiteArrayPattern"   "false")
 absSetBinOption( "Core" "AbstractSiteArrayCells"     "")
 absSetBinOption( "Core" "AbstractSiteArrayCellsTable" "")
