@@ -1,0 +1,65 @@
+#!/usr/bin/python
+
+from optparse import OptionParser
+import sys, os
+sys.path.append(os.path.abspath('../../../gdsfactory/gdsdummy'))
+print(sys.path)
+from gdsDummy import *
+
+parser = OptionParser(usage='%prog [options] module [(w,h)] [pinSpacing]')
+(options, args) = parser.parse_args()
+
+# router doesn't like unaligned numbers
+def legalize(v):
+   return round(v, 1)
+
+name = 'toysram_16x12'
+width = 33
+height = 22
+size = (width, height)
+print(f'Generating {name}, size={size}...')
+
+# 67: li
+# 68: met1
+# 69: met2
+# 70: met3
+# 71: met4
+
+#input  [0:15]         RWL0,
+#input  [0:15]         RWL1,
+#input  [0:15]         WWL,
+#output [0:11]         RBL0,
+#input  [0:11]         WBL,
+#input  [0:11]         WBLb
+
+ra = GDSDummy(name, size)
+
+# 3 sets of word lines from center horizontal
+pw = 1.20
+ph = 1.20
+spacing = legalize((width*.75)/(16+1))
+pinsWL = [
+   Pin('RWL0', Dir.I, Edge.S, bit_from=0, bit_to=15, width=pw, height=ph, layer=(67,16), spacing=spacing, yOffset=0.0),
+   Pin('RWL1', Dir.I, (Edge.S, 0), bit_from=0, bit_to=15, width=pw, height=ph, layer=(67,16), spacing=spacing, yOffset=2.0),
+   Pin('WWL',  Dir.I, (Edge.S, 0), bit_from=0, bit_to=15, width=pw, height=ph, layer=(67,16), spacing=spacing, yOffset=4.0)
+]
+ra.xOffset = spacing
+
+spacing = legalize((height*.8)/(12+1))
+pinsBL = [
+   Pin('RBL0', Dir.O, Edge.E, bit_from=0, bit_to=11, width=pw, height=ph, layer=(67,16), spacing=spacing),
+   Pin('RBL1', Dir.O, (Edge.E, 0), bit_from=0, bit_to=11, width=pw, height=ph, layer=(67,16), spacing=spacing, xOffset=2.0),
+   Pin('WBL',  Dir.I, (Edge.E, 0), bit_from=0, bit_to=11, width=pw, height=ph, layer=(67,16), spacing=spacing, xOffset=4.0),
+   Pin('WBLb', Dir.I, (Edge.E, 0), bit_from=0, bit_to=11, width=pw, height=ph, layer=(67,16), spacing=spacing, xOffset=6.0),
+]
+ra.yOffset = spacing
+
+for p in pinsWL:
+   ra.add_pin(p)
+for p in pinsBL:
+   ra.add_pin(p)
+
+ra.gen_verilog()
+ra.gen_gds()
+ra.gen_lef()
+#ra.gen_constraints('[expr $::clk_period*.9]', '[expr $::clk_period*.1]')
