@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1675183705
+timestamp 1681932131
 << nwell >>
 rect 191 4187 344 4283
 rect 771 4187 924 4283
@@ -17328,7 +17328,10 @@ rect 6595 100 6625 134
 rect 6673 100 6703 134
 rect 6751 73 6781 107
 rect 6852 95 6882 129
+<< locali >>
+rect -113 233 -91 263
 << corelocali >>
+rect -113 4283 -91 4313
 rect -7 4123 8 4361
 tri 73 4277 95 4299 se
 rect 95 4292 110 4361
@@ -17366,6 +17369,7 @@ rect 457 4256 472 4271
 tri 82 4192 94 4204 ne
 rect 94 4199 104 4204
 tri 104 4199 109 4204 sw
+rect -113 4013 -91 4043
 rect -7 3853 8 4081
 rect 94 4043 109 4199
 rect 148 4157 176 4213
@@ -17445,6 +17449,7 @@ rect 457 3986 472 4001
 tri 82 3922 94 3934 ne
 rect 94 3929 104 3934
 tri 104 3929 109 3934 sw
+rect -113 3743 -91 3773
 rect -7 3583 8 3811
 rect 94 3821 109 3929
 rect 148 3887 176 3943
@@ -17525,6 +17530,7 @@ rect 457 3716 472 3731
 tri 82 3652 94 3664 ne
 rect 94 3659 104 3664
 tri 104 3659 109 3664 sw
+rect -113 3473 -91 3503
 rect -7 3313 8 3541
 rect 94 3503 109 3659
 rect 148 3617 176 3673
@@ -17604,6 +17610,7 @@ rect 457 3446 472 3461
 tri 82 3382 94 3394 ne
 rect 94 3389 104 3394
 tri 104 3389 109 3394 sw
+rect -113 3203 -91 3233
 rect -7 3043 8 3271
 rect 94 3281 109 3389
 rect 148 3347 176 3403
@@ -17684,6 +17691,7 @@ rect 457 3176 472 3191
 tri 82 3112 94 3124 ne
 rect 94 3119 104 3124
 tri 104 3119 109 3124 sw
+rect -113 2933 -91 2963
 rect -7 2773 8 3001
 rect 94 2963 109 3119
 rect 148 3077 176 3133
@@ -17763,6 +17771,7 @@ rect 457 2906 472 2921
 tri 82 2842 94 2854 ne
 rect 94 2849 104 2854
 tri 104 2849 109 2854 sw
+rect -113 2663 -91 2693
 rect -7 2503 8 2731
 rect 94 2741 109 2849
 rect 148 2807 176 2863
@@ -17843,6 +17852,7 @@ rect 457 2636 472 2651
 tri 82 2572 94 2584 ne
 rect 94 2579 104 2584
 tri 104 2579 109 2584 sw
+rect -113 2393 -91 2423
 rect -7 2233 8 2461
 rect 94 2423 109 2579
 rect 148 2537 176 2593
@@ -17922,6 +17932,7 @@ rect 457 2366 472 2381
 tri 82 2302 94 2314 ne
 rect 94 2309 104 2314
 tri 104 2309 109 2314 sw
+rect -113 2123 -91 2153
 rect -7 1963 8 2191
 rect 94 2201 109 2309
 rect 148 2267 176 2323
@@ -18002,6 +18013,7 @@ rect 457 2096 472 2111
 tri 82 2032 94 2044 ne
 rect 94 2039 104 2044
 tri 104 2039 109 2044 sw
+rect -113 1853 -91 1883
 rect -7 1693 8 1921
 rect 94 1883 109 2039
 rect 148 1997 176 2053
@@ -18081,6 +18093,7 @@ rect 457 1826 472 1841
 tri 82 1762 94 1774 ne
 rect 94 1769 104 1774
 tri 104 1769 109 1774 sw
+rect -113 1583 -91 1613
 rect -7 1423 8 1651
 rect 94 1661 109 1769
 rect 148 1727 176 1783
@@ -18161,6 +18174,7 @@ rect 457 1556 472 1571
 tri 82 1492 94 1504 ne
 rect 94 1499 104 1504
 tri 104 1499 109 1504 sw
+rect -113 1313 -91 1343
 rect -7 1153 8 1381
 rect 94 1343 109 1499
 rect 148 1457 176 1513
@@ -18240,6 +18254,7 @@ rect 457 1286 472 1301
 tri 82 1222 94 1234 ne
 rect 94 1229 104 1234
 tri 104 1229 109 1234 sw
+rect -113 1043 -91 1073
 rect -7 883 8 1111
 rect 94 1121 109 1229
 rect 148 1187 176 1243
@@ -18320,6 +18335,7 @@ rect 457 1016 472 1031
 tri 82 952 94 964 ne
 rect 94 959 104 964
 tri 104 959 109 964 sw
+rect -113 773 -91 803
 rect -7 613 8 841
 rect 94 803 109 959
 rect 148 917 176 973
@@ -18399,6 +18415,7 @@ rect 457 746 472 761
 tri 82 682 94 694 ne
 rect 94 689 104 694
 tri 104 689 109 694 sw
+rect -113 503 -91 533
 rect -7 343 8 571
 rect 94 581 109 689
 rect 148 647 176 703
@@ -18558,8 +18575,8 @@ rect 457 206 472 221
 tri 82 142 94 154 ne
 rect 94 149 104 154
 tri 104 149 109 154 sw
-rect -7 -55 8 31
-rect 94 -55 109 149
+rect -7 -21 8 31
+rect 94 -21 109 149
 rect 148 107 176 163
 tri 268 145 286 163 ne
 rect 286 143 308 163
@@ -18599,10 +18616,10 @@ rect 348 31 390 63
 rect 330 9 390 31
 rect 236 -7 253 7
 rect 285 -7 302 7
-rect 429 -55 444 148
+rect 429 -21 444 148
 tri 444 141 457 154 nw
 rect 530 73 545 301
-rect 530 -55 545 31
+rect 530 -21 545 31
 rect 573 4123 588 4361
 tri 653 4277 675 4299 se
 rect 675 4292 690 4361
@@ -19832,8 +19849,8 @@ rect 1037 206 1052 221
 tri 662 142 674 154 ne
 rect 674 149 684 154
 tri 684 149 689 154 sw
-rect 573 -55 588 31
-rect 674 -55 689 149
+rect 573 -21 588 31
+rect 674 -21 689 149
 rect 728 107 756 163
 tri 848 145 866 163 ne
 rect 866 143 888 163
@@ -19873,10 +19890,10 @@ rect 928 31 970 63
 rect 910 9 970 31
 rect 816 -7 833 7
 rect 865 -7 882 7
-rect 1009 -55 1024 148
+rect 1009 -21 1024 148
 tri 1024 141 1037 154 nw
 rect 1110 73 1125 301
-rect 1110 -55 1125 31
+rect 1110 -21 1125 31
 rect 1153 4123 1168 4361
 tri 1233 4277 1255 4299 se
 rect 1255 4292 1270 4361
@@ -21106,8 +21123,8 @@ rect 1617 206 1632 221
 tri 1242 142 1254 154 ne
 rect 1254 149 1264 154
 tri 1264 149 1269 154 sw
-rect 1153 -55 1168 31
-rect 1254 -55 1269 149
+rect 1153 -21 1168 31
+rect 1254 -21 1269 149
 rect 1308 107 1336 163
 tri 1428 145 1446 163 ne
 rect 1446 143 1468 163
@@ -21147,10 +21164,10 @@ rect 1508 31 1550 63
 rect 1490 9 1550 31
 rect 1396 -7 1413 7
 rect 1445 -7 1462 7
-rect 1589 -55 1604 148
+rect 1589 -21 1604 148
 tri 1604 141 1617 154 nw
 rect 1690 73 1705 301
-rect 1690 -55 1705 31
+rect 1690 -21 1705 31
 rect 1733 4123 1748 4361
 tri 1813 4277 1835 4299 se
 rect 1835 4292 1850 4361
@@ -22380,8 +22397,8 @@ rect 2197 206 2212 221
 tri 1822 142 1834 154 ne
 rect 1834 149 1844 154
 tri 1844 149 1849 154 sw
-rect 1733 -55 1748 31
-rect 1834 -55 1849 149
+rect 1733 -21 1748 31
+rect 1834 -21 1849 149
 rect 1888 107 1916 163
 tri 2008 145 2026 163 ne
 rect 2026 143 2048 163
@@ -22421,10 +22438,10 @@ rect 2088 31 2130 63
 rect 2070 9 2130 31
 rect 1976 -7 1993 7
 rect 2025 -7 2042 7
-rect 2169 -55 2184 148
+rect 2169 -21 2184 148
 tri 2184 141 2197 154 nw
 rect 2270 73 2285 301
-rect 2270 -55 2285 31
+rect 2270 -21 2285 31
 rect 2313 4123 2328 4361
 tri 2393 4277 2415 4299 se
 rect 2415 4292 2430 4361
@@ -23654,8 +23671,8 @@ rect 2777 206 2792 221
 tri 2402 142 2414 154 ne
 rect 2414 149 2424 154
 tri 2424 149 2429 154 sw
-rect 2313 -55 2328 31
-rect 2414 -55 2429 149
+rect 2313 -21 2328 31
+rect 2414 -21 2429 149
 rect 2468 107 2496 163
 tri 2588 145 2606 163 ne
 rect 2606 143 2628 163
@@ -23695,10 +23712,10 @@ rect 2668 31 2710 63
 rect 2650 9 2710 31
 rect 2556 -7 2573 7
 rect 2605 -7 2622 7
-rect 2749 -55 2764 148
+rect 2749 -21 2764 148
 tri 2764 141 2777 154 nw
 rect 2850 73 2865 301
-rect 2850 -55 2865 31
+rect 2850 -21 2865 31
 rect 2893 4123 2908 4361
 tri 2973 4277 2995 4299 se
 rect 2995 4292 3010 4361
@@ -24928,8 +24945,8 @@ rect 3357 206 3372 221
 tri 2982 142 2994 154 ne
 rect 2994 149 3004 154
 tri 3004 149 3009 154 sw
-rect 2893 -55 2908 31
-rect 2994 -55 3009 149
+rect 2893 -21 2908 31
+rect 2994 -21 3009 149
 rect 3048 107 3076 163
 tri 3168 145 3186 163 ne
 rect 3186 143 3208 163
@@ -24969,10 +24986,10 @@ rect 3248 31 3290 63
 rect 3230 9 3290 31
 rect 3136 -7 3153 7
 rect 3185 -7 3202 7
-rect 3329 -55 3344 148
+rect 3329 -21 3344 148
 tri 3344 141 3357 154 nw
 rect 3430 73 3445 301
-rect 3430 -55 3445 31
+rect 3430 -21 3445 31
 rect 3473 4123 3488 4361
 tri 3553 4277 3575 4299 se
 rect 3575 4292 3590 4361
@@ -26202,8 +26219,8 @@ rect 3937 206 3952 221
 tri 3562 142 3574 154 ne
 rect 3574 149 3584 154
 tri 3584 149 3589 154 sw
-rect 3473 -55 3488 31
-rect 3574 -55 3589 149
+rect 3473 -21 3488 31
+rect 3574 -21 3589 149
 rect 3628 107 3656 163
 tri 3748 145 3766 163 ne
 rect 3766 143 3788 163
@@ -26243,10 +26260,10 @@ rect 3828 31 3870 63
 rect 3810 9 3870 31
 rect 3716 -7 3733 7
 rect 3765 -7 3782 7
-rect 3909 -55 3924 148
+rect 3909 -21 3924 148
 tri 3924 141 3937 154 nw
 rect 4010 73 4025 301
-rect 4010 -55 4025 31
+rect 4010 -21 4025 31
 rect 4053 4123 4068 4361
 tri 4133 4277 4155 4299 se
 rect 4155 4292 4170 4361
@@ -27476,8 +27493,8 @@ rect 4517 206 4532 221
 tri 4142 142 4154 154 ne
 rect 4154 149 4164 154
 tri 4164 149 4169 154 sw
-rect 4053 -55 4068 31
-rect 4154 -55 4169 149
+rect 4053 -21 4068 31
+rect 4154 -21 4169 149
 rect 4208 107 4236 163
 tri 4328 145 4346 163 ne
 rect 4346 143 4368 163
@@ -27517,10 +27534,10 @@ rect 4408 31 4450 63
 rect 4390 9 4450 31
 rect 4296 -7 4313 7
 rect 4345 -7 4362 7
-rect 4489 -55 4504 148
+rect 4489 -21 4504 148
 tri 4504 141 4517 154 nw
 rect 4590 73 4605 301
-rect 4590 -55 4605 31
+rect 4590 -21 4605 31
 rect 4633 4123 4648 4361
 tri 4713 4277 4735 4299 se
 rect 4735 4292 4750 4361
@@ -28750,8 +28767,8 @@ rect 5097 206 5112 221
 tri 4722 142 4734 154 ne
 rect 4734 149 4744 154
 tri 4744 149 4749 154 sw
-rect 4633 -55 4648 31
-rect 4734 -55 4749 149
+rect 4633 -21 4648 31
+rect 4734 -21 4749 149
 rect 4788 107 4816 163
 tri 4908 145 4926 163 ne
 rect 4926 143 4948 163
@@ -28791,10 +28808,10 @@ rect 4988 31 5030 63
 rect 4970 9 5030 31
 rect 4876 -7 4893 7
 rect 4925 -7 4942 7
-rect 5069 -55 5084 148
+rect 5069 -21 5084 148
 tri 5084 141 5097 154 nw
 rect 5170 73 5185 301
-rect 5170 -55 5185 31
+rect 5170 -21 5185 31
 rect 5213 4123 5228 4361
 tri 5293 4277 5315 4299 se
 rect 5315 4292 5330 4361
@@ -30024,8 +30041,8 @@ rect 5677 206 5692 221
 tri 5302 142 5314 154 ne
 rect 5314 149 5324 154
 tri 5324 149 5329 154 sw
-rect 5213 -55 5228 31
-rect 5314 -55 5329 149
+rect 5213 -21 5228 31
+rect 5314 -21 5329 149
 rect 5368 107 5396 163
 tri 5488 145 5506 163 ne
 rect 5506 143 5528 163
@@ -30065,10 +30082,10 @@ rect 5568 31 5610 63
 rect 5550 9 5610 31
 rect 5456 -7 5473 7
 rect 5505 -7 5522 7
-rect 5649 -55 5664 148
+rect 5649 -21 5664 148
 tri 5664 141 5677 154 nw
 rect 5750 73 5765 301
-rect 5750 -55 5765 31
+rect 5750 -21 5765 31
 rect 5793 4123 5808 4361
 tri 5873 4277 5895 4299 se
 rect 5895 4292 5910 4361
@@ -31298,8 +31315,8 @@ rect 6257 206 6272 221
 tri 5882 142 5894 154 ne
 rect 5894 149 5904 154
 tri 5904 149 5909 154 sw
-rect 5793 -55 5808 31
-rect 5894 -55 5909 149
+rect 5793 -21 5808 31
+rect 5894 -21 5909 149
 rect 5948 107 5976 163
 tri 6068 145 6086 163 ne
 rect 6086 143 6108 163
@@ -31339,10 +31356,10 @@ rect 6148 31 6190 63
 rect 6130 9 6190 31
 rect 6036 -7 6053 7
 rect 6085 -7 6102 7
-rect 6229 -55 6244 148
+rect 6229 -21 6244 148
 tri 6244 141 6257 154 nw
 rect 6330 73 6345 301
-rect 6330 -55 6345 31
+rect 6330 -21 6345 31
 rect 6373 4123 6388 4361
 tri 6453 4277 6475 4299 se
 rect 6475 4292 6490 4361
@@ -32572,8 +32589,8 @@ rect 6837 206 6852 221
 tri 6462 142 6474 154 ne
 rect 6474 149 6484 154
 tri 6484 149 6489 154 sw
-rect 6373 -55 6388 31
-rect 6474 -55 6489 149
+rect 6373 -21 6388 31
+rect 6474 -21 6489 149
 rect 6528 107 6556 163
 tri 6648 145 6666 163 ne
 rect 6666 143 6688 163
@@ -32613,75 +32630,95 @@ rect 6728 31 6770 63
 rect 6710 9 6770 31
 rect 6616 -7 6633 7
 rect 6665 -7 6682 7
-rect 6809 -55 6824 148
+rect 6809 -21 6824 148
 tri 6824 141 6837 154 nw
 rect 6910 73 6925 301
-rect 6910 -55 6925 31
+rect 6910 -21 6925 31
 << viali >>
+rect -135 4283 -113 4313
 rect 253 4269 285 4283
 rect 36 4145 66 4179
+rect -135 4013 -113 4043
 rect 253 4043 285 4057
 rect 472 4145 502 4179
 rect 253 3999 285 4013
 rect 36 3875 66 3909
+rect -135 3743 -113 3773
 rect 253 3773 285 3787
 rect 472 3876 502 3909
 rect 253 3729 285 3743
 rect 36 3605 66 3639
+rect -135 3473 -113 3503
 rect 253 3503 285 3517
 rect 472 3606 502 3639
 rect 253 3459 285 3473
 rect 36 3335 66 3369
+rect -135 3203 -113 3233
 rect 253 3233 285 3247
 rect 472 3336 502 3369
 rect 253 3189 285 3203
 rect 36 3065 66 3099
+rect -135 2933 -113 2963
 rect 253 2963 285 2977
 rect 472 3066 502 3099
 rect 253 2919 285 2933
 rect 36 2795 66 2829
+rect -135 2663 -113 2693
 rect 253 2693 285 2707
 rect 472 2796 502 2829
 rect 253 2649 285 2663
 rect 36 2525 66 2559
+rect -135 2393 -113 2423
 rect 253 2423 285 2437
 rect 472 2526 502 2559
 rect 253 2379 285 2393
 rect 36 2255 66 2289
+rect -135 2123 -113 2153
 rect 253 2153 285 2167
 rect 472 2256 502 2289
 rect 253 2109 285 2123
 rect 36 1985 66 2019
+rect -135 1853 -113 1883
 rect 253 1883 285 1897
 rect 472 1986 502 2019
 rect 253 1839 285 1853
 rect 36 1715 66 1749
+rect -135 1583 -113 1613
 rect 253 1613 285 1627
 rect 472 1716 502 1749
 rect 253 1569 285 1583
 rect 36 1445 66 1479
+rect -135 1313 -113 1343
 rect 253 1343 285 1357
 rect 472 1446 502 1479
 rect 253 1299 285 1313
 rect 36 1175 66 1209
+rect -135 1043 -113 1073
 rect 253 1073 285 1087
 rect 472 1176 502 1209
 rect 253 1029 285 1043
 rect 36 905 66 939
+rect -135 773 -113 803
 rect 253 803 285 817
 rect 472 906 502 939
 rect 253 759 285 773
 rect 36 635 66 669
+rect -135 503 -113 533
 rect 253 533 285 547
 rect 472 636 502 669
 rect 253 489 285 503
 rect 36 365 66 399
+rect -135 233 -113 263
 rect 253 263 285 277
 rect 472 366 502 399
 rect 253 219 285 233
 rect 36 95 66 129
+rect -7 -55 8 -21
 rect 253 -7 285 7
+rect 94 -55 109 -21
 rect 472 96 502 129
+rect 429 -55 444 -21
+rect 530 -55 545 -21
 rect 833 4269 865 4283
 rect 616 4145 646 4179
 rect 833 4043 865 4057
@@ -32744,8 +32781,12 @@ rect 833 263 865 277
 rect 1052 365 1082 399
 rect 833 219 865 233
 rect 616 95 646 129
+rect 573 -55 588 -21
 rect 833 -7 865 7
+rect 674 -55 689 -21
 rect 1052 95 1082 129
+rect 1009 -55 1024 -21
+rect 1110 -55 1125 -21
 rect 1413 4269 1445 4283
 rect 1196 4145 1226 4179
 rect 1413 4043 1445 4057
@@ -32808,8 +32849,12 @@ rect 1413 263 1445 277
 rect 1632 366 1662 399
 rect 1413 219 1445 233
 rect 1196 95 1226 129
+rect 1153 -55 1168 -21
 rect 1413 -7 1445 7
+rect 1254 -55 1269 -21
 rect 1632 96 1662 129
+rect 1589 -55 1604 -21
+rect 1690 -55 1705 -21
 rect 1993 4269 2025 4283
 rect 1776 4145 1806 4179
 rect 1993 4043 2025 4057
@@ -32872,8 +32917,12 @@ rect 1993 263 2025 277
 rect 2212 365 2242 399
 rect 1993 219 2025 233
 rect 1776 95 1806 129
+rect 1733 -55 1748 -21
 rect 1993 -7 2025 7
+rect 1834 -55 1849 -21
 rect 2212 95 2242 129
+rect 2169 -55 2184 -21
+rect 2270 -55 2285 -21
 rect 2573 4269 2605 4283
 rect 2356 4145 2386 4179
 rect 2573 4043 2605 4057
@@ -32936,8 +32985,12 @@ rect 2573 263 2605 277
 rect 2792 366 2822 399
 rect 2573 219 2605 233
 rect 2356 95 2386 129
+rect 2313 -55 2328 -21
 rect 2573 -7 2605 7
+rect 2414 -55 2429 -21
 rect 2792 96 2822 129
+rect 2749 -55 2764 -21
+rect 2850 -55 2865 -21
 rect 3153 4269 3185 4283
 rect 2936 4145 2966 4179
 rect 3153 4043 3185 4057
@@ -33000,8 +33053,12 @@ rect 3153 263 3185 277
 rect 3372 365 3402 399
 rect 3153 219 3185 233
 rect 2936 95 2966 129
+rect 2893 -55 2908 -21
 rect 3153 -7 3185 7
+rect 2994 -55 3009 -21
 rect 3372 95 3402 129
+rect 3329 -55 3344 -21
+rect 3430 -55 3445 -21
 rect 3733 4269 3765 4283
 rect 3516 4145 3546 4179
 rect 3733 4043 3765 4057
@@ -33064,8 +33121,12 @@ rect 3733 263 3765 277
 rect 3952 366 3982 399
 rect 3733 219 3765 233
 rect 3516 95 3546 129
+rect 3473 -55 3488 -21
 rect 3733 -7 3765 7
+rect 3574 -55 3589 -21
 rect 3952 96 3982 129
+rect 3909 -55 3924 -21
+rect 4010 -55 4025 -21
 rect 4313 4269 4345 4283
 rect 4096 4145 4126 4179
 rect 4313 4043 4345 4057
@@ -33128,8 +33189,12 @@ rect 4313 263 4345 277
 rect 4532 365 4562 399
 rect 4313 219 4345 233
 rect 4096 95 4126 129
+rect 4053 -55 4068 -21
 rect 4313 -7 4345 7
+rect 4154 -55 4169 -21
 rect 4532 95 4562 129
+rect 4489 -55 4504 -21
+rect 4590 -55 4605 -21
 rect 4893 4269 4925 4283
 rect 4676 4145 4706 4179
 rect 4893 4043 4925 4057
@@ -33192,8 +33257,12 @@ rect 4893 263 4925 277
 rect 5112 366 5142 399
 rect 4893 219 4925 233
 rect 4676 95 4706 129
+rect 4633 -55 4648 -21
 rect 4893 -7 4925 7
+rect 4734 -55 4749 -21
 rect 5112 96 5142 129
+rect 5069 -55 5084 -21
+rect 5170 -55 5185 -21
 rect 5473 4269 5505 4283
 rect 5256 4145 5286 4179
 rect 5473 4043 5505 4057
@@ -33256,8 +33325,12 @@ rect 5473 263 5505 277
 rect 5692 365 5722 399
 rect 5473 219 5505 233
 rect 5256 95 5286 129
+rect 5213 -55 5228 -21
 rect 5473 -7 5505 7
+rect 5314 -55 5329 -21
 rect 5692 95 5722 129
+rect 5649 -55 5664 -21
+rect 5750 -55 5765 -21
 rect 6053 4269 6085 4283
 rect 5836 4145 5866 4179
 rect 6053 4043 6085 4057
@@ -33320,8 +33393,12 @@ rect 6053 263 6085 277
 rect 6272 366 6302 399
 rect 6053 219 6085 233
 rect 5836 95 5866 129
+rect 5793 -55 5808 -21
 rect 6053 -7 6085 7
+rect 5894 -55 5909 -21
 rect 6272 96 6302 129
+rect 6229 -55 6244 -21
+rect 6330 -55 6345 -21
 rect 6633 4269 6665 4283
 rect 6416 4145 6446 4179
 rect 6633 4043 6665 4057
@@ -33384,8 +33461,12 @@ rect 6633 263 6665 277
 rect 6852 365 6882 399
 rect 6633 219 6665 233
 rect 6416 95 6446 129
+rect 6373 -55 6388 -21
 rect 6633 -7 6665 7
+rect 6474 -55 6489 -21
 rect 6852 95 6882 129
+rect 6809 -55 6824 -21
+rect 6910 -55 6925 -21
 << metal1 >>
 rect -91 4269 253 4283
 rect 285 4269 833 4283
@@ -36222,7 +36303,7 @@ rect 6446 95 6792 129
 tri 6792 95 6826 129 nw
 tri 6908 95 6942 129 ne
 rect 6942 95 6952 129
-rect -91 -7 253 7
+rect -43 -7 253 7
 rect 285 -7 833 7
 rect 865 -7 1413 7
 rect 1445 -7 1993 7
@@ -36523,6 +36604,7 @@ rect 5692 95 5722 129
 rect 6272 96 6302 129
 rect 6272 95 6302 96
 rect 6852 95 6882 129
+rect -91 -7 -43 7
 << metal2 >>
 rect -91 4145 472 4179
 rect 502 4145 1052 4179
@@ -36733,105 +36815,9 @@ rect 5722 95 6272 129
 rect 6302 95 6852 129
 rect 6882 95 6952 129
 << labels >>
-rlabel corelocali 530 -55 545 -7 1 RBL0_0
-port 6 ns signal output
-rlabel corelocali -7 -55 8 -7 1 RBL1_0
-port 7 ns signal output
-rlabel corelocali 429 -55 444 -7 1 WBL_0
-port 8 ns signal input
-rlabel corelocali 94 -55 109 -7 1 WBLb_0
-port 9 ns signal input
-rlabel corelocali 1110 -55 1125 -7 1 RBL0_1
-port 55 ns signal output
-rlabel corelocali 573 -55 588 -7 1 RBL1_1
-port 56 ns signal output
-rlabel corelocali 1009 -55 1024 -7 1 WBL_1
-port 57 ns signal input
-rlabel corelocali 674 -55 689 -7 1 WBLb_1
-port 58 ns signal input
-rlabel corelocali 1690 -55 1705 -7 1 RBL0_2
-port 59 ns signal output
-rlabel corelocali 1153 -55 1168 -7 1 RBL1_2
-port 60 ns signal output
-rlabel corelocali 1589 -55 1604 -7 1 WBL_2
-port 61 ns signal input
-rlabel corelocali 1254 -55 1269 -7 1 WBLb_2
-port 62 ns signal input
-rlabel corelocali 2270 -55 2285 -7 1 RBL0_3
-port 63 ns signal output
-rlabel corelocali 1733 -55 1748 -7 1 RBL1_3
-port 64 ns signal output
-rlabel corelocali 2169 -55 2184 -7 1 WBL_3
-port 65 ns signal input
-rlabel corelocali 1834 -55 1849 -7 1 WBLb_3
-port 66 ns signal input
-rlabel corelocali 2850 -55 2865 -7 1 RBL0_4
-port 67 ns signal output
-rlabel corelocali 2313 -55 2328 -7 1 RBL1_4
-port 68 ns signal output
-rlabel corelocali 2749 -55 2764 -7 1 WBL_4
-port 69 ns signal input
-rlabel corelocali 2414 -55 2429 -7 1 WBLb_4
-port 70 ns signal input
-rlabel corelocali 3430 -55 3445 -7 1 RBL0_5
-port 71 ns signal output
-rlabel corelocali 2893 -55 2908 -7 1 RBL1_5
-port 72 ns signal output
-rlabel corelocali 3329 -55 3344 -7 1 WBL_5
-port 73 ns signal input
-rlabel corelocali 2994 -55 3009 -7 1 WBLb_5
-port 74 ns signal input
-rlabel corelocali 4010 -55 4025 -7 1 RBL0_6
-port 75 ns signal output
-rlabel corelocali 3473 -55 3488 -7 1 RBL1_6
-port 76 ns signal output
-rlabel corelocali 3909 -55 3924 -7 1 WBL_6
-port 77 ns signal input
-rlabel corelocali 3574 -55 3589 -7 1 WBLb_6
-port 78 ns signal input
-rlabel corelocali 4590 -55 4605 -7 1 RBL0_7
-port 79 ns signal output
-rlabel corelocali 4053 -55 4068 -7 1 RBL1_7
-port 80 ns signal output
-rlabel corelocali 4489 -55 4504 -7 1 WBL_7
-port 81 ns signal input
-rlabel corelocali 4154 -55 4169 -7 1 WBLb_7
-port 82 ns signal input
-rlabel corelocali 5170 -55 5185 -7 1 RBL0_8
-port 83 ns signal output
-rlabel corelocali 4633 -55 4648 -7 1 RBL1_8
-port 84 ns signal output
-rlabel corelocali 5069 -55 5084 -7 1 WBL_8
-port 85 ns signal input
-rlabel corelocali 4734 -55 4749 -7 1 WBLb_8
-port 86 ns signal input
-rlabel corelocali 5750 -55 5765 -7 1 RBL0_9
-port 87 ns signal output
-rlabel corelocali 5213 -55 5228 -7 1 RBL1_9
-port 88 ns signal output
-rlabel corelocali 5649 -55 5664 -7 1 WBL_9
-port 89 ns signal input
-rlabel corelocali 5314 -55 5329 -7 1 WBLb_9
-port 90 ns signal input
-rlabel corelocali 6330 -55 6345 -7 1 RBL0_10
-port 91 ns signal output
-rlabel corelocali 5793 -55 5808 -7 1 RBL1_10
-port 92 ns signal output
-rlabel corelocali 6229 -55 6244 -7 1 WBL_10
-port 93 ns signal input
-rlabel corelocali 5894 -55 5909 -7 1 WBLb_10
-port 94 ns signal input
-rlabel corelocali 6910 -55 6925 -7 1 RBL0_11
-port 95 ns signal output
-rlabel corelocali 6373 -55 6388 -7 1 RBL1_11
-port 96 ns signal output
-rlabel corelocali 6809 -55 6824 -7 1 WBL_11
-port 97 ns signal input
-rlabel corelocali 6474 -55 6489 -7 1 WBLb_11
-port 98 ns signal input
 rlabel metal1 -91 219 -43 233 1 VDD
 port 1 ew power bidirectional abutment
-rlabel metal1 -91 -7 -43 7 1 GND
+rlabel via1 -91 -7 -43 7 1 GND
 port 2 ew ground bidirectional abutment
 rlabel metal1 -91 489 -43 503 1 VDD
 port 1 ew power bidirectional abutment
@@ -36893,100 +36879,196 @@ rlabel metal1 -91 4269 -43 4283 1 VDD
 port 1 ew power bidirectional abutment
 rlabel metal1 -91 4043 -43 4057 1 GND
 port 2 ew ground bidirectional abutment
-rlabel polycont -91 233 -43 263 1 WWL_0
-port 3 ew signal input
 rlabel metal2 -91 95 -67 129 1 RWL0_0
 port 4 ew signal input
 rlabel metal1 -67 95 -43 129 1 RWL1_0
 port 5 ew signal input
-rlabel polycont -91 503 -43 533 1 WWL_1
-port 10 ew signal input
 rlabel metal2 -91 365 -67 399 1 RWL0_1
 port 11 ew signal input
 rlabel metal1 -67 365 -43 399 1 RWL1_1
 port 12 ew signal input
-rlabel polycont -91 773 -43 803 1 WWL_2
-port 13 ew signal input
 rlabel metal2 -91 635 -67 669 1 RWL0_2
 port 14 ew signal input
 rlabel metal1 -67 635 -43 669 1 RWL1_2
 port 15 ew signal input
-rlabel polycont -91 1043 -43 1073 1 WWL_3
-port 16 ew signal input
 rlabel metal2 -91 905 -67 939 1 RWL0_3
 port 17 ew signal input
 rlabel metal1 -67 905 -43 939 1 RWL1_3
 port 18 ew signal input
-rlabel polycont -91 1313 -43 1343 1 WWL_4
-port 19 ew signal input
 rlabel metal2 -91 1175 -67 1209 1 RWL0_4
 port 20 ew signal input
 rlabel metal1 -67 1175 -43 1209 1 RWL1_4
 port 21 ew signal input
-rlabel polycont -91 1583 -43 1613 1 WWL_5
-port 22 ew signal input
 rlabel metal2 -91 1445 -67 1479 1 RWL0_5
 port 23 ew signal input
 rlabel metal1 -67 1445 -43 1479 1 RWL1_5
 port 24 ew signal input
-rlabel polycont -91 1853 -43 1883 1 WWL_6
-port 25 ew signal input
 rlabel metal2 -91 1715 -67 1749 1 RWL0_6
 port 26 ew signal input
 rlabel metal1 -67 1715 -43 1749 1 RWL1_6
 port 27 ew signal input
-rlabel polycont -91 2123 -43 2153 1 WWL_7
-port 28 ew signal input
 rlabel metal2 -91 1985 -67 2019 1 RWL0_7
 port 29 ew signal input
 rlabel metal1 -67 1985 -43 2019 1 RWL1_7
 port 30 ew signal input
-rlabel polycont -91 2393 -43 2423 1 WWL_8
-port 31 ew signal input
 rlabel metal2 -91 2255 -67 2289 1 RWL0_8
 port 32 ew signal input
 rlabel metal1 -67 2255 -43 2289 1 RWL1_8
 port 33 ew signal input
-rlabel polycont -91 2663 -43 2693 1 WWL_9
-port 34 ew signal input
 rlabel metal2 -91 2525 -67 2559 1 RWL0_9
 port 35 ew signal input
 rlabel metal1 -67 2525 -43 2559 1 RWL1_9
 port 36 ew signal input
-rlabel polycont -91 2933 -43 2963 1 WWL_10
-port 37 ew signal input
 rlabel metal2 -91 2795 -67 2829 1 RWL0_10
 port 38 ew signal input
 rlabel metal1 -67 2795 -43 2829 1 RWL1_10
 port 39 ew signal input
-rlabel polycont -91 3203 -43 3233 1 WWL_11
-port 40 ew signal input
 rlabel metal2 -91 3065 -67 3099 1 RWL0_11
 port 41 ew signal input
 rlabel metal1 -67 3065 -43 3099 1 RWL1_11
 port 42 ew signal input
-rlabel polycont -91 3473 -43 3503 1 WWL_12
-port 43 ew signal input
 rlabel metal2 -91 3335 -67 3369 1 RWL0_12
 port 44 ew signal input
 rlabel metal1 -67 3335 -43 3369 1 RWL1_12
 port 45 ew signal input
-rlabel polycont -91 3743 -43 3773 1 WWL_13
-port 46 ew signal input
 rlabel metal2 -91 3605 -67 3639 1 RWL0_13
 port 47 ew signal input
 rlabel metal1 -67 3605 -43 3639 1 RWL1_13
 port 48 ew signal input
-rlabel polycont -91 4013 -43 4043 1 WWL_14
-port 49 ew signal input
 rlabel metal2 -91 3875 -67 3909 1 RWL0_14
 port 50 ew signal input
 rlabel metal1 -67 3875 -43 3909 1 RWL1_14
 port 51 ew signal input
-rlabel polycont -91 4283 -43 4313 1 WWL_15
-port 52 ew signal input
 rlabel metal2 -91 4145 -67 4179 1 RWL0_15
 port 53 ew signal input
 rlabel metal1 -67 4145 -43 4179 1 RWL1_15
 port 54 ew signal input
+rlabel viali -135 233 -113 263 1 WWL_0
+port 99 ew signal input
+rlabel viali -135 503 -113 533 1 WWL_1
+port 100 ew signal input
+rlabel viali -135 773 -113 803 1 WWL_2
+port 101 ew signal input
+rlabel viali -135 1043 -113 1073 1 WWL_3
+port 102 ew signal input
+rlabel viali -135 1313 -113 1343 1 WWL_4
+port 103 ew signal input
+rlabel viali -135 1583 -113 1613 1 WWL_5
+port 22 ew signal input
+rlabel viali -135 1853 -113 1883 1 WWL_6
+port 104 ew signal input
+rlabel viali -135 2123 -113 2153 1 WWL_7
+port 105 ew signal input
+rlabel viali -135 2393 -113 2423 1 WWL_8
+port 106 ew signal input
+rlabel viali -135 2663 -113 2693 1 WWL_9
+port 107 ew signal input
+rlabel viali -135 2933 -113 2963 1 WWL_10
+port 108 ew signal input
+rlabel viali -135 3203 -113 3233 1 WWL_11
+port 109 ew signal input
+rlabel viali -135 3473 -113 3503 1 WWL_12
+port 110 ew signal input
+rlabel viali -135 3743 -113 3773 1 WWL_13
+port 111 ew signal input
+rlabel viali -135 4013 -113 4043 1 WWL_14
+port 112 ew signal input
+rlabel viali -135 4283 -113 4313 1 WWL_15
+port 113 ew signal input
+rlabel viali -7 -55 8 -21 1 RBL1_0
+port 114 ns signal output
+rlabel viali 94 -55 109 -21 1 WBLb_0
+port 115 ns signal output
+rlabel viali 429 -55 444 -21 1 WBL_0
+port 116 ns signal output
+rlabel viali 530 -55 545 -21 1 RBL0_0
+port 117 ns signal output
+rlabel viali 573 -55 588 -21 1 RBL1_1
+port 118 ns signal output
+rlabel viali 674 -55 689 -21 1 WBLb_1
+port 119 ns signal output
+rlabel viali 1009 -55 1024 -21 1 WBL_1
+port 120 ns signal output
+rlabel viali 1110 -55 1125 -21 1 RBL0_1
+port 121 ns signal output
+rlabel viali 1153 -55 1168 -21 1 RBL1_2
+port 122 ns signal output
+rlabel viali 1254 -55 1269 -21 1 WBLb_2
+port 123 ns signal output
+rlabel viali 1589 -55 1604 -21 1 WBL_2
+port 124 ns signal output
+rlabel viali 1690 -55 1705 -21 1 RBL0_2
+port 125 ns signal output
+rlabel viali 1733 -55 1748 -21 1 RBL1_3
+port 126 ns signal output
+rlabel viali 1834 -55 1849 -21 1 WBLb_3
+port 127 ns signal output
+rlabel viali 2169 -55 2184 -21 1 WBL_3
+port 128 ns signal output
+rlabel viali 2270 -55 2285 -21 1 RBL0_3
+port 129 ns signal output
+rlabel viali 2313 -55 2328 -21 1 RBL1_4
+port 130 ns signal output
+rlabel viali 2414 -55 2429 -21 1 WBLb_4
+port 131 ns signal output
+rlabel viali 2749 -55 2764 -21 1 WBL_4
+port 132 ns signal output
+rlabel viali 2850 -55 2865 -21 1 RBL0_4
+port 133 ns signal output
+rlabel viali 2893 -55 2908 -21 1 RBL1_5
+port 134 ns signal output
+rlabel viali 2994 -55 3009 -21 1 WBLb_5
+port 135 ns signal output
+rlabel viali 3329 -55 3344 -21 1 WBL_5
+port 136 ns signal output
+rlabel viali 3430 -55 3445 -21 1 RBL0_5
+port 137 ns signal output
+rlabel viali 3473 -55 3488 -21 1 RBL1_6
+port 138 ns signal output
+rlabel viali 3574 -55 3589 -21 1 WBLb_6
+port 139 ns signal output
+rlabel viali 3909 -55 3924 -21 1 WBL_6
+port 140 ns signal output
+rlabel viali 4010 -55 4025 -21 1 RBL0_6
+port 141 ns signal output
+rlabel viali 4053 -55 4068 -21 1 RBL1_7
+port 142 ns signal output
+rlabel viali 4154 -55 4169 -21 1 WBLb_7
+port 143 ns signal output
+rlabel viali 4489 -55 4504 -21 1 WBL_7
+port 144 ns signal output
+rlabel viali 4590 -55 4605 -21 1 RBL0_7
+port 145 ns signal output
+rlabel viali 4633 -55 4648 -21 1 RBL1_8
+port 146 ns signal output
+rlabel viali 4734 -55 4749 -21 1 WBLb_8
+port 147 ns signal output
+rlabel viali 5069 -55 5084 -21 1 WBL_8
+port 148 ns signal output
+rlabel viali 5170 -55 5185 -21 1 RBL0_8
+port 149 ns signal output
+rlabel viali 5213 -55 5228 -21 1 RBL1_9
+port 150 ns signal output
+rlabel viali 5314 -55 5329 -21 1 WBLb_9
+port 151 ns signal output
+rlabel viali 5649 -55 5664 -21 1 WBL_9
+port 152 ns signal output
+rlabel viali 5750 -55 5765 -21 1 RBL0_9
+port 153 ns signal output
+rlabel viali 5793 -55 5808 -21 1 RBL1_10
+port 154 ns signal output
+rlabel viali 5894 -55 5909 -21 1 WBLb_10
+port 155 ns signal output
+rlabel viali 6229 -55 6244 -21 1 WBL_10
+port 156 ns signal output
+rlabel viali 6330 -55 6345 -21 1 RBL0_10
+port 157 ns signal output
+rlabel viali 6373 -55 6388 -21 1 RBL1_11
+port 158 ns signal output
+rlabel viali 6474 -55 6489 -21 1 WBLb_11
+port 159 ns signal output
+rlabel viali 6809 -55 6824 -21 1 WBL_11
+port 160 ns signal output
+rlabel viali 6910 -55 6925 -21 1 RBL0_11
+port 161 ns signal output
 << end >>
